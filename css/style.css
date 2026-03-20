@@ -997,13 +997,7 @@ form textarea:focus {
 	overflow-y: visible;
 	aspect-ratio: 1.0;
 	background: #ffffff11;
-	cursor: pointer;
 	transition: all 0.3s ease;
-}
-
-.software-tile-cont:hover {
-	background: #444;
-	border: 1px solid #6a7affff;
 }
 
 .software-tile-cover-img-holder {
