@@ -2124,6 +2124,12 @@ button:focus:not(:focus-visible) {
 	/*justify-self: left;*/
 }
 
+@media (max-width: 760px) {
+	.footer-copyright-text {
+		text-align: center;
+	}
+}
+
 /* 🟢🟢🟢 BEGIN Spacing and Layout */
 /* ************ */
 .h-sep-64 {
