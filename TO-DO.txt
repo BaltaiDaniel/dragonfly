@@ -1,0 +1,31 @@
+1.  Add the "So Much, with So Little" section to our Brand Story page as a testament to our humble beginnings.
+
+✅2.  Responsiveness.
+
+3.  Cookies
+
+4.  Cookie Notice Dialog
+
+5.  Privacy Policy
+
+6.  Projects for /index.html
+
+7.  SW checkout functionality
+
+8.  Email newsletter functionality
+
+9.  Content for /consulting.html
+
+10. Argument parsing for /sw_checkout.html, as well as db fetching for software (by `id` arg)
+
+11. /sitemap.xml
+
+12. Terms of Use
+
+13. Windows/macOS/iOS/Android icons for /software.html
+
+14. Content for /about.html#leadership
+
+15. Popup diag for /about.html#leadership
+
+16. Banner image for /software.html
