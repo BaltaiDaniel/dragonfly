@@ -971,12 +971,18 @@ form textarea:focus {
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-content: flex-start;
-  width: 100%;
-  gap: 32px;
-  padding: 128px 128px 128px 128px;
-  background: #474d6d;
+	width: 100%;
+	gap: 32px;
+	padding: 128px 128px 128px 128px;
+	background: #474d6d;
 }
 
+@media (max-width: 760px) {
+	.software-grid-section {
+		padding: 32px;
+		justify-content: center;
+	}
+}
 
 /********************************************************************/
 /********************************************************************/
