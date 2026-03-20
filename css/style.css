@@ -1891,7 +1891,7 @@ button:focus:not(:focus-visible) {
 -----------------------*/
 .footer {
 	padding: 0 128px 24px 128px;
-	background: #ddd;
+	background: #fff;
 	gap: 0;
 	display: flex;
 	width: 100%;
