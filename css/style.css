@@ -1658,6 +1658,7 @@ button:focus:not(:focus-visible) {
 	position: relative;
 	display: flex;
 	width: 100%;
+	align-items: center;
 }
 
 .nav-btns-holder {
