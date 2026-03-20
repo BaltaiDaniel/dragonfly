@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (cartIcon && cartPreview) {
         cartIcon.addEventListener('mouseenter', () => {
-            cartPreview.style.display = 'block';
+            cartPreview.style.display = 'flex';
         });
         
         cartIcon.addEventListener('mouseleave', () => {
