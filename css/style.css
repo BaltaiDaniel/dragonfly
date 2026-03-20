@@ -1191,6 +1191,8 @@ form textarea:focus {
 
 
 
+
+
 .cart-modal-content {
     margin: 0 auto;
     max-height: 100vh;
@@ -1344,11 +1346,20 @@ button:focus:not(:focus-visible) {
 
 
 #cart-count {
-    background-color: #ff4444;
+    background-color: #333;
     border-radius: 50%;
-    padding: 2px 6px;
-    font-size: 0.8rem;
-    margin-left: 5px;
+    padding: 4px;
+    font-size: 10px;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    text-align: center;
+
+    top: 0;
+	position: absolute;
+	color: white;
+	box-shadow: 0 2px rgba(0, 0, 0, 0.2);
 }
 
 .cart-preview {
@@ -1631,7 +1642,7 @@ button:focus:not(:focus-visible) {
 	flex-wrap: wrap;
 	text-align: left;
 	align-items: flex-start;
-	gap: 4px;
+	gap: 8px;
 }
 
 
