@@ -301,3 +301,7 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+
+
+const CartMgr = new CartManager();

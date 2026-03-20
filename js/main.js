@@ -47,6 +47,10 @@ var owl = $('.hero__slider');
 		}
 	}
 
+	// function setNavbarCompact() {
+	// 	window.pageYOffset += 101;
+	// }
+
 
 	window.addEventListener('scroll', onScroll, {passive:true});
 	

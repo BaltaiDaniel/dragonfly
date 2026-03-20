@@ -34,6 +34,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 	<link rel="stylesheet" href="css/bulma.min.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/cookie-diag.css">
 	
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<!-- END CSS Styles -->
@@ -64,7 +65,7 @@
 
 			<div class="nav-btns-holder-right fade-in">
 				<!-- <button class="nav-btn-icon" title="Your cart"><i class="bi-cart"></i></button> -->
-				<button class="nav-btn-icon" type="button" data-bs-toggle="collapse" data-bs-target="#cartDropdown" aria-expanded="true" aria-controls="cartDropdown" title="Tabs" onclick="setNavbarCompact(); updateCartPreview(); addToCart({'id' = 1, 'name' = 'Test', 'imgSrc' = 'img/hom-rnl-2.png'}); loadCart();"><i class="bi-cart"></i></button>
+				<button class="nav-btn-icon" type="button" data-bs-toggle="collapse" data-bs-target="#cartDropdown" aria-expanded="true" aria-controls="cartDropdown" title="Tabs" onclick="CartMgr.addToCart({id: 1, name: 'Test', imgSrc: 'img/hom-rnl-2.png'}); CartMgr.loadCart();"><i class="bi-cart"></i></button>
 				<button class="nav-dropdown-btn" type="button" data-bs-toggle="collapse" data-bs-target="#topNavDropdown" aria-expanded="true" aria-controls="topNavDropdown" title="Tabs"><i class="bi-list"></i></button>
 			</div>
 
@@ -88,19 +89,16 @@
             	<div class="v-flex">
 	            	<h3>Your Cart</h3>
 	            	<div class="nav-sect-cart">
-	            		<div class="cart-item">
+	            		<!-- <div class="cart-item">
 	            			<img src="img/hom-rnl-2.png" class="cart-item-img">
 	        				<h6 class="cart-item-title">App Name</h6>
 			            	<button type="button" class="cart-remove-btn light-100" title="Remove from cart">-</a>
 	            		</div>
 	            		<div class="cart-item">
 	            			<img src="img/hom-rnl-2.png" class="cart-item-img">
-	            			<!-- <div class="v-flex"> -->
 	        				<h6 class="cart-item-title">App Name</h6>
-	            			<!-- </div> -->
-			            	<!-- <a href="https://baltaidaniel.github.io/dragonfly/software" class="nav-btn mobile">Software</a> -->
 			            	<button type="button" class="cart-remove-btn light-100" title="Remove from cart">-</a>
-	            		</div>
+	            		</div> -->
 	            	</div>
             	</div>
             	<div class="v-sep-32"></div>
@@ -144,6 +142,153 @@
 		</div>
 	</section>
 
+
+
+
+
+	<!-- Cookie Consent Dialog -->
+	<div id="cookie-consent" class="cookie-consent" style="display: none;">
+	    <div class="cookie-consent-content">
+	        <div class="cookie-header">
+	            <div class="cookie-icon">🍪</div>
+	            <h3>We Value Your Privacy</h3>
+	        </div>
+	        <div class="cookie-body">
+	            <p>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.</p>
+	            <div class="cookie-categories">
+	                <div class="cookie-category">
+	                    <label class="cookie-toggle">
+	                        <input type="checkbox" id="necessary-cookies" checked disabled>
+	                        <span class="toggle-slider"></span>
+	                    </label>
+	                    <div class="cookie-category-info">
+	                        <strong>Necessary Cookies</strong>
+	                        <span>Always Active</span>
+	                        <p>These cookies are required for the website to function properly.</p>
+	                    </div>
+	                </div>
+	                <div class="cookie-category">
+	                    <label class="cookie-toggle">
+	                        <input type="checkbox" id="functional-cookies">
+	                        <span class="toggle-slider"></span>
+	                    </label>
+	                    <div class="cookie-category-info">
+	                        <strong>Functional Cookies</strong>
+	                        <span>Enhance functionality</span>
+	                        <p>Remember your preferences and provide enhanced features.</p>
+	                    </div>
+	                </div>
+	                <div class="cookie-category">
+	                    <label class="cookie-toggle">
+	                        <input type="checkbox" id="analytics-cookies">
+	                        <span class="toggle-slider"></span>
+	                    </label>
+	                    <div class="cookie-category-info">
+	                        <strong>Analytics Cookies</strong>
+	                        <span>Help us improve</span>
+	                        <p>Help us understand how visitors interact with our website.</p>
+	                    </div>
+	                </div>
+	                <div class="cookie-category">
+	                    <label class="cookie-toggle">
+	                        <input type="checkbox" id="marketing-cookies">
+	                        <span class="toggle-slider"></span>
+	                    </label>
+	                    <div class="cookie-category-info">
+	                        <strong>Marketing Cookies</strong>
+	                        <span>Personalized content</span>
+	                        <p>Used to deliver relevant advertisements and content.</p>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="cookie-footer">
+	            <button class="cookie-btn cookie-settings-btn" id="cookie-settings-btn">
+	                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+	                    <circle cx="12" cy="12" r="3"></circle>
+	                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+	                </svg>
+	                Cookie Settings
+	            </button>
+	            <div class="cookie-buttons">
+	                <button class="cookie-btn cookie-decline-btn" id="cookie-decline-btn">Decline All</button>
+	                <button class="cookie-btn cookie-accept-btn" id="cookie-accept-all">Accept All</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+	<!-- Cookie Settings Modal -->
+	<div id="cookie-settings-modal" class="cookie-settings-modal" style="display: none;">
+	    <div class="cookie-settings-content">
+	        <div class="cookie-settings-header">
+	            <h3>Cookie Settings</h3>
+	            <button class="cookie-settings-close">&times;</button>
+	        </div>
+	        <div class="cookie-settings-body">
+	            <p>We use cookies to improve your experience. You can choose which cookies you want to allow.</p>
+	            
+	            <div class="cookie-settings-categories">
+	                <div class="settings-category">
+	                    <div class="category-header">
+	                        <div>
+	                            <strong>Necessary Cookies</strong>
+	                            <span class="always-active">Always Active</span>
+	                        </div>
+	                        <label class="cookie-toggle disabled">
+	                            <input type="checkbox" checked disabled>
+	                            <span class="toggle-slider"></span>
+	                        </label>
+	                    </div>
+	                    <p>These cookies are essential for the website to function properly. They enable basic features like page navigation and access to secure areas.</p>
+	                </div>
+	                
+	                <div class="settings-category">
+	                    <div class="category-header">
+	                        <div>
+	                            <strong>Functional Cookies</strong>
+	                        </div>
+	                        <label class="cookie-toggle">
+	                            <input type="checkbox" id="settings-functional">
+	                            <span class="toggle-slider"></span>
+	                        </label>
+	                    </div>
+	                    <p>These cookies enable enhanced functionality and personalization, such as remembering your preferences and settings.</p>
+	                </div>
+	                
+	                <div class="settings-category">
+	                    <div class="category-header">
+	                        <div>
+	                            <strong>Analytics Cookies</strong>
+	                        </div>
+	                        <label class="cookie-toggle">
+	                            <input type="checkbox" id="settings-analytics">
+	                            <span class="toggle-slider"></span>
+	                        </label>
+	                    </div>
+	                    <p>These cookies help us understand how visitors interact with our website by collecting and reporting information anonymously.</p>
+	                </div>
+	                
+	                <div class="settings-category">
+	                    <div class="category-header">
+	                        <div>
+	                            <strong>Marketing Cookies</strong>
+	                        </div>
+	                        <label class="cookie-toggle">
+	                            <input type="checkbox" id="settings-marketing">
+	                            <span class="toggle-slider"></span>
+	                        </label>
+	                    </div>
+	                    <p>These cookies are used to track visitors across websites to display relevant advertisements and personalized content.</p>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="cookie-settings-footer">
+	            <button class="cookie-btn cookie-save-preferences" id="save-preferences">Save Preferences</button>
+	            <button class="cookie-btn cookie-accept-all-settings" id="accept-all-settings">Accept All</button>
+	        </div>
+	    </div>
+	</div>
 
     <!-- Footer Section Begin -->
     <footer class="footer">
@@ -244,7 +389,8 @@
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/jquery.slicknav.js"></script>
 	<script src="js/main.js"></script>
-	<!-- <script src="js/cart.js"></script> -->
+	<script src="js/cart.js"></script>
+	<script src="js/cookies.js"></script>
 
 
 </body>
