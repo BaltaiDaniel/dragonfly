@@ -107,8 +107,18 @@ class CartManager {
     updateCartDisplay() {
         // Update cart count
         const cartCountElement = document.getElementById('cart-count');
+        const cartCountElementDark = document.getElementById('cart-count-dark');
         if (cartCountElement) {
-            cartCountElement.textContent = this.getItemCount();
+            // if (this.getItemCount() > 0) {
+                cartCountElement.style.display = 'flex';
+                cartCountElement.textContent = this.getItemCount();
+            // }
+        }
+        else if (cartCountElementDark) {
+            // if (this.getItemCount() > 0) {
+                cartCountElementDark.style.display = 'flex';
+                cartCountElementDark.textContent = this.getItemCount();
+            // }
         }
 
         // Update cart preview

@@ -58,10 +58,39 @@
             </div>
 
             <div class="nav-btns-holder-right fade-in">
-                <button class="nav-btn-icon dark" title="Your cart"><i class="bi-cart"></i></button>
+                <div class="cart-icon-cont">
+                    <button class="nav-btn-icon dark" type="button" data-bs-toggle="collapse" data-bs-target="#cartDropdown" aria-expanded="true" aria-controls="cartDropdown" title="Tabs" onclick="CartMgr.updateCartPreview();"><i class="bi-cart"></i></button>
+                    <div id="cart-count"></div>
+                </div>
             </div>
 
         </div>
+
+
+        <div id="topNavDropdown" class="accordion-collapse collapse dark-80" aria-labelledby="topNavDropdown" data-bs-parent="#accordionGeneral">
+            <div class="accordion-body">
+                <div class="nav-sect-mobile">
+                    <a href="https://baltaidaniel.github.io/dragonfly/software" class="nav-btn mobile">Software</a>
+                    <a href="https://baltaidaniel.github.io/dragonfly/consulting" class="nav-btn mobile">Consulting</a>
+                    <a href="https://baltaidaniel.github.io/dragonfly/entertainment" class="nav-btn mobile">Movies & Games</a>
+                    <a href="https://baltaidaniel.github.io/dragonfly/about" class="nav-btn mobile">About Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="cartDropdown" class="accordion-collapse collapse dark-80" aria-labelledby="cartDropdown" data-bs-parent="#accordionGeneral">
+            <div class="accordion-body">
+                <div class="v-flex">
+                    <h3>Your Cart</h3>
+                    <div class="nav-sect-cart" id="nav-sect-cart">
+                    </div>
+                </div>
+                <div class="v-sep-32"></div>
+                <button onclick="checkout()" class="primary-btn">Proceed to Checkout</button>
+                <button onclick="clearCart()" class="clear-btn">Clear Cart</button>
+            </div>
+        </div>
+
     </header>
 
 
@@ -242,6 +271,7 @@
 	<script src="js/jquery.slicknav.js"></script>
 	<script src="js/form.js"></script>
 	<script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
 
 
 </body>

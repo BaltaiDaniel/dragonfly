@@ -60,7 +60,10 @@
             </div>
 
             <div class="nav-btns-holder-right fade-in">
-                <button class="nav-btn-icon" title="Your cart"><i class="bi-cart"></i></button>
+                <div class="cart-icon-cont">
+                    <button class="nav-btn-icon" type="button" data-bs-toggle="collapse" data-bs-target="#cartDropdown" aria-expanded="true" aria-controls="cartDropdown" title="Tabs" onclick="CartMgr.updateCartPreview();"><i class="bi-cart"></i></button>
+                    <div id="cart-count-dark"></div>
+                </div>
                 <button class="nav-dropdown-btn" type="button" data-bs-toggle="collapse" data-bs-target="#topNavDropdown" aria-expanded="true" aria-controls="topNavDropdown" title="Tabs"><i class="bi-list"></i></button>
             </div>
 
@@ -76,6 +79,21 @@
                 </div>
             </div>
         </div>
+
+
+        <div id="cartDropdown" class="accordion-collapse collapse dark-80" aria-labelledby="cartDropdown" data-bs-parent="#accordionGeneral">
+            <div class="accordion-body">
+                <div class="v-flex">
+                    <h3>Your Cart</h3>
+                    <div class="nav-sect-cart" id="nav-sect-cart">
+                    </div>
+                </div>
+                <div class="v-sep-32"></div>
+                <button onclick="checkout()" class="primary-btn">Proceed to Checkout</button>
+                <button onclick="clearCart()" class="clear-btn">Clear Cart</button>
+            </div>
+        </div>
+
     </header>
 
 
@@ -230,6 +248,7 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
 
 
 </body>

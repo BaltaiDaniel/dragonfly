@@ -1344,9 +1344,37 @@ button:focus:not(:focus-visible) {
 
 
 
+.cart-icon-cont {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	gap: 0;
+	min-width: 36px;
+}
 
 #cart-count {
+	display: none;
     background-color: #333;
+    border-radius: 50%;
+    padding: 4px;
+    font-size: 10px;
+    min-width: 20px;
+    min-height: 20px;
+    max-width: auto;
+    max-height: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    top: 0;
+	position: relative;
+	color: white;
+}
+
+
+#cart-count-dark {
+	display: none;
+    background-color: #ccc;
     border-radius: 50%;
     padding: 4px;
     font-size: 10px;
@@ -1354,13 +1382,16 @@ button:focus:not(:focus-visible) {
     min-height: 20px;
     max-width: 20px;
     max-height: 20px;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 
     top: 0;
-	position: absolute;
-	color: white;
-	box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+	position: relative;
+	color: black;
 }
+
+
 
 .cart-preview {
     position: absolute;
