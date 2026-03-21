@@ -2,11 +2,11 @@
 
 ✅2.  Responsiveness.
 
-3.  Cookies
+✅3.  Cookies
 
 4.  Cookie Notice Dialog
 
-5.  Privacy Policy
+✅5.  Privacy Policy
 
 6.  Projects for /index.html
 
@@ -20,7 +20,7 @@
 
 11. /sitemap.xml
 
-12. Terms of Use
+✅12. Terms of Use
 
 13. Windows/macOS/iOS/Android icons for /software.html
 
