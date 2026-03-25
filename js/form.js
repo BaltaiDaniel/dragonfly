@@ -209,8 +209,25 @@ countries.forEach(country => {
 // Handle form submission
 document.getElementById('form').addEventListener('submit', function(e) {
     e.preventDefault();
-    const selectedCountry = selectElement.options[selectElement.selectedIndex].text;
-    const selectedCode = selectElement.value;
-    console.log(`Selected: ${selectedCountry} (${selectedCode})`);
+    
+    let full_name = document.getElementById('consulting-form-full-name').textContent;
+    let email = document.getElementById('consulting-form-email').textContent;
+    let phone = document.getElementById('consulting-form-phone').textContent;
+    let country = document.getElementById('consulting-form-country').textContent;
+    let company_name = document.getElementById('consulting-form-company').textContent;
+    let subject = document.getElementById('consulting-form-subject').textContent;
+    let message = document.getElementById('consulting-form-message').textContent;
+
+    // const selectedCountry = selectElement.options[selectElement.selectedIndex].text;
+    // const selectedCode = selectElement.value;
+    // console.log(`Selected: ${selectedCountry} (${selectedCode})`);
+    
+    console.log(`Full Name: ${full_name}\nEmail: ${email}\nPhone: ${phone}\nCountry: ${country}\nCompany: ${company}\nSubject: ${subject}\nMessage: ${message}`);
 });
 
+
+
+
+function submitConsultingForm() {
+    return
+}

@@ -52,16 +52,21 @@
 
             <h4 class="header-logo-title dark fade-in">Dragonfly Consulting</h4>
 
-            <!-- <div class="h-sep-64"></div> -->
+            <div class="h-sep-64"></div>
 
             <div class="nav-btns-holder fade-in">
+                <a href="https://baltaidaniel.github.io/dragonfly/software" class="nav-btn">Software</a>
+                <a href="https://baltaidaniel.github.io/dragonfly/consulting" class="nav-btn">Consulting</a>
+                <a href="https://baltaidaniel.github.io/dragonfly/entertainment" class="nav-btn">Movies & Games</a>
+                <a href="https://baltaidaniel.github.io/dragonfly/about" class="nav-btn">About Us</a>
             </div>
 
             <div class="nav-btns-holder-right fade-in">
                 <div class="cart-icon-cont">
-                    <button class="nav-btn-icon dark" type="button" data-bs-toggle="collapse" data-bs-target="#cartDropdown" aria-expanded="true" aria-controls="cartDropdown" title="Tabs" onclick="CartMgr.updateCartPreview();"><i class="bi-cart"></i></button>
+                    <button class="nav-btn-icon" type="button" data-bs-toggle="collapse" data-bs-target="#cartDropdown" aria-expanded="true" aria-controls="cartDropdown" title="Tabs" onclick="CartMgr.updateCartPreview();"><i class="bi-cart"></i></button>
                     <div id="cart-count"></div>
                 </div>
+                <button class="nav-dropdown-btn" type="button" data-bs-toggle="collapse" data-bs-target="#topNavDropdown" aria-expanded="true" aria-controls="topNavDropdown" title="Tabs"><i class="bi-list"></i></button>
             </div>
 
         </div>
@@ -120,50 +125,51 @@
     		<div class="form-sect">
     			<div class="form-item">
     				<h3 class="title dark-75">Full Name*</h3>
-    				<input type="text" id="form-full-name" placeholder="Full Name" maxlength="128" required>
+    				<input type="text" id="consulting-form-full-name" placeholder="Full Name" maxlength="128" required>
     			</div>
 
     			<div class="form-item">
     				<h3 class="title dark-75">Email*</h3>
-    				<input type="email" id="form-email" placeholder="user@example.com" maxlength="320" required>
+    				<input type="email" id="consulting-form-email" placeholder="user@example.com" maxlength="320" required>
     			</div>
 
     			<div class="form-item">
     				<h3 class="title dark-75">Phone Number*</h3>
-    				<input type="phone" id="form-phone" placeholder="Phone Number" maxlength="24" required>
+    				<input type="phone" id="consulting-form-phone" placeholder="Phone Number" maxlength="24" required>
     			</div>
 
     			<div class="form-item">
     				<h3 class="title dark-75">Country*</h3>
-					<select id="form-country" name="form-country" required>
+					<select id="consulting-form-country" name="form-country" required>
 						<option value="">-- Select a Country --</option>
 					</select>
     			</div>	
 
     			<div class="form-item">
     				<h3 class="title dark-75">Name of Company</h3>
-    				<input type="text" id="form-company" placeholder="Name of company" maxlength="96">
+    				<input type="text" id="consulting-form-company" placeholder="Name of company" maxlength="96">
     			</div>
 
     			<div class="form-item">
     				<h3 class="title dark-75">Company Address</h3>
-    				<input type="text" id="form-company-address" placeholder="Company address" maxlength="320">
+    				<input type="text" id="consulting-form-address" placeholder="Company address" maxlength="320">
     			</div>
 
     			<div class="form-item">
     				<h3 class="title dark-75">Subject</h3>
-    				<input type="text" id="form-subject" placeholder="Subject" maxlength="96">
+    				<input type="text" id="consulting-form-subject" placeholder="Subject" maxlength="96">
     			</div>
 
     			<div class="form-item">
     				<h3 class="title dark-75">Message*</h3>
-    				<textarea id="form-message" placeholder="Message" maxlength="400" required></textarea>
+    				<textarea id="consulting-form-message" placeholder="Message" maxlength="400" required></textarea>
     			</div>
     		</div>
 
     		<div class="margin-bottom-solid"></div>
     		<div class="v-sep-16"></div>
-    		<button class="form-submit-btn primary-btn">Submit</button>
+    		<!-- <button class="form-submit-btn primary-btn" onclick="submitConsultingForm()">Submit</button> -->
+            <button class="form-submit-btn primary-btn">Submit</button>
 
     	</form>
     </section>
