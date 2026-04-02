@@ -92,7 +92,7 @@ a:focus {
 
 a.blue {
 	font-size: 14px;
-	color: #4a5adf;
+	color: #6a7aff;
 	font-weight: 400;
 	transition: all 0.3s;
 }
@@ -253,43 +253,58 @@ ol {
 	margin: 0;
 }
 
-form input {
+input {
 	border: 2px solid rgba(0, 0, 0, 0.2);
 	border-radius: 16px;
 	background: transparent;
 	color: #000;
-	padding: 12px 10px 12px 10px;
+	padding: 10px;
 	transition: all 0.3s;
 }
 
-form input:placeholder {
+input:placeholder {
 	color: #adadad;
 }
 
-form input:focus {
+input:focus {
 	border-color: #6a7aff;
 	color: #000;
 }
 
 
 
-form select {
+select {
 	border: 2px solid rgba(0, 0, 0, 0.2);
 	background: transparent;
 	color: #000;
 	border-radius: 16px;
-	padding: 12px 10px 12px 10px;
+	padding: 6px 10px 6px 10px;
 	transition: all 0.3s;
 }
 
-form select:hover {
+select:hover {
 	border-color: #6a7aff;
 	color: #000;
 }
 
 
 
-form textarea {
+select.light {
+	color: #fff;
+}
+
+select.light:hover {
+	border-color: #6a7aff;
+	color: #fff;
+}
+
+select.light:focus {
+	color: #fff;
+}
+
+
+
+textarea {
 	height: 128px;
 	width: 100%;
 	border-radius: 16px;
@@ -300,11 +315,11 @@ form textarea {
 	transition: all 0.3s;
 }
 
-form textarea:placeholder {
+textarea:placeholder {
 	color: #adadad;
 }
 
-form textarea:focus {
+textarea:focus {
 	border-color: #6a7aff;
 	color: #000;
 }
@@ -627,12 +642,13 @@ form textarea:focus {
 	position: relative;
 	background: #6a7aff;
 	border-radius: 32px;
-	justify-content: center;
 	text-align: center;
 	box-shadow: 0 0 6px #00000022;
 	backdrop-filter: blur(8px);
 	transition: all 0.3s;
 }
+
+
 
 .primary-btn-slim {
 	display: inline-block;
@@ -645,7 +661,6 @@ form textarea:focus {
 	position: relative;
 	background: #6a7aff;
 	border-radius: 32px;
-	justify-content: center;
 	text-align: center;
 	box-shadow: 0 0 6px #00000022;
 	backdrop-filter: blur(8px);
@@ -663,7 +678,6 @@ form textarea:focus {
 	position: relative;
 	background: #000;
 	border-radius: 32px;
-	justify-content: center;
 	text-align: center;
 	box-shadow: 0 0 6px #00000022;
 	backdrop-filter: blur(8px);
@@ -1827,6 +1841,13 @@ button:focus:not(:focus-visible) {
 
 
 
+.cart-btn-cont {
+	display: block;
+	max-width: 96px;
+}
+
+
+
 .nav-dropdown-btn {
 	color: #ccc;
 	font-size: 20px;
@@ -1888,7 +1909,14 @@ button:focus:not(:focus-visible) {
 	align-content: center;
 	display: block;
 }
-
+.sub-nav-btn.inactive {
+	color: #aaa;
+	font-weight: 400;
+}
+.sub-nav-btn.active {
+	color: #fff;
+	font-weight: 400;
+}
 
 .sub-nav-btn-dark {
 	margin: 10px 18px 10px 18px;

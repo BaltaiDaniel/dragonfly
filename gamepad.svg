@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800px"
+   height="800px"
+   viewBox="0 0 24 24"
+   fill="none"
+   version="1.1"
+   id="svg14"
+   sodipodi:docname="gamepad.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:export-filename="C:\Users\BD21\Desktop\Project Resources\ICON_SETS\___\SET001 (outlined)\gamepad.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <metadata
+     id="metadata20">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs18" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     id="namedview16"
+     showgrid="false"
+     inkscape:pagecheckerboard="true"
+     inkscape:zoom="0.295"
+     inkscape:cx="-415.94383"
+     inkscape:cy="474.06143"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg14" />
+  <path
+     d="M 21.9176,12 C 21.821106,11.694359 21.780391,10.877087 21.698055,10.309201 21.550679,9.2927333 21.349194,8.3621189 21.019332,7.5229677 20.216638,5.4809561 18.905963,4.4496853 18.0908,4.16059 17.7099,4.02549 17.3016,4 16.8974,4 H 16.2849 C 15.4074,4 14.5514,4.27225 13.8351,4.77922 L 13.3332,5.13441 C 12.9434,5.41029 12.4776,5.55844 12,5.55844 c -0.4775,0 -0.9433,-0.14815 -1.3331,-0.42401 L 10.165,4.77922 C 9.44862,4.27225 8.59264,4 7.71504,4 H 7.10257 C 6.69838,4 6.29009,4.02549 5.90915,4.16059 3.52645,5.00566 1.88749,8.09504 2.00604,15.1026 2.02992,16.5145 2.3603,18.075 3.63423,18.6842 4.03121,18.8741 4.49667,19 5.02671,19 5.66273,19 6.1678,18.8187 6.55763,18.5632 7.47153,17.9642 8.14122,16.9639 9.11125,16.4609 9.69519,16.1581 10.3434,16 11.0011,16 h 1.9978 c 0.6577,0 1.3059,0.1581 1.8899,0.4609 0.97,0.503 1.6397,1.5033 2.5536,2.1023 0.3898,0.2555 0.8949,0.4368 1.5309,0.4368 0.53,0 0.9955,-0.1259 1.3925,-0.3158 1.2739,-0.6092 1.6043,-2.1697 1.6282,-3.5816 C 22.0132,13.9681 21.9863,12.9362 21.9176,12"
+     id="path2"
+     style="stroke:#ffffff;stroke-width:1.5;stroke-linecap:round"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="csscssccsccsscccsccssccsccc" />
+  <path
+     d="M7.5 9V12M6 10.5L9 10.5"
+     stroke="#1C274C"
+     stroke-width="1.5"
+     stroke-linecap="round"
+     id="path4"
+     style="stroke:#ffffff" />
+  <path
+     d="M19 10.25C19 10.6642 18.6642 11 18.25 11C17.8358 11 17.5 10.6642 17.5 10.25C17.5 9.83579 17.8358 9.5 18.25 9.5C18.6642 9.5 19 9.83579 19 10.25Z"
+     fill="#1C274C"
+     id="path6"
+     style="fill:#ffffff" />
+  <path
+     d="M16 10.25C16 10.6642 15.6642 11 15.25 11C14.8358 11 14.5 10.6642 14.5 10.25C14.5 9.83579 14.8358 9.5 15.25 9.5C15.6642 9.5 16 9.83579 16 10.25Z"
+     fill="#1C274C"
+     id="path8"
+     style="fill:#ffffff" />
+  <path
+     d="M16.75 8C17.1642 8 17.5 8.33579 17.5 8.75C17.5 9.16421 17.1642 9.5 16.75 9.5C16.3358 9.5 16 9.16421 16 8.75C16 8.33579 16.3358 8 16.75 8Z"
+     fill="#1C274C"
+     id="path10"
+     style="fill:#ffffff" />
+  <path
+     d="M16.75 11C17.1642 11 17.5 11.3358 17.5 11.75C17.5 12.1642 17.1642 12.5 16.75 12.5C16.3358 12.5 16 12.1642 16 11.75C16 11.3358 16.3358 11 16.75 11Z"
+     fill="#1C274C"
+     id="path12"
+     style="fill:#ffffff" />
+</svg>
