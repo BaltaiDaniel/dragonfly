@@ -2,21 +2,21 @@
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="800px"
    height="800px"
    viewBox="0 0 24 24"
    fill="none"
    version="1.1"
    id="svg4"
-   sodipodi:docname="basket-shopping-svgrepo-com.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+   sodipodi:docname="basket-shopping.svg"
+   inkscape:version="1.4.2 (ebf0e94, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -25,7 +25,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -45,19 +44,25 @@
      id="namedview6"
      showgrid="false"
      inkscape:pagecheckerboard="true"
-     inkscape:zoom="0.295"
-     inkscape:cx="400"
-     inkscape:cy="400"
+     inkscape:zoom="0.59"
+     inkscape:cx="424.57627"
+     inkscape:cy="463.55932"
      inkscape:window-x="-11"
      inkscape:window-y="-11"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg4" />
+     inkscape:current-layer="svg4"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
   <path
-     d="M20 10L18.5145 17.4276C18.3312 18.3439 18.2396 18.8021 18.0004 19.1448C17.7894 19.447 17.499 19.685 17.1613 19.8326C16.7783 20 16.3111 20 15.3766 20H8.62337C7.6889 20 7.22166 20 6.83869 19.8326C6.50097 19.685 6.2106 19.447 5.99964 19.1448C5.76041 18.8021 5.66878 18.3439 5.48551 17.4276L4 10M20 10H18M20 10H21M4 10H3M4 10H6M6 10H18M6 10L9 4M18 10L15 4M9 13V16M12 13V16M15 13V16"
-     stroke="#000000"
-     stroke-width="2"
-     stroke-linecap="round"
-     stroke-linejoin="round"
+     id="rect1"
+     style="fill:none;stroke:#000000;stroke-width:1.74937;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+     d="m 4.3535203,6.1195694 v 1.740652 6.2511946 6.251135 c 0,0.964321 0.6335448,1.740653 1.4205035,1.740653 H 18.225976 c 0.786958,0 1.420504,-0.776332 1.420504,-1.740653 V 14.111416 7.8602214 6.1195694 H 18.225976 5.7740238 Z" />
+  <path
      id="path2"
-     style="stroke:#ffffff" />
+     style="fill:#ffffff;stroke:#000000;stroke-width:1.92;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+     d="m 4.3535203,6.1195694 v 1.740652 6.2511946 6.251135 c 0,0.964321 0.6335448,1.740653 1.4205035,1.740653 H 18.225976 c 0.786958,0 1.420504,-0.776332 1.420504,-1.740653 V 14.111416 7.8602214 6.1195694 H 18.225976 5.7740238 Z" />
+  <path
+     id="rect2"
+     style="fill:#ffffff;stroke:#000000;stroke-width:1.92;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none"
+     d="m 8.3180919,2.0784959 c -0.9368466,0 -1.6910618,0.9241977 -1.6910618,2.0721877 V 8.7957317 H 7.4349432 V 6.3751062 h 9.1301138 v 2.4206255 h 0.807912 V 4.1506836 c 0,-1.14799 -0.754214,-2.0721877 -1.691061,-2.0721877 z" />
 </svg>

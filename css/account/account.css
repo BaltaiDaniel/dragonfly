@@ -4,7 +4,7 @@
 	flex-wrap: wrap;
 	background: linear-gradient(to right, rgba(30, 18, 180, 0.95), rgba(140, 14, 167, 0.95));
 	min-height: 100vh;
-	padding: 56px 0 24px 0;
+	padding: 56px 32px 24px 32px;
     align-items: center;
     align-content: center;
     justify-content: center;

@@ -68,14 +68,14 @@
     </style>
 </head>
 <body>
-    <canvas id="canvas" width="1920" height="1080"></canvas>
+    <canvas id="canvas" width="100" height="100"></canvas>
 
     <script>
         const canvas = document.getElementById('canvas');
         const ctx = canvas.getContext('2d');
         
-        canvas.width = 1920;
-        canvas.height = 1080;
+        canvas.width = 1280;
+        canvas.height = 720;
         
         // Cart position (bottom center)
         const cartX = canvas.width / 2;
@@ -156,7 +156,7 @@
             static drawJoystick(ctx, x, y, size, opacity) {
                 ctx.save();
                 ctx.translate(x, y);
-                ctx.strokeStyle = `rgba(255, 215, 100, ${opacity})`;
+                ctx.strokeStyle = `rgba(0, 156, 255, ${opacity})`;
                 ctx.lineWidth = 3;
                 
                 // Joystick base
@@ -181,7 +181,7 @@
             static drawPuzzle(ctx, x, y, size, opacity) {
                 ctx.save();
                 ctx.translate(x, y);
-                ctx.strokeStyle = `rgba(255, 215, 100, ${opacity})`;
+                ctx.strokeStyle = `rgba(0, 255, 100, ${opacity})`;
                 ctx.lineWidth = 3;
                 
                 ctx.beginPath();
@@ -199,7 +199,7 @@
             static drawStar(ctx, x, y, size, opacity) {
                 ctx.save();
                 ctx.translate(x, y);
-                ctx.strokeStyle = `rgba(255, 215, 100, ${opacity})`;
+                ctx.strokeStyle = `rgba(0, 255, 200, ${opacity})`;
                 ctx.lineWidth = 3;
                 
                 const spikes = 5;
@@ -224,7 +224,7 @@
             static drawHeart(ctx, x, y, size, opacity) {
                 ctx.save();
                 ctx.translate(x, y);
-                ctx.strokeStyle = `rgba(255, 215, 100, ${opacity})`;
+                ctx.strokeStyle = `rgba(255, 200, 0, ${opacity})`;
                 ctx.lineWidth = 3;
                 
                 ctx.beginPath();
@@ -239,7 +239,7 @@
             static drawCoin(ctx, x, y, size, opacity) {
                 ctx.save();
                 ctx.translate(x, y);
-                ctx.strokeStyle = `rgba(255, 215, 100, ${opacity})`;
+                ctx.strokeStyle = `rgba(255, 0, 40, ${opacity})`;
                 ctx.lineWidth = 3;
                 
                 ctx.beginPath();
@@ -261,7 +261,7 @@
             static drawSword(ctx, x, y, size, opacity) {
                 ctx.save();
                 ctx.translate(x, y);
-                ctx.strokeStyle = `rgba(255, 215, 100, ${opacity})`;
+                ctx.strokeStyle = `rgba(0, 215, 255, ${opacity})`;
                 ctx.lineWidth = 3;
                 
                 ctx.beginPath();
@@ -339,8 +339,8 @@
                 ctx.translate(this.x, this.y);
                 ctx.rotate(this.rotation);
                 ctx.globalAlpha = this.life;
-                ctx.shadowBlur = 4;
-                ctx.shadowColor = `rgba(0, 0, 0, ${this.life * 0.5})`;
+                // ctx.shadowBlur = 4;
+                // ctx.shadowColor = `rgba(0, 0, 0, ${this.life * 0.5})`;
                 
                 if (this.customImage && this.customImage.complete) {
                     // Draw custom image
@@ -374,7 +374,7 @@
                             IconLibrary.drawSword(ctx, 0, 0, this.size, this.life);
                             break;
                         default:
-                            IconLibrary.drawStar(ctx, 0, 0, this.size, this.life);
+                            IconLibrary.drawController(ctx, 0, 0, this.size, this.life);
                     }
                 }
                 
@@ -398,9 +398,9 @@
                 ctx.shadowBlur = 0;
                 
                 // Cart body
-                ctx.fillStyle = '#FFFFFF';
-                ctx.strokeStyle = '#CCCCCC';
-                ctx.lineWidth = 3;
+                ctx.fillStyle = '#000';
+                ctx.strokeStyle = '#000';
+                ctx.lineWidth = 1;
                 ctx.beginPath();
                 ctx.roundRect(cartX - 60, cartY - 45, 120, 70, 12);
                 ctx.fill();
@@ -410,11 +410,11 @@
                 ctx.beginPath();
                 ctx.arc(cartX - 35, cartY - 55, 12, 0, Math.PI * 2);
                 ctx.arc(cartX + 35, cartY - 55, 12, 0, Math.PI * 2);
-                ctx.fillStyle = '#DDDDDD';
+                ctx.fillStyle = '#222';
                 ctx.fill();
                 
                 // Wheels
-                ctx.fillStyle = '#888888';
+                ctx.fillStyle = '#555';
                 ctx.beginPath();
                 ctx.arc(cartX - 45, cartY - 15, 8, 0, Math.PI * 2);
                 ctx.fill();
@@ -466,8 +466,8 @@
             
             // Draw background gradient
             const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-            gradient.addColorStop(0, '#1a1a2e');
-            gradient.addColorStop(1, '#16213e');
+            gradient.addColorStop(0, '#fff');
+            gradient.addColorStop(1, '#fff');
             ctx.fillStyle = gradient;
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             

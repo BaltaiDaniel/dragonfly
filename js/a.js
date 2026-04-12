@@ -157,7 +157,7 @@ function renderPasswordMagicStep() {
 
         <button class="primary-btn" id="signinPasswordBtn">Sign in <i class="bi-forward"></i></button>
         <button class="sign-secondary-decision-btn" id="magicLinkBtn">Sign in using magic link</button>
-        <button class="sign-secondary-decision-btn" id="backToEmailBtn">← Use different email</button>
+        <button class="sign-secondary-decision-btn" id="backToEmailBtn">← Sign in with a different email</button>
     `;
     const passInput = document.getElementById('passwordInput');
     const signinBtn = document.getElementById('signinPasswordBtn');
