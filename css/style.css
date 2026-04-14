@@ -277,6 +277,7 @@ select {
 	border: 2px solid rgba(0, 0, 0, 0.2);
 	background: transparent;
 	color: #000;
+	height: 100%;
 	border-radius: 16px;
 	padding: 6px 10px 6px 10px;
 	transition: all 0.3s;
@@ -1851,6 +1852,9 @@ button:focus:not(:focus-visible) {
 	border: 2px transparent;
 	transition: all 0.3s;
 }
+.nav-btn.dark {
+	color: #333;
+}
 
 .nav-btn.mobile {
 	width: 100%;
@@ -1926,7 +1930,7 @@ button:focus:not(:focus-visible) {
 
 
 
-.nav-btn:hover {
+.nav-btn:hover, .nav-btn.dark:hover {
 	background: #6a7aff;
 	border-radius: 32px;
 	color: white;
