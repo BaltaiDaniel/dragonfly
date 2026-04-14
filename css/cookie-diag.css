@@ -29,7 +29,7 @@
 }
 
 .cookie-header {
-    background: #6a7aff;
+    background: black;
     padding: 20px 24px;
     display: flex;
     align-items: center;
@@ -190,7 +190,6 @@
 }
 
 .cookie-accept-btn {
-    /*background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);*/
     background: #6a7aff;
     color: white;
 }
@@ -213,7 +212,7 @@
 .cookie-settings-btn {
     background: white;
     color: #667eea;
-    border: 1px solid #667eea;
+    /*border: 1px solid #667eea;*/
 }
 
 .cookie-settings-btn:hover {
