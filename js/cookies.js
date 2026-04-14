@@ -46,7 +46,7 @@ class CookieNoticeManager {
                         <h3>Dragonfly Values Your Privacy</h3>
                     </div>
                     <div class="cookie-body">
-                        <p>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. You can reject all non-essential cookies by choosing to accept only necessary cookies. By clicking “Allow All”, you agree to the placement and use of cookies as described in the Cookie Policy</p>\
+                        <p>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. You can reject all non-essential cookies by choosing to accept only necessary cookies. By clicking “Allow All”, you agree to the placement and use of cookies.</p>\
                     </div>
                     <div class="cookie-footer">
                         <div class="cookie-buttons">
