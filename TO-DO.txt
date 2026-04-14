@@ -1,5 +1,3 @@
-1.  Add the "So Much, with So Little" section to our Brand Story page as a testament to our humble beginnings.
-
 ✅2.  Responsiveness.
 
 ✅3.  Cookies
@@ -17,8 +15,6 @@
 9.  Content for /consulting.html
 
 ✅12. Terms of Use
-
-✅13. Windows/macOS/iOS/Android icons for /software.html
 
 14. Content for /about.html#leadership
 
