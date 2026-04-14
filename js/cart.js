@@ -109,16 +109,16 @@ class CartManager {
         const cartCountElement = document.getElementById('cart-count');
         const cartCountElementDark = document.getElementById('cart-count-dark');
         if (cartCountElement) {
-            // if (this.getItemCount() > 0) {
+            if (this.getItemCount() > 0) {
                 cartCountElement.style.display = 'flex';
-                cartCountElement.textContent = this.getItemCount();
-            // }
+                // cartCountElement.textContent = this.getItemCount();
+            }
         }
         else if (cartCountElementDark) {
-            // if (this.getItemCount() > 0) {
+            if (this.getItemCount() > 0) {
                 cartCountElementDark.style.display = 'flex';
-                cartCountElementDark.textContent = this.getItemCount();
-            // }
+                // cartCountElementDark.textContent = this.getItemCount();
+            }
         }
 
         // Update cart preview

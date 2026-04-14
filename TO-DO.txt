@@ -4,11 +4,11 @@
 
 ✅3.  Cookies
 
-4.  Cookie Notice Dialog
+✅4.  Cookie Notice Dialog
 
 ✅5.  Privacy Policy
 
-6.  Projects for /index.html
+✅6.  Projects for /index.html
 
 7.  SW checkout functionality
 

@@ -19,7 +19,7 @@
 }
 
 .cookie-consent-content {
-    max-width: 1200px;
+    max-width: auto;
     margin: 0 auto;
     background: white;
     border-radius: 16px;
@@ -29,7 +29,7 @@
 }
 
 .cookie-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #6a7aff;
     padding: 20px 24px;
     display: flex;
     align-items: center;
@@ -190,7 +190,8 @@
 }
 
 .cookie-accept-btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /*background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);*/
+    background: #6a7aff;
     color: white;
 }
 
@@ -200,6 +201,7 @@
 }
 
 .cookie-decline-btn {
+    /*background: #6c757d;*/
     background: #6c757d;
     color: white;
 }

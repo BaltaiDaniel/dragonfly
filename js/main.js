@@ -71,5 +71,10 @@ var owl = $('.hero__slider');
 		// modal.querySelector('#modalLink3').textContent = item.dataset.modallink2 || '';
 	});
 
+
+	CookieNoticeManager.new().checkConsent();
+
+
+
 })(jQuery);
 
