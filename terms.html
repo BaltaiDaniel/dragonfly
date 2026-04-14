@@ -63,7 +63,7 @@
 			<div class="nav-btns-holder-right fade-in">
 				<div class="cart-icon-cont">
 					<button class="nav-btn-icon" type="button" data-bs-toggle="collapse" data-bs-target="#cartDropdown" aria-expanded="true" aria-controls="cartDropdown" title="Tabs" onclick="CartMgr.updateCartPreview();"><i class="bi-cart"></i></button>
-					<div id="cart-count-dark"></div>
+					<div id="cart-count"></div>
 				</div>
 				<button class="nav-dropdown-btn" type="button" data-bs-toggle="collapse" data-bs-target="#topNavDropdown" aria-expanded="true" aria-controls="topNavDropdown" title="Tabs"><i class="bi-list"></i></button>
 			</div>
@@ -83,34 +83,34 @@
 			</div>
 		</div>
 
-		<div id="cartDropdown" class="accordion-collapse collapse dark-80" aria-labelledby="cartDropdown" data-bs-parent="#accordionGeneral">
-			<div class="accordion-body">
-				<div class="v-flex">
-					<h3>Your Cart</h3>
-					<div class="nav-sect-cart" id="nav-sect-cart">
-					</div>
-				</div>
-				<div class="v-sep-32"></div>
-				<button onclick="checkout()" class="primary-btn">Proceed to Checkout</button>
-				<button onclick="clearCart()" class="clear-btn">Clear Cart</button>
-			</div>
-		</div>
+
+
+        <div id="cartDropdown" class="accordion-collapse collapse dark-80" aria-labelledby="cartDropdown" data-bs-parent="#accordionGeneral">
+            <div class="accordion-body">
+            	<div class="v-flex">
+	            	<h5><strong>My Cart</strong></h5>
+	            	<div class="nav-sect-cart" id="nav-sect-cart">
+	            	</div>
+            	</div>
+            </div>
+        </div>
 
 	</header>
 
 
 
 
-<!--         <button class="btn-primary" id="accept-terms-btn" style="display: none;">Accept Terms</button>
-		<button class="primary-btn" onclick="window.print()">Print</button>
-		<button class="primary-btn" onclick="downloadPDF()">Download PDF</button>
- -->
+
 
 
 	<div class="section-item-1-for-text fade-in">
 		<h1 class="about-section-item-title dark-100 fade-in">Website Terms of Use</h1>
 		<p class="last-updated dark-75">Last updated: 21<sup>st</sup> March, 2026</p>
 		<div class="v-sep-64"></div>
+        
+        <button class="btn-primary" id="accept-terms-btn" style="display: none;">Accept Terms</button>
+		<button class="primary-btn" onclick="window.print()">Print</button>
+		<!-- <button class="primary-btn" onclick="downloadPDF()">Download PDF</button> -->
 		
 		<h3 class="dark-100"><b>Acceptance of Terms</b></h3>
 		<h5 class="dark-75">These Terms of Use (hereinafter referred to as the "Terms of Use") govern your access to and use of the Dragonfly website located at <span><a href="https://www.madebydragonfly.com" class="blue">www.madebydragonfly.com</a></span>, including all associated subdomains, microsites, mobile applications, and any related services linked to www.madebydragonfly.com by Dragonfly Technologies Ltd., its subsidiaries, affiliates, and international counterparts (collectively, the "Site", or the "Service"). This Site is the exclusive property of Dragonfly Technologies Ltd. ("Dragonfly," "we," "us," or "our") and its licensors, and is protected by applicable intellectual property laws, including but not limited to copyright, trademark, and trade secret laws.</h5>
@@ -273,7 +273,7 @@
 
 		<div class="v-sep-8"></div>
 		<h4 class="dark-100">Copyright Infringement:</h4>
-		<h5 class="dark-75">If you believe that any material on our Service infringes upon your copyright, please notify us via email at <strong>feedback@madebydragonfly.com</stong> immediately. We will respond to all such notices and take appropriate action.</strong>
+		<h5 class="dark-80">If you believe that any material on our Service infringes upon your copyright, please notify us via email at feedback@madebydragonfly.com immediately. We will respond to all such notices and take appropriate action.
 
 
 		<div class="v-sep-32"></div>
@@ -338,7 +338,7 @@
 		</ul>
 		
 		<div class="v-sep-8"></div>
-		<h5 class="dark-75">IN NO EVENT SHALL OUR TOTAL LIABILITY TO YOU FOR ALL CLAIMS EXCEED THE AMOUNT PAID BY YOU TO US DURING THE TWELVE (12) MONTHS PRIOR TO THE CLAIM, OR $50.00, WHICHEVER IS GREATER.</h5>
+		<h5 class="dark-75">IN NO EVENT SHALL OUR TOTAL LIABILITY TO YOU FOR ALL CLAIMS EXCEED THE AMOUNT PAID BY YOU TO US DURING THE TWELVE (12) MONTHS PRIOR TO THE CLAIM, OR $100.00, WHICHEVER IS GREATER.</h5>
 
 		<div class="v-sep-32"></div>
 		
@@ -376,9 +376,9 @@
 		<ul class="ul-for-text">
 			<p><h5 class="dark-75"><strong class="dark-75">Email:</strong> feedback@madebydragonfly.com</h5></p>
 			<div class="v-sep-8"></div>
-			<p><h5 class="dark-75"><strong class="dark-75">Phone:</strong> +(234) 800-000-0000</h5></p>
+			<!-- <p><h5 class="dark-75"><strong class="dark-75">Phone:</strong> +(234) 800-000-0000</h5></p>
 			<div class="v-sep-8"></div>
-			<p><h5 class="dark-75"><strong class="dark-75">Support Hours:</strong> Monday-Friday, 9:00 AM - 6:00 PM WAT</p></h5>
+			<p><h5 class="dark-75"><strong class="dark-75">Support Hours:</strong> Monday-Friday, 9:00 AM - 6:00 PM WAT</p></h5> -->
 		</ul>
 
 	</div>
@@ -389,95 +389,7 @@
 
     <!-- Footer Section Begin -->
     <footer class="footer">
-        <div class="container">
-            <div class="margin-empty-large"></div>
-            <div class="margin-bottom-solid"></div>
-            
-            <div class="footer-flex gap-4">
-                <div class="footer-sect">
-                    <div class="margin_bottom_s"></div>
-                    <h3 class="footer-company-name dark-100">Dragonfly</h3>
-                    <p><i class="bi-pin-map"></i><span> </span>Nigeria</p>
-                    <p class="text-muted">Dragonfly works in remote teams.</p>
-
-                    <div class="social-icons-holder">
-                        <a href="https://instagram.com/madebydragonfly" class="social-icon"><i class="bi-instagram"></i></a>
-                        <a href="https://facebook.com/madebydragonfly" class="social-icon"><i class="bi-facebook"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer-right-items">
-                    <div class="footer-sect">
-                        <div class="margin_bottom_s"></div>
-                        <p class="footer-section-title">Entertainment</p>
-                        <a href="https://baltaidaniel.github.io/dragonfly#zenolegends" target=_blank class="footer-section-item">Zeno Legends</a>
-                        <a href="https://baltaidaniel.github.io/dragonfly#tlb" class="footer-section-item">TLB</a>
-                    </div>
-                    <div class="footer-sect">
-                        <div class="margin_bottom_s"></div>
-                        <p class="footer-section-title">About Dragonfly</p>
-                        <a href="https://baltaidaniel.github.io/dragonfly/about" class="footer-section-item">Who We Are</a>
-                        <a href="https://baltaidaniel.github.io/dragonfly/about#leadership" class="footer-section-item">Leadership</a>
-                    </div>
-                </div>
-
-                <div class="accordion footer-right-items-mobile" id="accordionGeneral">
-                    <div class="accordion-item">
-                        <p class="accordion-header footer-section-title-mobile" id="headingOne">
-                            <button class="accordion-button collapsed footer-section-title-mobile dark-80" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralOne" aria-expanded="true" aria-controls="accordionGeneralOne">
-                            From Dragonfly Studios
-                            </button>
-                        </p>
-                        <div id="accordionGeneralOne" class="accordion-collapse collapse dark-80" aria-labelledby="headingOne" data-bs-parent="#accordionGeneral">
-                            <div class="accordion-body">
-                                <div class="footer-sect">
-                                    <a href="https://baltaidaniel.github.io/dragonfly#sky_jumper" target=_blank class="footer-section-item">Sky Jumper</a>
-                                    <a href="https://baltaidaniel.github.io/dragonfly#tlb" class="footer-section-item">TLB</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <p class="accordion-header footer-section-title-mobile" id="headingTwo">
-                            <button class="accordion-button collapsed footer-section-title-mobile dark-80" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralTwo" aria-expanded="false" aria-controls="accordionGeneralTwo">
-                            About Dragonfly
-                            </button>
-                        </p>
-                        <div id="accordionGeneralTwo" class="accordion-collapse collapse dark-80" aria-labelledby="headingTwo" data-bs-parent="#accordionGeneral">
-                            <div class="accordion-body">
-                                <div class="footer-sect">
-                                    <a href="https://baltaidaniel.github.io/dragonfly/about" class="footer-section-item">Who We Are</a>
-                                    <a href="https://baltaidaniel.github.io/dragonfly/about#leadership" class="footer-section-item">Leadership</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="margin-bottom-solid"></div>
-
-
-            <div class="footlinks-sect">
-                <p class="footer-copyright-text">Copyright © 2026 Dragonfly Technologies Ltd. All Rights Reserved</p>
-
-                <div class="footlinks-right-items">
-                    <a href="https://baltaidaniel.github.io/dragonfly/terms" class="light-75 footer-section-item">Terms of Use</a>
-                    <p class="light-75">|</p>
-                    <a href="https://baltaidaniel.github.io/dragonfly/pp" class="light-75 footer-section-item">Privacy Policy</a>
-                    <p class="light-75">|</p>
-                    <a href="https://baltaidaniel.github.io/dragonfly/about#contact" class="light-75 footer-section-item">Contact Us</a>                    
-                </div>
-
-                <div class="footlinks-right-items-mobile">
-                    <a href="https://baltaidaniel.github.io/dragonfly/terms" class="light-75 footer-section-item">Terms of Use</a>
-                    <a href="https://baltaidaniel.github.io/dragonfly/pp" class="light-75 footer-section-item">Privacy Policy</a>
-                    <a href="https://baltaidaniel.github.io/dragonfly/about#contact" class="light-75 footer-section-item">Contact Us</a>                    
-                </div>  
-            </div>
-
+        <div class="container" id="base-footer">
         </div>
     </footer>
     <!-- Footer Section End -->
@@ -491,6 +403,7 @@
 	<script src="js/jquery.slicknav.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/cart.js"></script>
+	<script src="js/base-footer.js"></script>
 
 </body>
 

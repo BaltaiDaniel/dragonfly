@@ -42,7 +42,7 @@
 
 
 <body>
-    <header id="navbar-about">
+    <!-- <header id="navbar-about">
         <div class="navbar-holder">
 
             <div class="header-logo-container">
@@ -79,32 +79,109 @@
             </div>
         </div>
 
+
         <div id="cartDropdown" class="accordion-collapse collapse dark-80" aria-labelledby="cartDropdown" data-bs-parent="#accordionGeneral">
             <div class="accordion-body">
                 <div class="v-flex">
-                    <h3>Your Cart</h3>
+                    <h5><strong>My Cart</strong></h5>
                     <div class="nav-sect-cart" id="nav-sect-cart">
                     </div>
                 </div>
-                <div class="v-sep-32"></div>
-                <button onclick="checkout()" class="primary-btn">Proceed to Checkout</button>
-                <button onclick="clearCart()" class="clear-btn">Clear Cart</button>
+            </div>
+        </div>
+
+    </header> -->
+
+
+
+
+    <header id="navbar-about">
+        <div class="navbar-holder">
+
+            <div class="header-logo-container">
+                <a href="https://baltaidaniel.github.io/dragonfly"><img src="img/logo.png" class="fade-in" id="header-logo-img" alt="Dragonfly Logo"></a>
+            </div>
+
+            <a href="https://baltaidaniel.github.io/dragonfly" class="header-logo-title dark fade-in">Dragonfly</a>
+
+            <div class="h-sep-64"></div>
+
+            <div class="nav-btns-holder fade-in">
+                <a class="nav-btn" href="https://baltaidaniel.github.io/madebydragonfly/software">Software</a>
+                <a class="nav-btn" href="https://baltaidaniel.github.io/madebydragonfly/consulting">Consulting</a>
+                <a class="nav-btn" href="https://baltaidaniel.github.io/madebydragonfly/entertainment">Entertainment</a>
+                <a class="nav-btn active" href="https://baltaidaniel.github.io/madebydragonfly/entertainment">About</a>
+            </div>
+
+            <div class="nav-btns-holder-right fade-in">
+                <div class="cart-icon-cont">
+                    <button class="nav-btn-icon dark" type="button" data-bs-toggle="collapse" data-bs-target="#cartDropdown" aria-expanded="true" aria-controls="cartDropdown" title="Tabs" onclick="CartMgr.updateCartPreview();"><i class="bi-cart"></i></button>
+                    <div id="cart-count"></div>
+                </div>
+                <button class="nav-dropdown-btn dark" type="button" data-bs-toggle="collapse" data-bs-target="#topNavDropdown" aria-expanded="true" aria-controls="topNavDropdown" title="Tabs"><i class="bi-list dark-100"></i></button>
+            </div>
+
+        </div>
+
+        <div class="navbar-holder">
+            <!-- <h5 class="header-logo-title dark fade-in">About Dragonfly</h5>
+
+            <div class="h-sep-64"></div> -->
+
+            <div class="nav-btns-holder fade-in">
+                <a class="sub-nav-btn-dark" href="#business_profile">Business Profile</a>
+                <a class="sub-nav-btn-dark" href="#leadership">Leadership</a>
+                <a class="sub-nav-btn-dark" href="#contact">Contact Us</a>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div id="topNavDropdown" class="accordion-collapse collapse dark-80" aria-labelledby="topNavDropdown" data-bs-parent="#accordionGeneral">
+            <div class="accordion-body">
+                <div class="nav-sect-mobile">
+                    <a class="sub-nav-btn-mobile" href="#business_profile">Business Profile</a>
+                    <a class="sub-nav-btn-mobile" href="#leadership">Leadership</a>
+                    <a class="sub-nav-btn-mobile" href="#contact">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="cartDropdown" class="accordion-collapse collapse dark-80" aria-labelledby="cartDropdown" data-bs-parent="#accordionGeneral">
+            <div class="accordion-body">
+                <div class="v-flex">
+                    <h5><strong>My Cart</strong></h5>
+                    <div class="nav-sect-cart" id="nav-sect-cart">
+                    </div>
+                </div>
             </div>
         </div>
 
     </header>
 
 
+
+
+
+
+
+
     <section class="section-item-1 fade-in">
-        <h1 class="about-section-item-title dark fade-in">Innovation, Accessibility, and Creativity.</h1>
-        <p class="about-section-item-subtext dark fade-in">At Dragonfly, lorem ipsum sit dolor amet, lorem ipsum sit dolor amet, lorem ipsum sit dolor amet, lorem ipsum sit dolor amet, lorem ipsum sit dolor amet, lorem ipsum sit dolor amet, lorem ipsum sit dolor amet, lorem ipsum sit dolor amet, lorem ipsum sit dolor amet, lorem ipsum sit dolor amet, lorem ipsum sit dolor amet, lorem ipsum sit dolor amet, lorem ipsum sit dolor amet.</p>
+        <h1 class="about-section-item-title dark fade-in">Innovation. Accessibility. Creativity.</h1>
+        <p class="about-section-item-subtext dark fade-in">
+            At Dragonfly, we strive toward innovation, embed accessibility into every layer of our work, and fuel it all with creativity.
+        </p>
     </section>
 
 
-    <section class="section-item-1-v-fill fade-in" id="business_profile">
+    <section class="section-item-1-v-fill fade-in">
         <section class="grid-sect fade-in">
 
-            <div class="v-flex spad-l-s grid-item-1">
+            <div class="v-flex spad-l-s grid-item-1" id="business_profile">
                 <h1 class="about-section-item-title dark fade-in">Who We Are</h1>
                 <p class="about-section-item-subtext dark fade-in">We are a creative technology company reinventing ways technology can benefit society at large by bridging the gap between old systems and access to modern technology.</p>
             </div>
@@ -270,95 +347,7 @@
 
     <!-- Footer Section Begin -->
     <footer class="footer">
-        <div class="container">
-            <div class="margin-empty-large"></div>
-            <div class="margin-bottom-solid"></div>
-            
-            <div class="footer-flex gap-4">
-                <div class="footer-sect">
-                    <div class="margin_bottom_s"></div>
-                    <h3 class="footer-company-name dark-100">Dragonfly</h3>
-                    <p><i class="bi-pin-map"></i><span> </span>Nigeria</p>
-                    <p class="text-muted">Dragonfly works in remote teams.</p>
-
-                    <div class="social-icons-holder">
-                        <a href="https://instagram.com/madebydragonfly" class="social-icon"><i class="bi-instagram"></i></a>
-                        <a href="https://facebook.com/madebydragonfly" class="social-icon"><i class="bi-facebook"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer-right-items">
-                    <div class="footer-sect">
-                        <div class="margin_bottom_s"></div>
-                        <p class="footer-section-title">Entertainment</p>
-                        <a href="https://baltaidaniel.github.io/dragonfly#zenolegends" target=_blank class="footer-section-item">Zeno Legends</a>
-                        <a href="https://baltaidaniel.github.io/dragonfly#tlb" class="footer-section-item">TLB</a>
-                    </div>
-                    <div class="footer-sect">
-                        <div class="margin_bottom_s"></div>
-                        <p class="footer-section-title">About Dragonfly</p>
-                        <a href="https://baltaidaniel.github.io/dragonfly/about" class="footer-section-item">Who We Are</a>
-                        <a href="https://baltaidaniel.github.io/dragonfly/about#leadership" class="footer-section-item">Leadership</a>
-                    </div>
-                </div>
-
-                <div class="accordion footer-right-items-mobile" id="accordionGeneral">
-                    <div class="accordion-item">
-                        <p class="accordion-header footer-section-title-mobile" id="headingOne">
-                            <button class="accordion-button collapsed footer-section-title-mobile dark-80" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralOne" aria-expanded="true" aria-controls="accordionGeneralOne">
-                            From Dragonfly Studios
-                            </button>
-                        </p>
-                        <div id="accordionGeneralOne" class="accordion-collapse collapse dark-80" aria-labelledby="headingOne" data-bs-parent="#accordionGeneral">
-                            <div class="accordion-body">
-                                <div class="footer-sect">
-                                    <a href="https://baltaidaniel.github.io/dragonfly#sky_jumper" target=_blank class="footer-section-item">Sky Jumper</a>
-                                    <a href="https://baltaidaniel.github.io/dragonfly#tlb" class="footer-section-item">TLB</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <p class="accordion-header footer-section-title-mobile" id="headingTwo">
-                            <button class="accordion-button collapsed footer-section-title-mobile dark-80" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralTwo" aria-expanded="false" aria-controls="accordionGeneralTwo">
-                            About Dragonfly
-                            </button>
-                        </p>
-                        <div id="accordionGeneralTwo" class="accordion-collapse collapse dark-80" aria-labelledby="headingTwo" data-bs-parent="#accordionGeneral">
-                            <div class="accordion-body">
-                                <div class="footer-sect">
-                                    <a href="https://baltaidaniel.github.io/dragonfly/about" class="footer-section-item">Who We Are</a>
-                                    <a href="https://baltaidaniel.github.io/dragonfly/about#leadership" class="footer-section-item">Leadership</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="margin-bottom-solid"></div>
-
-
-            <div class="footlinks-sect">
-                <p class="footer-copyright-text">Copyright © 2026 Dragonfly Technologies Ltd. All Rights Reserved</p>
-
-                <div class="footlinks-right-items">
-                    <a href="https://baltaidaniel.github.io/dragonfly/terms" class="light-75 footer-section-item">Terms of Use</a>
-                    <p class="light-75">|</p>
-                    <a href="https://baltaidaniel.github.io/dragonfly/pp" class="light-75 footer-section-item">Privacy Policy</a>
-                    <p class="light-75">|</p>
-                    <a href="https://baltaidaniel.github.io/dragonfly/about#contact" class="light-75 footer-section-item">Contact Us</a>                    
-                </div>
-
-                <div class="footlinks-right-items-mobile">
-                    <a href="https://baltaidaniel.github.io/dragonfly/terms" class="light-75 footer-section-item">Terms of Use</a>
-                    <a href="https://baltaidaniel.github.io/dragonfly/pp" class="light-75 footer-section-item">Privacy Policy</a>
-                    <a href="https://baltaidaniel.github.io/dragonfly/about#contact" class="light-75 footer-section-item">Contact Us</a>                    
-                </div>  
-            </div>
-
+        <div class="container" id="base-footer">
         </div>
     </footer>
     <!-- Footer Section End -->
@@ -373,6 +362,7 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/main.js"></script>
     <script src="js/cart.js"></script>
+    <script src="js/base-footer.js"></script>
 
 
 </body>
