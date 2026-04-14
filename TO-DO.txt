@@ -20,7 +20,7 @@
 
 15. Popup diag for /about.html#leadership
 
-16. Banner image for /software.html
+✅16. Banner image for /software.html
 
 
 ------------------------
