@@ -169,47 +169,46 @@
         <form class="form">
 
             <div class="form-sect">
-                <div class="form-item">
-                    <h3 class="title dark-75">Full Name*</h3>
-                    <input type="text" id="form-full-name" placeholder="Full Name" maxlength="128" required>
+                <div class="float-group">
+                    <input type="text" id="form-full-name" placeholder="Full Name" autocomplete="additional-name" required>
+                    <label>Full Name*</label>
                 </div>
 
-                <div class="form-item">
-                    <h3 class="title dark-75">Email*</h3>
-                    <input type="email" id="form-email" placeholder="user@example.com" maxlength="320" required>
+                <div class="float-group">
+                    <input type="text" id="form-email" placeholder="user@example.com" autocomplete="email" required>
+                    <label>Email*</label>
                 </div>
 
-                <div class="form-item">
-                    <h3 class="title dark-75">Phone Number*</h3>
-                    <input type="phone" id="form-phone" placeholder="Phone Number" maxlength="24" required>
+                <div class="float-group">
+                    <input type="text" id="form-phone" placeholder="Phone Number" autocomplete="phone" required>
+                    <label>Phone Number*</label>
                 </div>
 
-                <div class="form-item">
-                    <h3 class="title dark-75">Country*</h3>
+                <div class="float-group">
                     <select id="form-country" name="form-country" required>
                         <option value="">-- Select a Country --</option>
                     </select>
-                </div>  
-
-                <div class="form-item">
-                    <h3 class="title dark-75">Company</h3>
-                    <input type="text" id="form-company" placeholder="Company" maxlength="96">
                 </div>
 
-                <div class="form-item">
-                    <h3 class="title dark-75">Company Address</h3>
-                    <input type="text" id="form-company-address" placeholder="Company address" maxlength="320">
+                <div class="float-group">
+                    <input type="text" id="form-company" placeholder="Company">
+                    <label>Company</label>
                 </div>
 
-                <div class="form-item">
-                    <h3 class="title dark-75">Subject</h3>
-                    <input type="text" id="form-subject" placeholder="Subject" maxlength="96">
+                <div class="float-group">
+                    <input type="text" id="form-address" placeholder="Company address">
+                    <label>Company Address</label>
                 </div>
 
-                <div class="form-item">
-                    <h3 class="title dark-75">Message*</h3>
+                <div class="float-group">
+                    <input type="text" id="form-subject" placeholder="Consultancy for..." required>
+                    <label>Subject*</label>
+                </div>
+
+                <div class="float-group">
                     <textarea id="form-message" placeholder="Message" maxlength="400" required></textarea>
                 </div>
+            
             </div>
 
             <div class="margin-bottom-solid"></div>

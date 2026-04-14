@@ -1,3 +1,72 @@
+
+.float-group {
+    position: relative;
+    margin-bottom: 1.75rem;
+}
+
+.float-group input, .float-group textarea, .float-group select {
+    width: 100%;
+    padding: 1rem 0.85rem 0.5rem 0.85rem;
+    font-size: 1rem;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 1rem;
+    background: white;
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+    color: #0f172a;
+    font-weight: 400;
+}
+
+.float-group select {
+    width: 100%;
+    padding: 0.5rem 0.85rem 0.5rem 0.85rem;
+    font-size: 1rem;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 1rem;
+    background: white;
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+    color: #0f172a;
+    font-weight: 400;
+}
+
+.float-group input:focus, .float-group textarea:focus, .float-group select:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(39,110,226,0.2);
+}
+
+/* floating label style */
+.float-group label {
+    position: absolute;
+    left: 0.85rem;
+    top: 0.9rem;
+    font-size: 1rem;
+    color: #6c7a91;
+    pointer-events: none;
+    transition: all 0.2s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    background: transparent;
+    padding: 0 0.2rem;
+    font-weight: 450;
+}
+
+/* label ascends when input focused OR has value (non-empty) */
+.float-group.float-active label,
+.float-group input:focus ~ label,
+.float-group input:not(:placeholder-shown) ~ label {
+    top: 0.2rem;
+    font-size: 0.7rem;
+    background: white;
+    color: #3b82f6;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+/* make placeholder transparent to rely on label only (clean look) */
+.float-group input::placeholder {
+    color: transparent;
+}
+
+
 /*---------------------
 	Header
 -----------------------*/
