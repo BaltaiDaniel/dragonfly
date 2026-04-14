@@ -21,7 +21,7 @@
 .cookie-consent-content {
     max-width: auto;
     margin: 0 auto;
-    background: white;
+    background: black;
     border-radius: 16px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     overflow: hidden;
@@ -55,7 +55,7 @@
 .cookie-body p {
     margin-bottom: 20px;
     line-height: 1.6;
-    color: #555;
+    color: #ccc;
 }
 
 /* Cookie Categories */
@@ -87,7 +87,7 @@
 .cookie-category-info strong {
     display: block;
     margin-bottom: 4px;
-    color: #333;
+    color: #ccc;
 }
 
 .cookie-category-info span {
@@ -100,7 +100,7 @@
 .cookie-category-info p {
     margin: 8px 0 0 0;
     font-size: 0.9rem;
-    color: #666;
+    color: #ccc;
 }
 
 /* Toggle Switch */
@@ -162,7 +162,7 @@
 /* Cookie Footer */
 .cookie-footer {
     padding: 16px 24px;
-    background: #f8f9fa;
+    background: black;
     border-top: 1px solid #e0e0e0;
     display: flex;
     justify-content: space-between;

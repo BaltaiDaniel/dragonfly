@@ -51,7 +51,7 @@ class CookieNoticeManager {
                     <div class="cookie-footer">
                         <div class="cookie-buttons">
                             <button class="cookie-btn cookie-accept-btn" id="cookie-accept-all">Accept All Cookies</button>
-                            <button class="cookie-btn cookie-accept-btn" id="cookie-accept-necessary">Accept Necessary Only</button>
+                            <button class="cookie-btn cookie-accept-btn" id="cookie-accept-necessary">Accept Only Necessary</button>
                         </div>
                     </div>
                 </div>

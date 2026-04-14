@@ -16,10 +16,6 @@
 
 9.  Content for /consulting.html
 
-10. /sitemap.html
-
-11. /sitemap.xml
-
 ✅12. Terms of Use
 
 ✅13. Windows/macOS/iOS/Android icons for /software.html
