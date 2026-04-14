@@ -72,7 +72,7 @@ var owl = $('.hero__slider');
 	});
 
 
-	CookieNoticeManager.new().checkConsent();
+	// CookieNoticeManager.new();
 
 
 

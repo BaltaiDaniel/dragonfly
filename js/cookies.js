@@ -36,28 +36,27 @@ class CookieNoticeManager {
 
     // Show cookie notice
     showCookieNotice() {
-        const notice = document.getElentById('cookie-consent');
+        const notice = document.getElementById('cookie-consent');
         if (notice) {
             notice.style.display = 'block';
 
-            notice.innerHTML = '\
-                <div class="cookie-consent-content">\
-                    <div class="cookie-header">\
-                        <div class="cookie-icon">🍪</div>\
-                        <h3>Dragonfly Values Your Privacy</h3>\
-                    </div>\
-                    <div class="cookie-body">\
-                        <p>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.</p>\
-                    </div>\
-                    <div class="cookie-footer">\
-                        <div class="cookie-buttons">\
-                            <button class="cookie-btn cookie-accept-btn" id="cookie-accept-all">Accept All</button>\
-                            <button class="cookie-btn cookie-accept-btn" id="cookie-accept-all">Accept Necessary Only</button>\
-                            <button class="cookie-btn cookie-decline-btn" id="cookie-decline-btn">Decline All</button>\
-                        </div>\
-                    </div>\
-                </div>\
-            ';
+            notice.innerHTML = `\
+                <div class="cookie-consent-content">
+                    <div class="cookie-header">
+                        <div class="cookie-icon">🍪</div>
+                        <h3>Dragonfly Values Your Privacy</h3>
+                    </div>
+                    <div class="cookie-body">
+                        <p>We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic.</p>\
+                    </div>
+                    <div class="cookie-footer">
+                        <div class="cookie-buttons">
+                            <button class="cookie-btn cookie-accept-btn" id="cookie-accept-all">Accept All Cookies</button>
+                            <button class="cookie-btn cookie-accept-btn" id="cookie-accept-necessary">Accept Necessary Only</button>
+                        </div>
+                    </div>
+                </div>
+            `;
         }
     }
 
@@ -139,7 +138,22 @@ class CookieNoticeManager {
         this.applyCookieSettings();
         this.hideCookieNotice();
         this.hideSettingsModal();
-        this.showNotification('Cookie preferences saved successfully!');
+        // this.showNotification('Cookie preferences saved successfully!');
+    }
+
+    // Accept necessary cookies
+    acceptNecessary() {
+        this.cookieSettings = {
+            necessary: true,
+            functional: true,
+            analytics: false,
+            marketing: false
+        };
+        this.saveConsent();
+        this.applyCookieSettings();
+        this.hideCookieNotice();
+        this.hideSettingsModal();
+        // this.showNotification('Cookie preferences saved successfully!');
     }
 
     // Decline all non-essential cookies
