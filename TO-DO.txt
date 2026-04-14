@@ -10,7 +10,7 @@
 
 ✅6.  Projects for /index.html
 
-7.  SW checkout functionality (we're going static with this)
+✅7.  SW checkout functionality (we're going static with this)
 
 8.  Email newsletter functionality
 
@@ -22,7 +22,7 @@
 
 ✅12. Terms of Use
 
-13. Windows/macOS/iOS/Android icons for /software.html
+✅13. Windows/macOS/iOS/Android icons for /software.html
 
 14. Content for /about.html#leadership
 
