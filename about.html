@@ -154,7 +154,8 @@
                         <h3 class="leadership-item-name">Baltai Daniel</h3>
                         <p class="leadership-item-position">Founder & CEO</p>
                         <div class="v-sep-32"></div>
-                        <button class="hero-download-btn" data-bs-toggle="modal" data-bs-target="#leadershipModal" data-title="Baltai Daniel" data-subtitle="Founder & CEO" data-content="Baltai Daniel is the founder and CEO of Dragonfly Technologies Ltd. With over 3 years of experience building and deploying software for clients such as organizations and businesses, he has honed his skills tremendously. He started programming when he was 12 years old." data-imgsrc = "img/leadership/244c919fafdcb4def2247b4ce74c9f5a.jpg"><i class="bi-plus-circle"></i> See More</button>
+                        <!-- <button class="hero-download-btn" onclick="showLeadershipModal1();"><i class="bi-plus-circle"></i> See More</button> -->
+                        <button class="hero-download-btn" id="showLeadershipModal1Btn"><i class="bi-plus-circle"></i> See More</button>
                     </div>
                 </div>
             </div>
@@ -230,30 +231,38 @@
 
 
 
-    <!-- MODAL -->
-    <div class="modal fade-in" id="leadershipModal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content bg-dark text-white">
-                <div class="modal-header border-0">
-                    <h5 class="modal-title" id="modalTitle"></h5>
-                    <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <img class="modal-img" id="modalImg" src="">
-                </div>
-                
-                <div>
-                    <p id="modalSubtitle"></p>
-                    <ul class="modal-links">
-                        <li id="modalLink1"></li>
-                        <li id="modalLink2"></li>
-                        <li id="modalLink3"></li>
-                    </ul>
-                </div>
+    <div class="leadership-modal fade-in" id="leadershipModal1" style="display: none;">
+        <div class="leadership-modal-content">
+            <div class="leadership-modal-header">
+                <button class="leadership-modal-close-btn" id="leadershipModalCloseBtn1"><i class="bi-x"></i></button>
+            </div>
 
+            <div class="leadership-modal-img-holder">
+                <div class="leadership-modal-img-cont">
+                    <div class="leadership-img-1"></div>
+                </div>
+            </div>
+
+            <div class="v-sep-8"></div>
+            <h2 class="text-center dark-80">Baltai Daniel</h2>
+            <h6 class="text-center dark-80">Founder & CEO</h6>
+            <div class="v-sep-64"></div>
+
+            <p class="leadership-modal-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="margin-bottom-solid"></div>
+            <div class="leadership-modal-quick-links">
+                <a href="https://www.instagram.com/baltaidaniel" target="__blank"><i class="bi-instagram leadership-modal-quick-link"></i></a>
             </div>
         </div>
     </div>
+
+
+
 
 
     <div id="cookie-consent" class="cookie-consent" style="display: none;">     
@@ -276,9 +285,9 @@
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
     <script src="js/cookies.js"></script>
     <script src="js/form.js"></script>
     <script src="js/base-footer.js"></script>

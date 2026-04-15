@@ -22,6 +22,9 @@ var owl = $('.hero__slider');
 
 	window.addEventListener('load', ()=>{
 		document.querySelectorAll('.fade-in').forEach((el,i)=>{setTimeout(()=>el.classList.add('show'), 120 + i*120)});
+		if (window.scrollY >= 100) {
+			document.querySelectorAll('.fade-in').forEach((el,i)=>{el.classList.add('show')});
+		}
 	});
 
 
@@ -66,9 +69,6 @@ var owl = $('.hero__slider');
 		modal.querySelector('#modalTitle').textContent = item.dataset.title || '';
 		modal.querySelector('#modalSubtitle').textContent = item.dataset.subtitle || '';
 		modal.querySelector('#modalImg').src = item.dataset.imgsrc || '';
-		// modal.querySelector('#modalLink1').innerHTML = item.dataset.modallink1 || '';
-		// modal.querySelector('#modalLink2').textContent = item.dataset.modallink2 || '';
-		// modal.querySelector('#modalLink3').textContent = item.dataset.modallink2 || '';
 	});
 
 
