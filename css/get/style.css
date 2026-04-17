@@ -263,10 +263,10 @@
 	flex-direction: column;
 	flex-wrap: wrap;
 	width: 100%;
-	background: #000000ff;
+	background: #00000088;
 	padding: 6px 128px 6px 128px;
 	z-index: 3;
-	backdrop-filter: blur(16px);
+	backdrop-filter: blur(8px);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 	transition: all 0.3s ease;
 }

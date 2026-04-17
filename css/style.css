@@ -5,7 +5,7 @@ body {
 	padding: 0;
 	height: 100vh;
 	z-index: 0;
-	font-family: "Arial", sans-serif;
+	font-family: 'Arial', sans-serif;
 	background: #100028;
 	-webkit-font-smoothing: antialiased;
 	scroll-behavior: smooth;
@@ -21,7 +21,7 @@ h6 {
 	margin: 0;
 	color: #eeeeee;
 	font-weight: 400;
-	font-family: "Arial", sans-serif;
+	font-family: 'Arial', sans-serif;
 }
 
 h1 {
@@ -919,7 +919,7 @@ textarea:focus {
 
 
 .video-cont-big {
-	width: 90vw;
+	width: 100%;
 	box-shadow: 0 0 64px #00000055;
 	height: 70vh;	/*100%;*/
 	border: 1px solid rgba(255, 255, 255, 0.2);
@@ -1743,6 +1743,10 @@ button:focus:not(:focus-visible) {
 	background-image: url('../img/software/randomizer-showcase-1.png');
 }
 
+.hero-img-3 {
+	background-image: url('../img/software/hom-rnl-showcase-1.png');
+}
+
 /*@media(max-width: 1024px) {
 	.hero-img-1 {
 		background-image: url('../img/test_Medium.webp');
@@ -1839,7 +1843,7 @@ button:focus:not(:focus-visible) {
 
 #navbar.compact{
 	padding: 6px 128px 6px 128px;
-	backdrop-filter: blur(16px);
+	backdrop-filter: blur(8px);
 	background: #00000088;
 }
 
@@ -1927,6 +1931,7 @@ button:focus:not(:focus-visible) {
     justify-content: flex-end;
     flex-direction: row;
     width: 10%;
+    max-width: 30%;
     z-index: 0;
 }
 
@@ -2335,7 +2340,8 @@ button:focus:not(:focus-visible) {
 
 .footer-section-title {
 	color: black;
-	font-size: 14px;
+	font-size: 16px;
+	font-weight: 500;
 	text-align: left;
 	width: 100%;
 	margin-bottom: 10px;

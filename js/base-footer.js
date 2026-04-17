@@ -83,7 +83,7 @@
 						<div class="margin_bottom_s"></div>\
 						<p class="footer-section-title">Subscribe to Our Newsletter</p>\
 						<div class="newsletter-email-sect">\
-							<input placeholder="you@example.com" type="email" class="email-input" autocomplete="email">\
+							<input placeholder="Type your email here" type="email" class="email-input" autocomplete="email">\
 							<button class="primary-btn-slim">Subscribe</button>\
 						</div>\
 						<div class="margin_bottom_s"></div>\
