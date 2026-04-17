@@ -703,7 +703,6 @@ textarea:focus {
 }
 
 
-/*.primary-btn:hover, .black:hover {*/
 .primary-btn:hover, .primary-btn-black:hover, .primary-btn-slim:hover, .cart-checkout-btn:hover {
 	background: #4858dd;
 	text-decoration: none;
@@ -712,6 +711,59 @@ textarea:focus {
 
 
 
+
+.v-flex {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+
+
+.flex-center {
+	justify-content: center;
+	align-content: center;
+}
+
+
+
+
+
+.newsletter-email-sect {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 100%;
+	gap: 12px;
+}
+
+.newsletter-email-sect .email-input{
+	width: 100%;
+}
+
+
+.newsletter-email-sect .primary-btn-slim {
+	display: inline-block;
+	width: auto;
+	justify-content: center;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 13px 31px 11px;
+	color:white;
+	position: relative;
+	background: #6a7aff;
+	border-radius: 16px;
+	text-align: center;
+	box-shadow: 0 0 6px #00000022;
+	backdrop-filter: blur(8px);
+	transition: all 0.3s;
+}
+
+.newsletter-email-sect .primary-btn-slim:hover {
+	background: #4858dd;
+	text-decoration: none;
+	color: white;
+}
 
 
 
@@ -1032,6 +1084,36 @@ textarea:focus {
     justify-items: stretch;
 }
 
+
+.footnote-sect {
+	display: flex;
+	height: auto;
+	width: 100vw;
+	background: white;
+    overflow: hidden;
+	padding: 0 148px 8px 148px;
+	gap: 0;
+    align-items: stretch;
+    align-content: center;
+    justify-items: stretch;
+}
+
+@media(max-width: 1024px) {
+	.footnote-sect {
+		padding: 0px 68px 8px 68px;
+		flex-wrap: wrap;
+	}
+}
+
+@media(max-width: 760px) {
+	.footnote-sect {
+		padding: 0px 38px 38px 8px;
+		flex-wrap: wrap;
+	}
+}
+
+
+
 .section-item-1-for-text {
     min-height: 100vh;
     width: 100vw;
@@ -1055,12 +1137,20 @@ textarea:focus {
 	.section-item-1, .section-item-1-for-text {
 		padding: 96px 64px 64px 64px;
 	}
+
+	 .section-item-1-auto-height {
+	 	padding: 8px 64px 8px 64px;
+	 }
 }
 
 @media(max-width: 760px) {
 	.section-item-1, .section-item-1-for-text {
 		padding: 96px 16px 64px 16px;
 	}
+
+	 .section-item-1-auto-height {
+	 	padding: 8px 16px 8px 16px;
+	 }
 }
 
 
@@ -1232,7 +1322,7 @@ textarea:focus {
 
 @media(max-width: 760px) {
 	.section-item-1-v-fill {
-		padding: 0;
+		padding: 0 32px 16px 32px;
 	}
 }
 
@@ -1401,6 +1491,7 @@ textarea:focus {
   border-top: 0;
   border-right: 0;
   border-left: 0;
+  width: 100%;
 }
 
 .accordion-button {

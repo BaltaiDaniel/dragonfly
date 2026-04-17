@@ -10,17 +10,19 @@
 
 ✅7.  SW checkout functionality (we're going static with this)
 
-8.  Email newsletter functionality
+🥟8.  Email newsletter functionality
 
 9.  Content for /consulting.html
 
 ✅12. Terms of Use
 
-14. Content for /about.html#leadership
+🥟14. Content for /about.html#leadership
 
-15. Popup diag for /about.html#leadership
+✅15. Popup diag for /about.html#leadership
 
 ✅16. Banner image for /software.html
+
+17. Sitemap
 
 
 ------------------------
