@@ -16,7 +16,7 @@
 
 ✅12. Terms of Use
 
-🥟14. Content for /about.html#leadership
+✅14. Content for /about.html#leadership
 
 ✅15. Popup diag for /about.html#leadership
 

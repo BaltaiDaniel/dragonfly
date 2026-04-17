@@ -649,6 +649,36 @@ textarea:focus {
 	transition: all 0.3s;
 }
 
+
+
+
+
+.base-btn {
+	color: #ccc;
+	background: #6a7aff;
+	text-wrap-mode: nowrap;
+	font-size: 14px;
+	text-align: center;
+	padding: 4px 8px 4px 8px;
+	align-content: center;
+	align-items: center;
+	display: block;
+	margin: 2px;
+	border: 2px transparent;
+	transition: all 0.3s;
+}
+
+.base-btn:hover {
+	background: #6a7aff;
+	border-radius: 32px;
+	color: white;
+}
+
+
+
+
+
+
 .cart-checkout-btn{
 	display: inline-block;
 	width: auto;
@@ -1931,7 +1961,6 @@ button:focus:not(:focus-visible) {
     justify-content: flex-end;
     flex-direction: row;
     width: 10%;
-    max-width: 30%;
     z-index: 0;
 }
 
