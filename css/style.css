@@ -134,6 +134,7 @@ ol {
 	font-weight: 600;
 	color: white;
 	width: 100%;
+	text-shadow: 2px 0 12px #00000044;
 	margin-bottom: 12px;
 }
 
@@ -158,6 +159,7 @@ ol {
 	display: block;
 	font-size: 20px;
 	font-weight: 400;
+	text-shadow: 2px 0 6px #00000044;
 	color: #aaa;
 	width: 100%;
 	margin: 0;
@@ -190,17 +192,17 @@ ol {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	width: 100%;
+	width: 50%;
 	height: 100%;
 	overflow: hidden;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	border-radius: 24px;
-	padding: 24px;
+	/*border: 1px solid rgba(0, 0, 0, 0.2);*/
+	/*border-radius: 24px;*/
+	padding: 4px;
 }
 
-@media(max-width: 1024px) {
+@media(max-width: 720px) {
 	.form {
-		padding: 16px;
+		width: 100%;
 	}
 }
 
@@ -213,8 +215,8 @@ ol {
 
 .form-sect {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 16px;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 24px;
 }
 
 @media(max-width: 760px) {
@@ -277,9 +279,9 @@ select {
 	border: 2px solid rgba(0, 0, 0, 0.2);
 	background: transparent;
 	color: #000;
-	height: 100%;
+	height: 50px;
 	border-radius: 16px;
-	padding: 6px 10px 6px 10px;
+	padding: 10px;
 	transition: all 0.3s;
 }
 
@@ -654,7 +656,7 @@ textarea:focus {
 
 
 .base-btn {
-	color: #ccc;
+	color: #fff;
 	background: #6a7aff;
 	text-wrap-mode: nowrap;
 	font-size: 14px;
@@ -663,6 +665,7 @@ textarea:focus {
 	align-content: center;
 	align-items: center;
 	display: block;
+	border-radius: 32px;
 	margin: 2px;
 	border: 2px transparent;
 	transition: all 0.3s;
@@ -670,7 +673,6 @@ textarea:focus {
 
 .base-btn:hover {
 	background: #6a7aff;
-	border-radius: 32px;
 	color: white;
 }
 
@@ -763,12 +765,13 @@ textarea:focus {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
+	justify-content: stretch;
 	width: 100%;
 	gap: 12px;
 }
 
 .newsletter-email-sect .email-input{
-	width: 100%;
+	width: auto;
 }
 
 
@@ -973,15 +976,33 @@ textarea:focus {
 }
 
 
-.meta-box-hero {
-    align-items: center;
-    align-content: center;
+/*.meta-box-hero {
     display: flex;
     position: relative;
-    align-self: stretch;
+    align-items: center;
+    align-self: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px;
+    gap: 12px;
+    z-index: 1;
+    flex-wrap: nowrap;
+    top: 75vh;
+    border-radius: 32px;
+    background: #000000aa;
+	box-shadow: 2px 0 12px #00000044;
+	backdrop-filter: blur(8px);
+}*/
+
+.meta-box-hero {
+    display: flex;
+    position: relative;
+    align-items: center;
+	align-self: stretch;
     flex-direction: row;
     justify-content: space-around;
     padding: 0 64px 2px 64px;
+    gap: 12px;
     z-index: 1;
     flex-wrap: nowrap;
     top: 75vh;
@@ -1194,7 +1215,7 @@ textarea:focus {
 	width: 100%;
 	gap: 32px;
 	padding: 128px 128px 128px 128px;
-	background: #474d6d;
+	background: white;
 }
 
 @media (max-width: 760px) {
@@ -1225,6 +1246,7 @@ textarea:focus {
 	flex-direction: column;
 	position: relative;
 	border: 1px solid #00000011;
+	box-shadow: 0 0 8px #00000022;
 	border-radius: 32px;
 	width: 250px;
 	height: 300px;
@@ -1855,7 +1877,7 @@ button:focus:not(:focus-visible) {
 	Global Header
 -----------------------*/
 /* --> BEGIN Navbar */
-#navbar {
+.navbar {
 	position: fixed;
 	display: flex;
 	top: 0;
@@ -1864,6 +1886,7 @@ button:focus:not(:focus-visible) {
 	margin: 0;
 	flex-direction: column;
 	flex-wrap: wrap;
+	align-items: stretch;
 	width: 100%;
 	background-color: transparent;
 	padding: 24px 64px 24px 64px;
@@ -1871,28 +1894,28 @@ button:focus:not(:focus-visible) {
 	transition: all 0.3s ease;
 }
 
-#navbar.compact{
+.navbar.compact{
 	padding: 6px 128px 6px 128px;
 	backdrop-filter: blur(8px);
 	background: #00000088;
 }
 
 @media(max-width: 1024px) {
-	#navbar {
+	.navbar {
 		padding: 24px 48px 24px 48px;
 	}
 	
-	#navbar.compact {
+	.navbar.compact {
 		padding: 6px 64px 6px 64px;
 	}
 }
 
 @media(max-width: 760px) {
-	#navbar {
+	.navbar {
 		padding: 24px 8px 24px 8px;
 	}
 	
-	#navbar.compact {
+	.navbar.compact {
 		padding: 6px 16px 6px 16px;
 	}
 }
@@ -1912,6 +1935,8 @@ button:focus:not(:focus-visible) {
 	flex-wrap: wrap;
 	text-align: left;
 	align-items: flex-start;
+	align-content: stretch;
+	width: 100%;
 	gap: 8px;
 }
 

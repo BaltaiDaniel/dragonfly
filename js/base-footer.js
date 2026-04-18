@@ -24,8 +24,8 @@
 						<div class="margin_bottom_s"></div>\
 						<p class="footer-section-title">Subscribe to Our Newsletter</p>\
 						<div class="newsletter-email-sect">\
-							<input placeholder="you@example.com" type="email" autocomplete="email">\
-							<button class="primary-btn-slim">Subscribe</button>\
+							<input placeholder="you@example.com" type="email" autocomplete="email" id="newsletterEmailInput">\
+							<button class="primary-btn-slim" id="newsletterSubscribeBtn">Subscribe</button>\
 						</div>\
 					</div>\
 					<div class="footer-sect">\

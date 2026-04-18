@@ -70,7 +70,7 @@
 /*---------------------
 	Header
 -----------------------*/
-#navbar-consulting {
+.navbar-consulting {
 	position: fixed;
 	display: flex;
 	top: 0;
@@ -80,6 +80,7 @@
 	flex-direction: column;
 	flex-wrap: wrap;
 	width: 100%;
+    align-items: stretch;
 	background-color: white;
 	padding: 6px 128px 6px 128px;
 	z-index: 3;
@@ -88,13 +89,13 @@
 }
 
 @media(max-width: 1024px) {
-	#navbar-consulting {
+	.navbar-consulting {
 		padding: 6px 48px 6px 48px;
 	}
 }
 
 @media(max-width: 760px) {
-	#navbar-consulting {
+	.navbar-consulting {
 		padding: 10px 24px 10px 16px;
 	}
 }

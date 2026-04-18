@@ -1,7 +1,5 @@
-
 .float-group {
     position: relative;
-    margin-bottom: 1.75rem;
 }
 
 .float-group input, .float-group textarea, .float-group select {
@@ -322,7 +320,7 @@
 /*---------------------
 	Header
 -----------------------*/
-#navbar-about {
+.navbar-about {
 	position: fixed;
 	display: flex;
 	top: 0;
@@ -332,6 +330,7 @@
 	flex-direction: column;
 	flex-wrap: wrap;
 	width: 100%;
+	align-items: stretch;
 	background-color: white;
 	padding: 6px 128px 6px 128px;
 	z-index: 3;
@@ -341,13 +340,13 @@
 
 
 @media(max-width: 1024px) {
-	#navbar-about {
+	.navbar-about {
 		padding: 10px 48px 10px 48px;
 	}
 }
 
 @media(max-width: 760px) {
-	#navbar-about {
+	.navbar-about {
 		padding: 10px 24px 10px 16px;
 	}
 }

@@ -192,14 +192,14 @@
 /*---------------------
 	Header
 -----------------------*/
-#navbar-privacy-policy {
+.navbar-privacy-policy {
 	position: fixed;
 	display: flex;
 	top: 0;
 	left: 0;
 	right: 0;
 	margin: 0;
-	background: #000000ff;
+	background: #fff;
 	flex-direction: column;
 	flex-wrap: wrap;
 	width: 100%;
@@ -210,13 +210,13 @@
 }
 
 @media(max-width: 1024px) {
-	#navbar-privacy-policy {
+	.navbar-privacy-policy {
 		padding: 6px 48px 6px 48px;
 	}
 }
 
 @media(max-width: 760px) {
-	#navbar-privacy-policy {
+	.navbar-privacy-policy {
 		padding: 10px 24px 10px 16px;
 	}
 }

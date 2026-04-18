@@ -222,12 +222,25 @@ document.getElementById('form').addEventListener('submit', function(e) {
     // const selectedCode = selectElement.value;
     // console.log(`Selected: ${selectedCountry} (${selectedCode})`);
     
-    console.log(`Full Name: ${full_name}\nEmail: ${email}\nPhone: ${phone}\nCountry: ${country}\nCompany: ${company}\nSubject: ${subject}\nMessage: ${message}`);
+    // console.log(`Full Name: ${full_name}\nEmail: ${email}\nPhone: ${phone}\nCountry: ${country}\nCompany: ${company}\nSubject: ${subject}\nMessage: ${message}`);
 });
-
-
 
 
 function submitConsultingForm() {
     return
 }
+
+
+
+document.getElementById('newsletterEmailInput').addEventListener('submit', function(e) {
+    let newsletter_email = document.getElementById('newsletterEmailInput').textContent;
+    showNotification("Newsletter subscription added");
+    // Process this and notify the user
+});
+
+document.getElementById('newsletterSubscribeBtn').addEventListener('click', function(e) {
+    let newsletter_email = document.getElementById('newsletterEmailInput').textContent;
+    showNotification("Newsletter subscription added");
+
+    // Process this and notify the user
+});

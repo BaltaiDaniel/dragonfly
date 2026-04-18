@@ -68,7 +68,7 @@
 
 
 
-#navbar-404 {
+.navbar-404 {
 	position: fixed;
 	display: flex;
 	top: 0;
@@ -78,7 +78,8 @@
 	flex-direction: column;
 	flex-wrap: wrap;
 	width: 100%;
-	background: #000000ff;
+	align-items: stretch;
+	background: #fff;
 	padding: 6px 128px 6px 128px;
 	z-index: 3;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -86,13 +87,13 @@
 }
 
 @media(max-width: 1024px) {
-	#navbar-404 {
+	.navbar-404 {
 		padding: 6px 48px 6px 48px;
 	}
 }
 
 @media(max-width: 760px) {
-	#navbar-404 {
+	.navbar-404 {
 		padding: 10px 24px 10px 16px;
 	}
 }

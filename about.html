@@ -43,7 +43,7 @@
 
 
 <body>
-    <header id="navbar-about">
+    <header class="navbar-about" id="navbarSelect">
         <div class="navbar-holder">
 
             <div class="header-logo-container">
@@ -154,7 +154,6 @@
                         <h3 class="leadership-item-name">Baltai Daniel</h3>
                         <p class="leadership-item-position">Founder & CEO</p>
                         <div class="v-sep-32"></div>
-                        <!-- <button class="hero-download-btn" onclick="showLeadershipModal1();"><i class="bi-plus-circle"></i> See More</button> -->
                         <button class="hero-download-btn" id="showLeadershipModal1Btn"><i class="bi-plus-circle"></i> See More</button>
                     </div>
                 </div>
@@ -175,8 +174,15 @@
         <div class="v-sep-8"></div>
 
         <form class="form">
-
             <div class="form-sect">
+                
+                <div class="float-group">
+                    <select id="form-purpose" name="form-purpose" required>
+                        <option value="">Purpose</option>
+                        <option value="feedback">Product Feedback</option>
+                    </select>
+                </div>
+
                 <div class="float-group">
                     <input type="text" id="form-full-name" placeholder="Full Name" autocomplete="additional-name" required>
                     <label>Full Name*</label>
@@ -194,7 +200,7 @@
 
                 <div class="float-group">
                     <select id="form-country" name="form-country" required>
-                        <option value="">-- Select a Country --</option>
+                        <option value="">Select your Country or Region</option>
                     </select>
                 </div>
 
@@ -220,7 +226,6 @@
             </div>
 
             <div class="margin-bottom-solid"></div>
-            <div class="v-sep-16"></div>
             <button class="form-submit-btn primary-btn">Submit</button>
 
         </form>

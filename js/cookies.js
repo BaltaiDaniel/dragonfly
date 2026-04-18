@@ -274,7 +274,6 @@ class CookieNoticeManager {
 
     // Enable analytics
     enableAnalytics() {
-        console.log('Analytics cookies enabled');
         // Add your analytics initialization code here
         // Example: Google Analytics
         if (typeof gtag !== 'undefined') {
@@ -289,7 +288,6 @@ class CookieNoticeManager {
 
     // Disable analytics
     disableAnalytics() {
-        console.log('Analytics cookies disabled');
         // Disable analytics tracking
         if (typeof gtag !== 'undefined') {
             gtag('consent', 'update', {
@@ -300,7 +298,6 @@ class CookieNoticeManager {
 
     // Enable marketing
     enableMarketing() {
-        console.log('Marketing cookies enabled');
         if (typeof gtag !== 'undefined') {
             gtag('consent', 'update', {
                 'ad_storage': 'granted',
@@ -312,7 +309,6 @@ class CookieNoticeManager {
 
     // Disable marketing
     disableMarketing() {
-        console.log('Marketing cookies disabled');
         if (typeof gtag !== 'undefined') {
             gtag('consent', 'update', {
                 'ad_storage': 'denied',
@@ -324,7 +320,6 @@ class CookieNoticeManager {
 
     // Enable functional
     enableFunctional() {
-        console.log('Functional cookies enabled');
         // Enable functionality that requires cookies
         // Example: Load user preferences, themes, etc.
         this.loadUserPreferences();
@@ -332,7 +327,6 @@ class CookieNoticeManager {
 
     // Disable functional
     disableFunctional() {
-        console.log('Functional cookies disabled');
         // Disable non-essential functionality
     }
 
