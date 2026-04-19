@@ -24,7 +24,7 @@
 						<div class="margin_bottom_s"></div>\
 						<p class="footer-section-title">Subscribe to Our Newsletter</p>\
 						<div class="newsletter-email-sect">\
-							<input placeholder="you@example.com" type="email" autocomplete="email" id="newsletterEmailInput">\
+							<input placeholder="you@example.com" class="email-input" type="email" autocomplete="email" id="newsletterEmailInput">\
 							<button class="primary-btn-slim" id="newsletterSubscribeBtn">Subscribe</button>\
 						</div>\
 					</div>\
@@ -38,6 +38,7 @@
 						<p class="footer-section-title">About Dragonfly</p>\
 						<a href="https://baltaidaniel.github.io/dragonfly/about" class="footer-section-item">Who We Are</a>\
 						<a href="https://baltaidaniel.github.io/dragonfly/about#leadership" class="footer-section-item">Leadership</a>\
+						<a href="https://baltaidaniel.github.io/dragonfly/about#contact" class="light-75 footer-section-item">Contact Us</a>\
 					</div>\
 				</div>\
 				\
@@ -73,6 +74,9 @@
 									<a href="https://baltaidaniel.github.io/dragonfly/about#leadership" class="footer-section-item">\
 										Leadership\
 									</a>\
+									<a href="https://baltaidaniel.github.io/dragonfly/about#contact" class="light-75 footer-section-item">\
+										Contact Us\
+									</a>\
 								</div>\
 							</div>\
 						</div>\
@@ -98,6 +102,12 @@
 					Copyright © 2026 Dragonfly Technologies Ltd. All Rights Reserved\
 				</p>\
 				<div class="footlinks-right-items">\
+					<a href="https://baltaidaniel.github.io/dragonfly/legal" class="light-75 footer-section-item">\
+						Legal\
+					</a>\
+					<p class="light-75">\
+						|\
+					</p>\
 					<a href="https://baltaidaniel.github.io/dragonfly/terms" class="light-75 footer-section-item">\
 						Terms of Use\
 					</a>\
@@ -106,12 +116,6 @@
 					</p>\
 					<a href="https://baltaidaniel.github.io/dragonfly/pp" class="light-75 footer-section-item">\
 						Privacy Policy\
-					</a>\
-					<p class="light-75">\
-						|\
-					</p>\
-					<a href="https://baltaidaniel.github.io/dragonfly/about#contact" class="light-75 footer-section-item">\
-						Contact Us\
 					</a>\
 				</div>\
 				<div class="footlinks-right-items-mobile">\
