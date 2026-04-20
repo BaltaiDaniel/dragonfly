@@ -12,7 +12,6 @@
 				<div class="footer-sect">\
 					<div class="margin_bottom_s"></div>\
 					<h3 class="footer-company-name dark-100">Dragonfly</h3>\
-					<p class="text-muted"> <i class="bi-pin-map"></i><span> </span>Nigeria</p>\
 					<div class="social-icons-holder">\
 						<a href="https://instagram.com/madebydragonfly" class="social-icon"><i class="bi-instagram"></i></a>\
 						<a href="https://facebook.com/madebydragonfly" class="social-icon"><i class="bi-facebook"></i></a>\

@@ -41,7 +41,6 @@
 <body>
 	<header class="navbar" id="navbarSelect">
 		<div class="navbar-holder">
-
 			<div class="header-logo-container">
 				<a href="https://baltaidaniel.github.io/dragonfly"><img src="img/logo-light.png" class="fade-in" id="header-logo-img" alt="Dragonfly Logo"></a>
 			</div>
@@ -60,7 +59,6 @@
 			<div class="nav-btns-holder-right fade-in">
 				<button class="nav-dropdown-btn" type="button" data-bs-toggle="collapse" data-bs-target="#topNavDropdown" aria-expanded="true" aria-controls="topNavDropdown" title="Tabs"><i class="bi-list"></i></button>
 			</div>
-
 		</div>
 
         <div id="topNavDropdown" class="accordion-collapse collapse dark-80" aria-labelledby="topNavDropdown" data-bs-parent="#accordionGeneral">
@@ -137,21 +135,38 @@
 		<h4 class="section-item-title dark-55">Get news and updates about Dragonfly</h4>
 		<div class="v-sep-24"></div>
 		
-		<div class="d-flex gap-2">
-	        <div class="float-group">
-	            <input type="email" class="email-input" id="form-email" placeholder="" autocomplete="email" required>
-	            <label>Email</label>
-	        </div>
-			<button class="primary-btn">Subscribe</button>\
-		</div>
+		<form id="newsletterForm">
+			<div class="h-flex nowrap align-begin gap-2">
+		        <div class="v-flex">
+			        <div class="float-group">
+			            <input type="email" class="email-input" id="newsletterEmail" placeholder="" autocomplete="email" required>
+			            <label>Email</label>
+			        </div>
 
-		<div class="v-sep-32"></div>
-						
-		<div class="v-flex gap-1">
-			<p class="dark-55">By subscribing you agree to receive updates and marketing messages from Dragonfly about Dragonfly's existing and future products and services.</p>
-			<p class="dark-55">You may withdraw your consent and unsubscribe at any time by clicking the unsubscribe link included in our messages.</p>
-			<p class="dark-55">Your subscription is subject to the <a href="https://baltaidaniel.github.io/dragonfly/terms" class="blue">Terms</a> and <a href="https://baltaidaniel.github.io/dragonfly/pp" class="blue">Privacy Policy</a>.</p>
-		</div>
+			        <div class="error-content" id="newletterEmailErrorCont" style="display: none;">
+			        	<i class="bi-info-circle text-error"></i>
+			        	<p class="text-error" id="newletterEmailErrorText">Invalid email</p>
+			        </div>
+
+		        </div>
+				
+				<div class="v-flex">
+					<button class="primary-btn" id="emailSubmitBtn" type="submit">Subscribe</button>
+				</div>
+			
+			</div>
+
+			<div class="v-sep-32"></div>
+
+			<div class="v-flex gap-1">
+				<p class="dark-55">By subscribing, you agree to receive news, product announcements, and special offers from Dragonfly about current and upcoming products and services.</p>
+
+				<p class="dark-55">You can unsubscribe at any time by clicking the unsubscribe link included in our messages.</p>
+				
+				<p class="dark-55">Your subscription is subject to our <a href="https://baltaidaniel.github.io/dragonfly/terms" class="blue">Terms</a> and <a href="https://baltaidaniel.github.io/dragonfly/pp" class="blue">Privacy Policy</a>.</p>
+			</div>
+		</form>
+
 	</section>
 
 
@@ -161,6 +176,69 @@
 
 
 
+	<script>
+		// Get the newsletter form and input fields
+		const newsletterForm = document.getElementById('newsletterForm');
+		const emailInput = document.getElementById('newsletterEmail');
+		const submitButton = document.getElementById('emailSubmitBtn');
+
+		const errorCont = document.getElementById('newletterEmailErrorCont');
+		const errorText = document.getElementById('newletterEmailErrorText');
+
+		// Add an event listener to the form submission
+		newsletterForm.addEventListener('submit', (e) => {
+		  e.preventDefault();
+	      errorCont.style.display = 'none';
+
+		  // Get the email value
+		  const email = emailInput.value.trim();
+
+		  // Validate the email
+		  if (!email || !validateEmail(email)) {
+		    errorCont.style.display = 'flex';
+		    errorText.innerHTML = 'Enter a valid email address';
+		    return;
+		  }
+
+		  // Send the email to your server or API
+		  sendEmailToServer(email)
+		    .then((response) => {
+		      submitButton.innerHTML = '<i class="bi-check-circle"></i> Subscribed';
+		      submitButton.disabled = true;
+		      emailInput.value = '';
+		      errorCont.style.display = 'none';
+		    })
+		    .catch((error) => {
+		      alert('Error subscribing. Please try again.');
+		      console.error(error);
+		    });
+		});
+
+		// Validate the email address
+		function validateEmail(email) {
+		  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+		  return emailRegex.test(email);
+		}
+
+		// Send the email to your server or API
+		function sendEmailToServer(email) {
+		  // Replace with your server or API URL
+		  const url = 'https://your-server.com/newsletter';
+
+		  // Replace with your API key or authentication token
+		  const apiKey = 'your-api-key';
+
+		  return fetch(url, {
+		    method: 'POST',
+		    headers: {
+		      'Content-Type': 'application/json',
+		      'Authorization': `Bearer ${apiKey}`,
+		    },
+		    body: JSON.stringify({ email }),
+		  });
+		}
+
+	</script>
 
 
     <!-- Footer Section Begin -->

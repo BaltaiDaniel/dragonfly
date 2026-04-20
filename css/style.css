@@ -1,5 +1,7 @@
 :root {
 	--default-border-radius: 32px;
+	--accent-color: #6a7aff;
+	--color-for-negative: #f60000;
 }
 
 @font-face {
@@ -100,7 +102,24 @@ a:focus {
 
 
 
+button:disabled {
+	cursor: not-allowed;
+	background: #00000022;
+	color: #777;
+	border: 2px solid #33333333;
+}
 
+
+button:hover:disabled {
+	background: #00000022;
+	color: #777;
+	border: 2px solid #33333333;
+}
+
+
+.accentuate {
+	color: #6a7aff;
+}
 
 a.blue {
 	font-size: 14px;
@@ -315,6 +334,7 @@ ol {
 
 .float-group input, .float-group textarea, .float-group select {
     width: 100%;
+    min-width: 250px;
     padding: 1rem 0.85rem 0.5rem 0.85rem;
     font-size: 1rem;
     border: 1px solid #c0c6d0;
@@ -378,7 +398,20 @@ ol {
 
 
 
+.error-content {
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+	flex-wrap: nowrap;
+	width: auto;
+	align-items: center;
+	padding-left: 8px;
+}
 
+
+.text-error {
+	color: var(--color-for-negative);
+}
 
 
 
@@ -399,7 +432,7 @@ input:placeholder {
 
 input:focus {
 	color: #000;
-	border: 1px solid #6a7aff;
+	border: 1px solid var(--accent-color);
 }
 
 
@@ -415,7 +448,7 @@ select {
 }
 
 select:hover {
-	border-color: #6a7aff;
+	border-color: var(--accent-color);
 	color: #000;
 }
 
@@ -426,7 +459,7 @@ select.light {
 }
 
 select.light:hover {
-	border-color: #6a7aff;
+	border-color: var(--accent-color);
 	color: #fff;
 }
 
@@ -452,7 +485,7 @@ textarea:placeholder {
 }
 
 textarea:focus {
-	border-color: #6a7aff;
+	border-color: var(--accent-color);
 	color: #000;
 }
 
@@ -502,7 +535,7 @@ textarea:focus {
 .what-we-offer-item .icon {
 	font-size: 64px;
 	display: inline-block;
-	color: #6a7aff;
+	color: var(--accent-color);
 }
 
 .what-we-offer-item .title {
@@ -711,7 +744,7 @@ textarea:focus {
 	padding: 14px 32px 12px;
 	color:white;
 	position: relative;
-	background: #6a7aff;	/*#0064e0;*/
+	background: var(--accent-color);	/*#0064e0;*/
 	border-radius: var(--default-border-radius);
 	justify-content: center;
 	text-align: center;
@@ -776,7 +809,7 @@ textarea:focus {
 	padding: 12px 30px 10px;
 	color:white;
 	position: relative;
-	background: #6a7aff;
+	background: var(--accent-color);
 	border-radius: var(--default-border-radius);
 	text-align: center;
 	transition: all 0.3s;
@@ -788,7 +821,7 @@ textarea:focus {
 
 .base-btn {
 	color: #fff;
-	background: #6a7aff;
+	background: var(--accent-color);
 	text-wrap-mode: nowrap;
 	font-size: 14px;
 	text-align: center;
@@ -803,7 +836,7 @@ textarea:focus {
 }
 
 .base-btn:hover {
-	background: #6a7aff;
+	background: var(--accent-color);
 	color: white;
 }
 
@@ -818,7 +851,7 @@ textarea:focus {
 	justify-content: center;
 	color:white;
 	position: relative;
-	background: #6a7aff;
+	background: var(--accent-color);
 	text-align: center;
 	transition: all 0.3s;
 	font-size: 14px;
@@ -840,7 +873,7 @@ textarea:focus {
 	padding: 13px 31px 11px;
 	color:white;
 	position: relative;
-	background: #6a7aff;
+	background: var(--accent-color);
 	border-radius: var(--default-border-radius);
 	text-align: center;
 	box-shadow: 0 0 6px #00000022;
@@ -881,11 +914,32 @@ textarea:focus {
 	flex-wrap: wrap;
 }
 
+.h-flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.h-flex.nowrap {
+	flex-wrap: nowrap;
+}
+
 
 
 .flex-center {
 	justify-content: center;
 	align-content: center;
+}
+
+
+.flex-start {
+	justify-content: flex-start;
+	align-content: flex-start;
+	justify-self: flex-start;
+	align-self: flex-start;
+}
+
+.height-100 {
+	height: 100%;
 }
 
 
@@ -912,7 +966,7 @@ textarea:focus {
 }
 
 .newsletter-email-sect .email-input:focus{
-	border: 2px solid #6a7aff;
+	border: 2px solid var(--accent-color);
 }
 
 
@@ -926,7 +980,7 @@ textarea:focus {
 	padding: 8px 12px 8px 12px;
 	color:white;
 	position: relative;
-	background: #6a7aff;
+	background: var(--accent-color);
 	border-radius: var(--default-border-radius);
 	text-align: center;
 	box-shadow: 0 0 6px #00000022;
@@ -1392,8 +1446,7 @@ textarea:focus {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	/*aspect-ratio: 1.0;*/
-	background: #ddd;
+	background: #fff;
 	transition: all 0.3s ease;
 }
 
@@ -1488,6 +1541,13 @@ textarea:focus {
     background: none;
     background-image: linear-gradient(40deg, #bab, #06f);
 }
+
+
+.section-gradient-bg-2 {
+    background: none;
+    background-image: linear-gradient(40deg, #656, #06f);
+}
+
 
 .section-item-1-center {
     min-height: 100vh;
@@ -1993,32 +2053,6 @@ button:focus:not(:focus-visible) {
 }*/
 
 
-.software-hero-img {
-	background-image: url('../img/software/hero.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	position: absolute;
-	display: block;
-	align-self: stretch;
-	justify-self: stretch;
-	width: 100%;
-	height: inherit;
-}
-
-/*@media(max-width: 1024px) {
-	.software-hero-img {
-		background-image: url('../img/software/hero_Medium.png');
-	}
-}
-
-@media(max-width: 760px) {
-	.software-hero-img {
-		background-image: url('../img/software/hero_Small.png');
-	}
-}*/
-
-
 
 
 .video-1 {
@@ -2196,7 +2230,7 @@ button:focus:not(:focus-visible) {
 }
 
 .nav-btn.active {
-	border: 2px solid #6a7aff;
+	border: 2px solid var(--accent-color);
 	border-radius: var(--default-border-radius);
 }
 
@@ -2215,7 +2249,7 @@ button:focus:not(:focus-visible) {
 }
 
 .nav-btn-icon:hover {
-	color: #6a7aff;
+	color: var(--accent-color);
 }
 
 
@@ -2251,7 +2285,7 @@ button:focus:not(:focus-visible) {
 }
 
 .nav-dropdown-btn:hover {
-	color: #6a7aff;
+	color: var(--accent-color);
 }
 
 @media(max-width: 1024px) {
@@ -2264,7 +2298,7 @@ button:focus:not(:focus-visible) {
 
 
 .nav-btn:hover, .nav-btn.dark:hover {
-	background: #6a7aff;
+	background: var(--accent-color);
 	border-radius: var(--default-border-radius);
 	color: white;
 }
