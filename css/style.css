@@ -1,3 +1,15 @@
+:root {
+	--default-border-radius: 32px;
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 html,
 body {
 	color: white;
@@ -5,7 +17,7 @@ body {
 	padding: 0;
 	height: 100vh;
 	z-index: 0;
-	font-family: 'Arial', sans-serif;
+	font-family: 'OpenSans-Regular', sans-serif;
 	background: #100028;
 	-webkit-font-smoothing: antialiased;
 	scroll-behavior: smooth;
@@ -21,7 +33,7 @@ h6 {
 	margin: 0;
 	color: #eeeeee;
 	font-weight: 400;
-	font-family: 'Arial', sans-serif;
+	font-family: 'OpenSans-Regular', sans-serif;
 }
 
 h1 {
@@ -72,7 +84,7 @@ a {
 	font-size: 14px;
 	color: black;
 	font-weight: 400;
-	transition: all 0.3s;
+	transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
 }
 
 a:hover {
@@ -94,7 +106,7 @@ a.blue {
 	font-size: 14px;
 	color: #6a7aff;
 	font-weight: 400;
-	transition: all 0.3s;
+	transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
 }
 
 a.blue:hover {
@@ -123,6 +135,40 @@ ol {
 	visibility: visible;
 }
 
+
+.fixed-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.fixed-bg-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  background-attachment: fixed;
+  transition: background-image 0.2s ease-out;
+}
+
+.fixed-bg-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
 
 
 
@@ -255,13 +301,96 @@ ol {
 	margin: 0;
 }
 
+
+
+
+
+
+
+
+
+.float-group {
+    position: relative;
+}
+
+.float-group input, .float-group textarea, .float-group select {
+    width: 100%;
+    padding: 1rem 0.85rem 0.5rem 0.85rem;
+    font-size: 1rem;
+    border: 1px solid #c0c6d0;
+    border-radius: var(--default-border-radius);
+    background: white;
+    outline: none;
+    transition: border 0.2s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    color: #0f172a;
+    font-weight: 400;
+}
+
+.float-group select {
+    width: 100%;
+    padding: 0.5rem 0.85rem 0.5rem 0.85rem;
+    font-size: 1rem;
+    border: 1.5px solid #e2e8f0;
+    border-radius: var(--default-border-radius);
+    background: white;
+    outline: none;
+    transition: border 0.2s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    color: #0f172a;
+    font-weight: 400;
+}
+
+.float-group input:focus, .float-group textarea:focus, .float-group select:focus {
+    border-color: #3b82f6;
+}
+
+/* floating label style */
+.float-group label {
+    position: absolute;
+    left: 0.85rem;
+    top: 0.9rem;
+    font-size: 1rem;
+    color: #6c7a91;
+    pointer-events: none;
+    transition: all 0.2s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    background: transparent;
+    padding: 0 0.2rem;
+    font-weight: 450;
+}
+
+/* label ascends when input focused OR has value (non-empty) */
+.float-group.float-active label,
+.float-group input:focus ~ label,
+.float-group input:not(:placeholder-shown) ~ label {
+    top: 0.2rem;
+    font-size: 0.7rem;
+    background: white;
+    color: #3b82f6;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+/* make placeholder transparent to rely on label only (clean look) */
+.float-group input::placeholder {
+    color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
 input {
-	border: 2px solid rgba(0, 0, 0, 0.2);
-	border-radius: 16px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: var(--default-border-radius);
 	background: transparent;
 	color: #000;
-	padding: 10px;
-	transition: all 0.3s;
+	padding: 8px;
+	transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
 }
 
 input:placeholder {
@@ -269,20 +398,20 @@ input:placeholder {
 }
 
 input:focus {
-	border-color: #6a7aff;
 	color: #000;
+	border: 1px solid #6a7aff;
 }
 
 
 
 select {
-	border: 2px solid rgba(0, 0, 0, 0.2);
+	border: 1px solid rgba(0, 0, 0, 0.2);
 	background: transparent;
 	color: #000;
 	height: 50px;
-	border-radius: 16px;
+	border-radius: var(--default-border-radius);
 	padding: 10px;
-	transition: all 0.3s;
+	transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
 }
 
 select:hover {
@@ -310,12 +439,12 @@ select.light:focus {
 textarea {
 	height: 128px;
 	width: 100%;
-	border-radius: 16px;
+	border-radius: var(--default-border-radius);
 	padding: 12px 10px 12px 10px;
 	border: 2px solid rgba(0, 0, 0, 0.2);
 	background: transparent;
 	color: #adadad;
-	transition: all 0.3s;
+	transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
 }
 
 textarea:placeholder {
@@ -454,6 +583,10 @@ textarea:focus {
 }
 
 
+.gap-1 {
+	gap: 10px;
+}
+
 .gap-2 {
 	gap: 20px;
 }
@@ -505,11 +638,11 @@ textarea:focus {
 	width: 320px;
 	height: 260px;
 	border: 1px solid rgba(255, 255, 255, 0.2);
-	border-radius: 24px;
+	border-radius: var(--default-border-radius);
 	overflow: hidden;
 	display: flex;
 	object-fit: cover;
-	transition: scale 0.3s ease;
+	transition: scale 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
 }
 
 
@@ -524,16 +657,16 @@ textarea:focus {
 .animate2 {
 		opacity: 0;
 		transform: translateY(40px);
-		transition: opacity 1s, transform 1s;
+		transition: opacity 1s, transform 1s cubic-bezier(0.2, 0.9, 0.4, 1.1);
 }
 .animate3 {
 		opacity: 0;
 		transform: translateY(100px);
-		transition: opacity 1s, transform 1s;
+		transition: opacity 1s, transform 1s cubic-bezier(0.2, 0.9, 0.4, 1.1);
 }
 .animate4 {
 		opacity: 0;
-		transition: opacity 1s;
+		transition: opacity 1s cubic-bezier(0.2, 0.9, 0.4, 1.1);
 }
 .in-view {
 		opacity: 1;
@@ -552,7 +685,7 @@ textarea:focus {
 .fade-in {
 	opacity: 0;
 	transform: translateY(8px);
-	transition: opacity .6s ease, transform .6s cubic-bezier(.22,.8,.32,1);
+	transition: opacity .6s ease, transform .6s cubic-bezier(0.2, 0.9, 0.4, 1.1);
 }
 
 .fade-in.show {
@@ -579,12 +712,12 @@ textarea:focus {
 	color:white;
 	position: relative;
 	background: #6a7aff;	/*#0064e0;*/
-	border-radius: 32px;
+	border-radius: var(--default-border-radius);
 	justify-content: center;
 	text-align: center;
 	box-shadow: 0 0 6px #00000022;
 	backdrop-filter: blur(8px);
-	transition: all 0.3s;
+	transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
 }
 
 @media(max-width: 1024px) {
@@ -596,7 +729,7 @@ textarea:focus {
 @media(max-width: 760px) {
 	.hero-download-btn {
 		padding: 8px 16px 7px;
-		border-radius: 24px;
+		border-radius: var(--default-border-radius);
 		font-size: 14px;
 	}
 }
@@ -639,15 +772,13 @@ textarea:focus {
 	width: auto;
 	justify-content: center;
 	font-size: 16px;
-	font-weight: 600;
-	padding: 18px 36px 16px;
+	font-weight: 400;
+	padding: 12px 30px 10px;
 	color:white;
 	position: relative;
 	background: #6a7aff;
-	border-radius: 32px;
+	border-radius: var(--default-border-radius);
 	text-align: center;
-	box-shadow: 0 0 6px #00000022;
-	backdrop-filter: blur(8px);
 	transition: all 0.3s;
 }
 
@@ -665,7 +796,7 @@ textarea:focus {
 	align-content: center;
 	align-items: center;
 	display: block;
-	border-radius: 32px;
+	border-radius: var(--default-border-radius);
 	margin: 2px;
 	border: 2px transparent;
 	transition: all 0.3s;
@@ -693,7 +824,7 @@ textarea:focus {
 	font-size: 14px;
 	font-weight: 400;
 	padding: 12px 16px 10px;
-	border-radius: 16px;
+	border-radius: var(--default-border-radius);
 	backdrop-filter: none;
 }
 
@@ -710,7 +841,7 @@ textarea:focus {
 	color:white;
 	position: relative;
 	background: #6a7aff;
-	border-radius: 32px;
+	border-radius: var(--default-border-radius);
 	text-align: center;
 	box-shadow: 0 0 6px #00000022;
 	backdrop-filter: blur(8px);
@@ -727,7 +858,7 @@ textarea:focus {
 	color:white;
 	position: relative;
 	background: #000;
-	border-radius: 32px;
+	border-radius: var(--default-border-radius);
 	text-align: center;
 	box-shadow: 0 0 6px #00000022;
 	backdrop-filter: blur(8px);
@@ -773,7 +904,7 @@ textarea:focus {
 .newsletter-email-sect .email-input{
 	width: auto;
 	border: 2px solid rgba(0, 0, 0, 0.2);
-	border-radius: 16px;
+	border-radius: var(--default-border-radius);
 	background: transparent;
 	color: #000;
 	padding: 8px;
@@ -796,7 +927,7 @@ textarea:focus {
 	color:white;
 	position: relative;
 	background: #6a7aff;
-	border-radius: 16px;
+	border-radius: var(--default-border-radius);
 	text-align: center;
 	box-shadow: 0 0 6px #00000022;
 	backdrop-filter: blur(8px);
@@ -954,7 +1085,7 @@ textarea:focus {
 	width: 500px;
 	height: 400px;
 	border: 1px solid rgba(255, 255, 255, 0.2);
-	border-radius: 24px;
+	border-radius: var(--default-border-radius);
 	overflow: hidden;
 	display: block;
 	object-fit: cover;
@@ -967,7 +1098,7 @@ textarea:focus {
 	box-shadow: 0 0 64px #00000055;
 	height: 70vh;	/*100%;*/
 	border: 1px solid rgba(255, 255, 255, 0.2);
-	border-radius: 24px;
+	border-radius: var(--default-border-radius);
 	overflow: hidden;
 	display: block;
 	object-fit: cover;
@@ -1451,7 +1582,7 @@ textarea:focus {
     justify-content: space-between;
     overflow: hidden;
     padding: 24px;
-    border-radius: 24px;
+    border-radius: var(--default-border-radius);
     gap: 24px;
 }
 
@@ -1935,7 +2066,7 @@ button:focus:not(:focus-visible) {
 .navbar.compact{
 	padding: 6px 128px 6px 128px;
 	backdrop-filter: blur(8px);
-	background: #00000088;
+	background: #000000aa;
 }
 
 @media(max-width: 1024px) {
@@ -2066,7 +2197,7 @@ button:focus:not(:focus-visible) {
 
 .nav-btn.active {
 	border: 2px solid #6a7aff;
-	border-radius: 24px;
+	border-radius: var(--default-border-radius);
 }
 
 .nav-btn-icon {
@@ -2077,7 +2208,7 @@ button:focus:not(:focus-visible) {
 	padding: 8px 0 8px 0;
 	align-content: center;
 	display: block;
-	border-radius: 32px;
+	border-radius: var(--default-border-radius);
 	margin: 2px;
 	border: 2px transparent;
 	transition: all 0.3s;
@@ -2108,7 +2239,7 @@ button:focus:not(:focus-visible) {
 	text-align: center;
 	padding: 8px 0 8px 0;
 	align-content: center;
-	border-radius: 32px;
+	border-radius: var(--default-border-radius);
 	margin: 2px;
 	border: 2px transparent;
 	transition: all 0.3s;
@@ -2134,12 +2265,12 @@ button:focus:not(:focus-visible) {
 
 .nav-btn:hover, .nav-btn.dark:hover {
 	background: #6a7aff;
-	border-radius: 32px;
+	border-radius: var(--default-border-radius);
 	color: white;
 }
 
 .nav-btn:focus {
-	border-radius: 32px;
+	border-radius: var(--default-border-radius);
 }
 
 

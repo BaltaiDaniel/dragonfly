@@ -22,14 +22,6 @@
 				<div class="footer-right-items">\
 					<div class="footer-sect">\
 						<div class="margin_bottom_s"></div>\
-						<p class="footer-section-title">Subscribe to Our Newsletter</p>\
-						<div class="newsletter-email-sect">\
-							<input placeholder="you@example.com" class="email-input" type="email" autocomplete="email" id="newsletterEmailInput">\
-							<button class="primary-btn-slim" id="newsletterSubscribeBtn">Subscribe</button>\
-						</div>\
-					</div>\
-					<div class="footer-sect">\
-						<div class="margin_bottom_s"></div>\
 						<p class="footer-section-title">From Dragonfly Studios</p>\
 						<a href="https://baltaidaniel.github.io/dragonfly/get/zenolegends" class="footer-section-item">Zeno Legends</a>\
 					</div>\
@@ -80,17 +72,6 @@
 								</div>\
 							</div>\
 						</div>\
-					</div>\
-					\
-					<div class="footer-sect">\
-						<div class="margin_bottom_s"></div>\
-						<div class="margin_bottom_s"></div>\
-						<p class="footer-section-title">Subscribe to Our Newsletter</p>\
-						<div class="newsletter-email-sect">\
-							<input placeholder="Type your email here" type="email" class="email-input" autocomplete="email">\
-							<button class="base-btn">Subscribe</button>\
-						</div>\
-						<div class="margin_bottom_s"></div>\
 					</div>\
 					\
 				</div>\

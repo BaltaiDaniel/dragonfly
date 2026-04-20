@@ -62,17 +62,21 @@
 
 
 
-    <section class="section-hero-item fade-in">
+<!--     <section class="section-hero-item">
         <div class="hero-img hero-img-1"></div>
         <div class="hero-overlay"></div>
-        
-        <div class="meta-box-hero">
-        </div>
-
     </section>
+ -->
+
+    <div class="section-hero-item">
+        <div class="fixed-bg-container hero-img-1"></div>
+        <div class="fixed-bg-container"></div>
+        <!-- <div class="hero-img hero-img-1"></div> -->
+        <!-- <div class="hero-overlay"></div> -->
+    </div>
 
 
-    <section class="section-item-1-v-fill">
+    <section class="section-item-1-v-fill" id="section-1" data-bg="../img/software/zeno-legends-showcase-1.png">
         <div class="v-sep-64"></div>
         <h2 class="dark-100 section-title">Screenshots</h2>
         <div class="v-sep-24"></div>
@@ -104,9 +108,15 @@
 
 
 
-    <section class="section-item-1-for-text">
+    <section class="section-item-1-for-text"  id="section-2" data-bg="../img/software/randomizer-showcase-1.png">
         <h2 class="dark-100 section-title">Plot</h2>
-        <h6 class="dark-75">Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. Set in an epic scene. </h6>
+        <h6 class="dark-75">This section contains the plot.</h6>
+    </section>
+
+
+    <section class="section-item-1-for-text"  id="section-3" data-bg="../img/software/zeno-legends-showcase-1.png">
+        <h2 class="dark-100 section-title">Plot</h2>
+        <h6 class="dark-75">This section contains the plot.</h6>
     </section>
 
 
@@ -124,7 +134,28 @@
     <!-- Footer Section End -->
 
 
-    <!-- </main> -->
+    <script>
+        const bgContainer = document.querySelector('.fixed-bg-container');
+        const sections = document.querySelectorAll('section');
+
+        let currentSectionIndex = 0;
+
+        window.addEventListener('scroll', () => {
+          let newSectionIndex = -1;
+          sections.forEach((section, index) => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top <= window.innerHeight / 2 && rect.bottom > window.innerHeight / 2) {
+              newSectionIndex = index;
+            }
+          });
+
+          if (newSectionIndex !== currentSectionIndex) {
+            currentSectionIndex = newSectionIndex;
+            const bgImage = sections[currentSectionIndex].getAttribute('data-bg');
+            bgContainer.style.backgroundImage = `url(${bgImage})`;
+          }
+        });
+    </script>
 
     <!-- Js Plugins -->
     <script src="../js/jquery-3.3.1.min.js"></script>
