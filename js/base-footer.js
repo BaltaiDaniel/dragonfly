@@ -100,6 +100,9 @@
 					</a>\
 				</div>\
 				<div class="footlinks-right-items-mobile">\
+					<a href="https://baltaidaniel.github.io/dragonfly/legal" class="light-75 footer-section-item">\
+						Legal\
+					</a>\
 					<a href="https://baltaidaniel.github.io/dragonfly/terms" class="light-75 footer-section-item">\
 						Terms of Use\
 					</a>\
