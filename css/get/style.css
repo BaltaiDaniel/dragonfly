@@ -318,6 +318,19 @@
 
 
 
+.zeno-legends-text-clip {
+  background-size: cover;
+  background-position: center;
+  
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  color: transparent;
+  
+  font-size: 80px;
+  font-weight: bold;
+}
+
 
 
 
@@ -329,7 +342,7 @@
 /*---------------------
 	Header
 -----------------------*/
-.navbar-sw-checkout {
+.navbar-get {
 	position: fixed;
 	display: flex;
 	top: 0;
@@ -341,24 +354,30 @@
 	width: 100%;
 	align-items: stretch;
 	background: transparent;
-	padding: 24px 64px 24px 64px;
+
+	padding: 6px 128px 6px 128px;
+	/*padding: 24px 64px 24px 64px;*/
+	
+	/*background: transparent;*/
+	background: #fff;
+
 	z-index: 3;
 	transition: all 0.3s ease;
 }
 
-.navbar-sw-checkout.compact{
+.navbar-get.compact{
 	padding: 6px 128px 6px 128px;
-	backdrop-filter: blur(8px);
-	background: #00000088;
+/*	backdrop-filter: blur(8px);
+	background: #00000088;*/
 }
 
 
 @media(max-width: 1024px) {
-	.navbar-sw-checkout {
+	.navbar-get {
 		padding: 24px 48px 24px 48px;
 	}
 	
-	.navbar-sw-checkout.compact {
+	.navbar-get.compact {
 		padding: 6px 64px 6px 64px;
 	}
 }

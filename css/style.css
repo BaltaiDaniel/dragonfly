@@ -7,8 +7,15 @@
 @font-face {
   font-family: 'OpenSans-Regular';
   src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
-  font-weight: normal;
+  /*font-weight: normal;*/
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  /*font-weight: 800;*/
+  font-style: bold;
 }
 
 
@@ -22,6 +29,7 @@ body {
 	font-family: 'OpenSans-Regular', sans-serif;
 	background: #100028;
 	-webkit-font-smoothing: antialiased;
+	font-smooth: always;
 	scroll-behavior: smooth;
 }
 
@@ -39,7 +47,7 @@ h6 {
 }
 
 h1 {
-	font-size: 70px;
+	font-size: 72px;
 }
 
 h2 {
@@ -189,7 +197,14 @@ ol {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 
-
+.relative-bg {
+  position: relative;
+  top: auto;
+  left: auto;
+  width: 100vw;
+  height: 100vh;
+  background-attachment: scroll;
+}
 
 
 
@@ -945,6 +960,12 @@ textarea:focus {
 	height: 100%;
 }
 
+.width-100 {
+	width: 100%;
+}
+
+
+
 
 
 
@@ -952,14 +973,14 @@ textarea:focus {
 .newsletter-email-sect {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 100%;
 	gap: 12px;
 }
 
 .newsletter-email-sect .email-input{
-	width: auto;
+	min-width: 300px;
 	border: 2px solid rgba(0, 0, 0, 0.2);
 	border-radius: var(--default-border-radius);
 	background: transparent;
@@ -1287,8 +1308,7 @@ textarea:focus {
 
 
 .section-title {
-	font-size: 48px;
-	font-weight: 600;
+	font-family: 'OpenSans-Bold', sans-serif;
 }
 
 
@@ -2192,6 +2212,7 @@ button:focus:not(:focus-visible) {
 	position: relative;
 	display: flex;
 	width: 100%;
+	gap: 8px;
 	align-items: center;
 }
 
