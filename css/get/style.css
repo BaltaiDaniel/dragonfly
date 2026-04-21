@@ -384,11 +384,11 @@
 
 @media(max-width: 760px) {
 	.navbar-get {
-		padding: 24px 8px 24px 8px;
+		padding: 6px 8px 6px 8px;
 	}
 	
 	.navbar-get.compact {
-		padding: 6px 16px 6px 16px;
+		padding: 6px 8px 6px 8px;
 	}
 }
 
