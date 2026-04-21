@@ -1167,6 +1167,8 @@ textarea:focus {
 	overflow: hidden;
 	display: block;
 	object-fit: cover;
+	background-size: cover;
+	background-position: center;
 	transition: scale 0.3s ease;
 }
 

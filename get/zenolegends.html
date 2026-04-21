@@ -96,7 +96,7 @@
     </section>
 
 
-    <section class="section-item-1-v-fill" id="section-1" data-bg="../img/software/zeno-legends-showcase-1.png">
+    <section class="section-item-1-v-fill">
         <h1 class="zeno-legends-text-clip hero-img-1 text-center">Plot</h1>
         <div class="v-sep-24"></div>
         <h6 class="dark-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -119,42 +119,6 @@
 
 
 
-    <section class="section-item-1-v-fill" id="section-2" data-bg="../img/software/zeno-legends-showcase-1.png">
-        <div class="v-sep-64"></div>
-        <h2 class="dark-100 section-title">Screenshots</h2>
-        <div class="v-sep-24"></div>
-        
-        <div class="snap-container" id="snapContainer">
-            <div class="project-card">
-                <div class="project-bg" style="background-image:url('../img/software/zeno-legends-showcase-1.png');"></div>
-            </div>
-            <div class="project-card">
-                <div class="project-bg" style="background-image:url('../img/software/zeno-legends-showcase-1.png');"></div>
-            </div>
-            <div class="project-card">
-                <div class="project-bg" style="background-image:url('../img/software/zeno-legends-showcase-1.png');"></div>
-            </div>
-            <div class="project-card">
-                <div class="project-bg" style="background-image:url('../img/software/zeno-legends-showcase-1.png');"></div>
-            </div>
-            <div class="project-card">
-                <div class="project-bg" style="background-image:url('../img/software/zeno-legends-showcase-1.png');"></div>
-            </div>
-            <div class="project-card">
-                <div class="project-bg" style="background-image:url('../img/software/zeno-legends-showcase-1.png');"></div>
-            </div>
-            <div class="project-card">
-                <div class="project-bg" style="background-image:url('../img/software/zeno-legends-showcase-1.png');"></div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="section-item-1-v-fill"  id="section-3" data-bg="../img/software/zeno-legends-showcase-1.png">
-    </section>
-
-
-
 
     <div id="cookie-consent" class="cookie-consent" style="display: none;">     
     </div>
@@ -167,35 +131,6 @@
         </div>
     </footer>
     <!-- Footer Section End -->
-
-
-    <script>
-        const bgContainer = document.querySelector('.fixed-bg-container');
-        const sections = document.querySelectorAll('section');
-
-        let currentSectionIndex = 0;
-
-        window.addEventListener('scroll', () => {
-          let newSectionIndex = -1;
-          sections.forEach((section, index) => {
-            const rect = section.getBoundingClientRect();
-            if (rect.top <= window.innerHeight / 2 && rect.bottom > window.innerHeight / 2) {
-              newSectionIndex = index;
-            }
-          });
-
-          if (newSectionIndex !== currentSectionIndex) {
-            currentSectionIndex = newSectionIndex;
-            const bgImage = sections[currentSectionIndex].getAttribute('data-bg');
-            bgContainer.style.backgroundImage = `url(${bgImage})`;
-          }
-
-          else if(currentSectionIndex == 3) {
-            bgContainer.style.position = `relative`;
-          }
-
-        });
-    </script>
 
     <!-- Js Plugins -->
     <script src="../js/jquery-3.3.1.min.js"></script>
