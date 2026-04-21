@@ -744,14 +744,17 @@ textarea:focus {
 	padding: 14px 32px 12px;
 	color:white;
 	position: relative;
-	background: var(--accent-color);	/*#0064e0;*/
+	background: var(--accent-color);
 	border-radius: var(--default-border-radius);
 	justify-content: center;
 	text-align: center;
-	box-shadow: 0 0 6px #00000022;
-	backdrop-filter: blur(8px);
 	transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
 }
+.hero-download-btn.black {
+	background: black;
+	color: white;
+}
+
 
 @media(max-width: 1024px) {
 	.hero-download-btn {
@@ -1685,6 +1688,20 @@ textarea:focus {
 
 
 
+.flex-begin {
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+
+
+.flex-center {
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+
 
 .cart-modal-content {
     margin: 0 auto;
@@ -2230,6 +2247,24 @@ button:focus:not(:focus-visible) {
 .nav-btn.dark {
 	color: #333;
 }
+.nav-btn.black {
+	background: black;
+	color: white;
+	border-radius: var(--default-border-radius);
+}
+
+
+.nav-btn:hover {
+	background: var(--accent-color);
+	border-radius: var(--default-border-radius);
+	color: white;
+}
+
+.nav-btn:focus {
+	border-radius: var(--default-border-radius);
+}
+
+
 
 .nav-btn.mobile {
 	width: 100%;
@@ -2301,21 +2336,6 @@ button:focus:not(:focus-visible) {
 		display: block;
 	}
 }
-
-
-
-
-.nav-btn:hover, .nav-btn.dark:hover {
-	background: var(--accent-color);
-	border-radius: var(--default-border-radius);
-	color: white;
-}
-
-.nav-btn:focus {
-	border-radius: var(--default-border-radius);
-}
-
-
 
 
 
