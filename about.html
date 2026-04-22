@@ -27,7 +27,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/bulma.min.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/bootstrap-icons.css" type="text/css">
     <link rel="stylesheet" href="css/cookie-diag.css">
     
@@ -42,7 +41,7 @@
 
 
 <body>
-    <header class="navbar-about" id="navbarSelect">
+<!--     <header class="navbar-about" id="navbarSelect">
         <div class="navbar-holder">
 
             <div class="header-logo-container">
@@ -78,7 +77,55 @@
 
 
         <div style="width: 100%; padding: 0 0 0 8px;">
-            <a href="https://baltaidaniel.github.io/dragonfly" class="blue"><i class="bi-arrow-left-circle"></i>Back to Homepage</a>
+            <a href="https://baltaidaniel.github.io/dragonfly" class="blue"><i class="bi-arrow-left-circle"></i>Back to Dragonfly</a>
+        </div>
+
+
+        <div id="topNavDropdown" class="accordion-collapse collapse dark-80" aria-labelledby="topNavDropdown" data-bs-parent="#accordionGeneral">
+            <div class="accordion-body">
+                <div class="nav-sect-mobile">
+                    <a class="sub-nav-btn-mobile" href="#business_profile">Business Profile</a>
+                    <a class="sub-nav-btn-mobile" href="#leadership">Leadership</a>
+                    <a class="sub-nav-btn-mobile" href="#contact">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+ -->
+
+    <header class="navbar-about" id="navbarSelect">
+        <div class="navbar-holder">
+
+            <div class="header-logo-container">
+                <a href="https://baltaidaniel.github.io/dragonfly"><img src="img/logo.png" class="fade-in" id="header-logo-img" alt="Dragonfly Logo"></a>
+            </div>
+
+            <a href="https://baltaidaniel.github.io/dragonfly" class="header-logo-title dark fade-in" data-delay="1500">Dragonfly</a>
+
+            <div class="h-sep-64"></div>
+
+            <div class="nav-btns-holder fade-in" data-delay="1500">
+                <a class="nav-btn dark" href="https://baltaidaniel.github.io/dragonfly/software">Software</a>
+                <a class="nav-btn dark" href="https://baltaidaniel.github.io/dragonfly/consulting">Consulting</a>
+                <a class="nav-btn dark" href="https://baltaidaniel.github.io/dragonfly/entertainment">Entertainment</a>
+                <a class="nav-btn dark active" href="https://baltaidaniel.github.io/dragonfly/about">About Us</a>
+            </div>
+
+            <div class="nav-btns-holder-right fade-in" data-delay="1500">
+                <button class="nav-dropdown-btn dark" type="button" data-bs-toggle="collapse" data-bs-target="#topNavDropdown" aria-expanded="true" aria-controls="topNavDropdown" title="Tabs"><i class="bi-list dark-100"></i></button>
+            </div>
+
+        </div>
+
+
+        <div class="navbar-holder">
+            <div class="nav-btns-holder fade-in" data-delay="1500">
+                <a class="sub-nav-btn-dark" href="#business_profile">Business Profile</a>
+                <a class="sub-nav-btn-dark" href="#leadership">Leadership</a>
+                <a class="sub-nav-btn-dark" href="#contact">Contact Us</a>
+            </div>
+
         </div>
 
 
@@ -101,14 +148,17 @@
 
 
 
-    <section class="section-item-1-v-fill fade-in">
+    <section class="section-item-1-v-fill">
         <div class="v-sep-64"></div>
         <div class="v-sep-64"></div>
         <div class="v-sep-64"></div>
-        <h1 class="about-section-item-title dark fade-in">Innovation. Accessibility. Creativity.</h1>
-        <p class="about-section-item-subtext dark fade-in">
-            At Dragonfly, we strive toward innovation, embed accessibility into every layer of our work, and fuel it all with creativity.
-        </p>
+        
+        <h3 class="dark-100"><span class="fade-in" data-delay="200">Innovation.</span> <span class="fade-in" data-delay="400">Accessibility.</span> <span class="fade-in" data-delay="600">Creativity.</span></h3>
+        
+        <h1 class="dark-100 fade-in" data-delay="1100">Dragonfly</h1>
+        
+        <div class="v-sep-32"></div>
+
         <div class="v-sep-64"></div>
         <div class="v-sep-64"></div>
         <div class="v-sep-64"></div>
@@ -116,59 +166,130 @@
     </section>
 
 
-    <section class="section-item-1-v-fill fade-in">
-        <section class="grid-sect fade-in">
-
-            <div class="v-flex spad-l-s grid-item-1" id="business_profile">
-                <h1 class="about-section-item-title dark fade-in">Who We Are</h1>
-                <p class="about-section-item-subtext dark fade-in">We are a creative technology company reinventing ways technology can benefit society at large by bridging the gap between old systems and access to modern technology.</p>
+    <section class="section-item-1-v-fill" id="business_profile">
+        <section class="grid-sect">
+            <div class="v-flex spad-l-s grid-item-1">
+                <h1 class="about-section-item-title dark">Who We Are</h1>
+                <p class="about-section-item-subtext dark">We are a creative technology company reinventing ways technology can benefit society at large by bridging the gap between old systems and access to modern technology.</p>
             </div>
 
             <div class="v-flex spad-l-s grid-item-2">
-                <h1 class="about-section-item-title dark fade-in">What We Do</h1>
-                <p class="about-section-item-subtext dark fade-in">We deliver innovative experiences through software and entertainment (video games and animations) that transform the way technology is accessed and experienced.</p>
+                <h1 class="about-section-item-title dark">What We Do</h1>
+                <p class="about-section-item-subtext dark">We deliver innovative experiences through software and entertainment (video games and animations) that transform the way technology is accessed and experienced.</p>
             </div>
 
 
             <div class="v-flex spad-l-s grid-item-3">
-                <h1 class="about-section-item-title dark fade-in">Our Mission</h1>
-                <p class="about-section-item-subtext dark fade-in">We believe we exist to provide scale-wise value for our customers that spans across decades by bridging the gap between old systems and access to modern technology.</p>
+                <h1 class="about-section-item-title dark">Our Mission</h1>
+                <p class="about-section-item-subtext dark">We believe we exist to provide scale-wise value for our customers that spans across decades by bridging the gap between old systems and access to modern technology.</p>
             </div>
 
             <div class="v-flex spad-l-s grid-item-4">
-                <h1 class="about-section-item-title dark fade-in">Our Vision</h1>
-                <p class="about-section-item-subtext dark fade-in">To become a pioneer of transformation from old systems to new systems by leveraging modern technology.</p>
+                <h1 class="about-section-item-title dark">Our Vision</h1>
+                <p class="about-section-item-subtext dark">To become a pioneer of transformation from old systems to new systems by leveraging modern technology.</p>
             </div>
-
         </section>
-
     </section>
 
 
-    <section class="section-item-1 bg-white-80 fade-in" id="leadership">
-        <h1 class="about-section-item-title dark fade-in">Dragonfly Leadership</h1>
-        
-        <section class="leadership-sect fade-in">
-            
-            <div class="leadership-item leadership-img-1">
-                <div class="info-cont">
-                    <div class="v-flex">
-                        <h3 class="leadership-item-name">Baltai Daniel</h3>
-                        <p class="leadership-item-position">Founder & CEO</p>
-                        <div class="v-sep-32"></div>
-                        <button class="hero-download-btn" id="showLeadershipModal1Btn"><i class="bi-plus-circle"></i> See More</button>
+
+    <section class="section-item-1" id="how_we_work">
+        <div class="h-flex leadership-testimonial-sect gap-2">
+            <div class="v-flex">
+                <h1 class="dark-100">How We Work</h1>
+                <p class="text-muted">This section outlines how we treat each other at work.</p>
+            </div>
+
+            <div class="v-sep-24"></div>
+
+            <div class="v-flex gap-2 height-100 width-100">
+                <div class="accordion-item">
+                    <p class="accordion-header" id="headingHowWeWork1">
+                        <button class="accordion-button collapsed dark-80 width-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordionHowWeWork1" aria-expanded="false" aria-controls="accordionHowWeWork1"><h3 class="dark-100 width-100" style="font-weight: 600;">01.  Remote-First</h3></button>
+                    </p>
+
+                    <div id="accordionHowWeWork1" class="accordion-collapse collapse dark-80" aria-labelledby="headingHowWeWork1" data-bs-parent="#accordionHowWeWork1">
+                        <div class="accordion-body">
+                            <h5 class="dark-55">We operate as a fully distributed team across multiple locations, proving that geography is no barrier to exceptional work. Our asynchronous-first approach ensures projects move forward without delays.</h5>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-        </section>
 
+                <div class="accordion-item">
+                    <p class="accordion-header" id="headingHowWeWork2">
+                        <button class="accordion-button collapsed dark-80 width-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordionHowWeWork2" aria-expanded="false" aria-controls="accordionHowWeWork2"><h3 class="dark-100 width-100" style="font-weight: 600;">02.  Mutual Respect</h3></button>
+                    </p>
+                        <div id="accordionHowWeWork2" class="accordion-collapse collapse dark-80" aria-labelledby="headingHowWeWork2" data-bs-parent="#accordionHowWeWork2">
+                            <div class="accordion-body">
+                                <h5 class="dark-55">We build trust across differences. Age, background, geography, accent—none of it changes how we respect and value each other. Diverse perspectives make our work stronger and our team better.</h5>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="accordion-item">
+                    <p class="accordion-header" id="headingHowWeWork3">
+                        <button class="accordion-button collapsed dark-80 width-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordionHowWeWork3" aria-expanded="false" aria-controls="accordionHowWeWork3"><h3 class="dark-80 width-100" style="font-weight: 600;">03.  Accountability</h3></button>
+                        </p>
+                        <div id="accordionHowWeWork3" class="accordion-collapse collapse dark-80" aria-labelledby="headingHowWeWork3" data-bs-parent="#accordionHowWeWork3">
+                            <div class="accordion-body">
+                                <h5 class="dark-55">Every project, deadline, and deliverable has clear ownership and measurable outcomes. We document decisions and progress transparently so there's never ambiguity about where things stand or who to reach out to.</h5>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="accordion-item">
+                    <p class="accordion-header" id="headingHowWeWork4">
+                        <button class="accordion-button collapsed dark-80 width-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordionHowWeWork4" aria-expanded="false" aria-controls="accordionHowWeWork4"><h3 class="dark-80 width-100" style="font-weight: 600;">04.  Human Connection</h3></button>
+                        </p>
+                        <div id="accordionHowWeWork4" class="accordion-collapse collapse dark-80" aria-labelledby="headingHowWeWork4" data-bs-parent="#accordionHowWeWork4">
+                            <div class="accordion-body">
+                                <h5 class="dark-55">Remote doesn't mean distant. We're a team that genuinely celebrates wins, supports each other through challenges, and brings our whole selves to our work. This translates directly into better collaboration with our team—we listen and we care about each other's success.</h5>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="accordion-item">
+                    <p class="accordion-header" id="headingHowWeWork5">
+                        <button class="accordion-button collapsed dark-80 width-100" type="button" data-bs-toggle="collapse" data-bs-target="#accordionHowWeWork5" aria-expanded="false" aria-controls="accordionHowWeWork5"><h3 class="dark-80 width-100" style="font-weight: 600;">05.  Transparency</h3></button>
+                        </p>
+                        <div id="accordionHowWeWork5" class="accordion-collapse collapse dark-80" aria-labelledby="headingHowWeWork5" data-bs-parent="#accordionHowWeWork5">
+                            <div class="accordion-body">
+                                <h5 class="dark-55">Transparency isn't about perfection—it's about honesty. We communicate setbacks as openly as wins. And we genuinely support each other through the hard stuff.</h5>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-item-1" id="leadership">
+        <div class="h-flex leadership-testimonial-sect-reverse gap-2">
+            <div class="v-flex">
+                <h2 class="dark-55 width-100">‘‘</h2>
+                <h4 class="dark-100">It's amazing how much you can do with so little. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+                <h2 class="dark-55 width-100">’’</h2>
+                <p class="text-muted width-100">- Baltai Daniel, Founder & CEO</p>
+            </div>
+
+            <div class="leadership-item leadership-img-1">
+            </div>
+
+        </div>
     </section>
 
 
 
-    <section class="section-item-1 fade-in" id="contact">
-        <h1 class="about-section-item-title dark fade-in">Contact Us</h1>
+
+
+    <section class="section-item-1" id="contact">
+        <h1 class="about-section-item-title dark">Contact Us</h1>
 
         <p class="partnership-section-item-subtext">Kindly fill out the form below.</p>
         <div class="v-sep-32"></div>
@@ -177,58 +298,91 @@
 
         <form class="form">
             <div class="form-sect">
-                
                 <div class="float-group">
                     <select id="form-purpose" name="form-purpose" required>
-                        <option value="">Purpose</option>
+                        <option value="">Purpose...</option>
                         <option value="feedback">Product Feedback</option>
                     </select>
                 </div>
+                <div class="v-sep-32"></div>
 
                 <div class="float-group">
                     <input type="text" id="form-full-name" placeholder="Full Name" autocomplete="additional-name" required>
                     <label>Full Name*</label>
                 </div>
+                <div class="error-content" id="newletterEmailErrorCont" style="display: flex;">
+                    <i class="bi-info-circle text-error"></i>
+                    <p class="text-error" id="newletterEmailErrorText">Invalid email</p>
+                </div>
+                <div class="v-sep-32"></div>
+
 
                 <div class="float-group">
                     <input type="text" id="form-email" placeholder="email*" autocomplete="email" required>
                     <label>Email*</label>
                 </div>
+                <div class="error-content" id="newletterEmailErrorCont" style="display: flex;">
+                    <i class="bi-info-circle text-error"></i>
+                    <p class="text-error" id="newletterEmailErrorText">Invalid email</p>
+                </div>
+                <div class="v-sep-32"></div>
 
                 <div class="float-group">
                     <input type="text" id="form-phone" placeholder="Phone Number" autocomplete="phone" required>
                     <label>Phone Number*</label>
                 </div>
+                <div class="error-content" id="newletterEmailErrorCont" style="display: flex;">
+                    <i class="bi-info-circle text-error"></i>
+                    <p class="text-error" id="newletterEmailErrorText">Invalid email</p>
+                </div>
+                <div class="v-sep-32"></div>
 
                 <div class="float-group">
                     <select id="form-country" name="form-country" required>
                         <option value="">Select your Country or Region</option>
                     </select>
                 </div>
+                <div class="error-content" id="newletterEmailErrorCont" style="display: flex;">
+                    <i class="bi-info-circle text-error"></i>
+                    <p class="text-error" id="newletterEmailErrorText">Invalid email</p>
+                </div>
+                <div class="v-sep-32"></div>
 
                 <div class="float-group">
                     <input type="text" id="form-company" placeholder="Company">
                     <label>Company</label>
                 </div>
+                <div class="v-sep-32"></div>
 
                 <div class="float-group">
                     <input type="text" id="form-address" placeholder="Company address">
                     <label>Company Address</label>
                 </div>
+                <div class="v-sep-32"></div>
 
                 <div class="float-group">
                     <input type="text" id="form-subject" placeholder="Subject*" required>
                     <label>Subject*</label>
                 </div>
+                <div class="error-content" id="newletterEmailErrorCont" style="display: flex;">
+                    <i class="bi-info-circle text-error"></i>
+                    <p class="text-error" id="newletterEmailErrorText">Invalid email</p>
+                </div>
+                <div class="v-sep-32"></div>
 
                 <div class="float-group">
                     <textarea id="form-message" placeholder="Message*" maxlength="400" required></textarea>
                 </div>
+                <div class="error-content" id="newletterEmailErrorCont" style="display: flex;">
+                    <i class="bi-info-circle text-error"></i>
+                    <p class="text-error" id="newletterEmailErrorText">Invalid email</p>
+                </div>
+                <div class="v-sep-32"></div>
             
             </div>
 
             <div class="margin-bottom-solid"></div>
-            <button class="form-submit-btn primary-btn">Submit</button>
+            <button class="form-submit-btn" type="submit">Submit</button>
 
         </form>
 
@@ -238,7 +392,7 @@
 
 
 
-    <div class="leadership-modal fade-in" id="leadershipModal1" style="display: none;">
+    <div class="leadership-modal" id="leadershipModal1" style="display: none;">
         <div class="leadership-modal-content">
             <div class="leadership-modal-header">
                 <button class="leadership-modal-close-btn" id="leadershipModalCloseBtn1"><i class="bi-x"></i></button>
@@ -277,25 +431,6 @@
 
 
 
-
-    <section class="footnote-sect">
-        <div class="accordion-item">
-            <p class="accordion-header footer-section-title-mobile" id="headingTwo">
-                <button class="accordion-button collapsed footer-section-title-mobile dark-80" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralTwo" aria-expanded="false" aria-controls="accordionGeneralTwo">
-                        Footnotes
-                </button>
-            </p>
-            <div id="accordionGeneralTwo" class="accordion-collapse collapse dark-80" aria-labelledby="headingTwo" data-bs-parent="#accordionGeneral">
-                <div class="accordion-body">
-                    <div class="footer-sect">
-                        <p><sup>1</sup>All logos are trademarks of their respective owners.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
     <!-- Footer Section Begin -->
     <footer class="footer">
         <div class="container" id="base-footer">
@@ -303,15 +438,11 @@
     </footer>
     <!-- Footer Section End -->
 
-
-    <!-- </main> -->
-
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/modal.js"></script>
     <script src="js/cookies.js"></script>
     <script src="js/form.js"></script>
     <script src="js/base-footer.js"></script>

@@ -1,12 +1,37 @@
 'use strict';
 
 (function ($) {
-	window.addEventListener('load', ()=>{
-		document.querySelectorAll('.fade-in').forEach((el,i)=>{setTimeout(()=>el.classList.add('show'), 120 + i*120)});
-		if (window.scrollY >= 100) {
-			document.querySelectorAll('.fade-in').forEach((el,i)=>{el.classList.add('show')});
-		}
+	window.addEventListener('load', () => {
+		var items = document.querySelectorAll('.fade-in');
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					const customDelay = entry.target.getAttribute('data-delay');
+					const delay = customDelay !== null ? parseInt(customDelay) : 0;
+
+					const hideOnCompleteAttrib = entry.target.getAttribute('data-hide-on-complete');
+					const hideOnComplete = hideOnCompleteAttrib !== null ? hideOnCompleteAttrib : false;
+					
+
+					setTimeout(() => {
+						entry.target.classList.add('show');
+						// if (hideOnComplete) {
+						// 	entry.target.style.display = 'none';
+						// }
+					}, delay);
+					
+					observer.unobserve(entry.target);
+
+				}
+			});
+		}, {
+			threshold: 0.1
+		});
+
+		items.forEach((el) => observer.observe(el));
 	});
+
 
 
 	const navbar = document.getElementById('navbarSelect');
