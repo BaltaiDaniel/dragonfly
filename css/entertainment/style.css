@@ -1,0 +1,50 @@
+/******** 🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 🚀🚀🚀🚀🚀🚀************/
+/******** 🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 🚀🚀🚀🚀🚀🚀************/
+/******** 🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 🚀🚀🚀🚀🚀🚀************/
+/******** 🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢🟢 🚀🚀🚀🚀🚀🚀************/
+/*---------------------
+	Header
+-----------------------*/
+.navbar-entertainment {
+	position: fixed;
+	display: flex;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: stretch;
+	width: 100%;
+	background-color: transparent;
+	padding: 24px 64px 24px 64px;
+	z-index: 3;
+	transition: all 0.3s ease;
+}
+
+.navbar-entertainment.compact{
+	padding: 6px 128px 6px 128px;
+	backdrop-filter: blur(8px);
+	background: white;
+}
+
+
+
+@media(max-width: 1024px) {
+	.navbar-entertainment {
+		padding: 10px 48px 10px 48px;
+	}
+	.navbar-entertainment.compact {
+		padding: 6px 64px 6px 64px;
+	}
+}
+
+@media(max-width: 760px) {
+	.navbar-entertainment {
+		padding: 10px 24px 10px 16px;
+	}
+	.navbar.compact {
+		padding: 6px 16px 6px 16px;
+	}
+}
+

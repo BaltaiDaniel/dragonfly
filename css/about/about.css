@@ -193,7 +193,7 @@
 	width: 100%;
 	justify-self: center;
 	flex-wrap: nowrap;
-	height: 96px;
+	height: 128px;
 	display: flex;
 	gap: 8px;
 	flex-direction: row;
@@ -203,12 +203,12 @@
 }
 
 .leadership-modal-img-cont {
-	width: 100px;
-	height: 100px;
+	width: 128px;
+	height: 128px;
 	object-fit: cover;
 	border: 6px solid rgba(255, 255, 255, 1.0);
     box-shadow: 0 0 32px 3px rgba(0, 0, 0, 0.2);
-	border-radius: 48px;
+	border-radius: 64px;
 	overflow: hidden;
 	padding: 0;
 }

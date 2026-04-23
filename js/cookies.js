@@ -43,7 +43,7 @@ class CookieNoticeManager {
             notice.innerHTML = `\
                 <div class="cookie-consent-content">
                     <div class="cookie-header">
-                        <h3>Dragonfly Respects Your Privacy</h3>
+                        <h3>Dragonfly Respects your Privacy</h3>
                     </div>
                     <div class="cookie-body">
                         <p>We are committed to enhancing your browsing experience. Cookies help us do that, as well as serve personalized ads or content, and analyze our traffic. You can reject all non-essential cookies by choosing to accept only essential cookies. By clicking "Accept All Cookies" or "Accept Only Essential", you agree to the placement and use of cookies.</p>\

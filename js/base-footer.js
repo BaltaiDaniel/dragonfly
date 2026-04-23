@@ -5,13 +5,21 @@
 		
 		
 		modalContainer.innerHTML = '\
-			"<div class="margin-empty-large"></div>\
-			<div class="margin-bottom-solid"></div>\
+			<div class="margin-empty-large"></div>\
+			<div class="margin-empty-large"></div>\
 			\
 			<div class="footer-flex gap-4">\
 				<div class="footer-sect">\
 					<div class="margin_bottom_s"></div>\
-					<h3 class="footer-company-name dark-100">Dragonfly</h3>\
+						\
+						<a href="https://baltaidaniel.github.io/dragonfly">\
+							<div class="v-flex" style="align-items: flex-start;">\
+								<div class="company-logo-img" style="width: 40px; height: 40px;"></div>\
+								<h3 class="footer-company-name dark-100">Dragonfly</h3>\
+							</div>\
+						</a>\
+						\
+					<div class="margin_bottom_s"></div>\
 					<div class="social-icons-holder">\
 						<a href="https://instagram.com/madebydragonfly" class="social-icon"><i class="bi-instagram"></i></a>\
 						<a href="https://facebook.com/madebydragonfly" class="social-icon"><i class="bi-facebook"></i></a>\

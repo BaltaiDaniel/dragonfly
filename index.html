@@ -178,71 +178,6 @@
 
 
 
-	<script>
-		// Get the newsletter form and input fields
-		const newsletterForm = document.getElementById('newsletterForm');
-		const emailInput = document.getElementById('newsletterEmail');
-		const submitButton = document.getElementById('emailSubmitBtn');
-
-		const errorCont = document.getElementById('newletterEmailErrorCont');
-		const errorText = document.getElementById('newletterEmailErrorText');
-
-		// Add an event listener to the form submission
-		newsletterForm.addEventListener('submit', (e) => {
-		  e.preventDefault();
-	      errorCont.style.display = 'none';
-
-		  // Get the email value
-		  const email = emailInput.value.trim();
-
-		  // Validate the email
-		  if (!email || !validateEmail(email)) {
-		    errorCont.style.display = 'flex';
-		    errorText.innerHTML = 'Enter a valid email address';
-		    return;
-		  }
-
-		  // Send the email to your server or API
-		  sendEmailToServer(email)
-		    .then((response) => {
-		      submitButton.innerHTML = '<i class="bi-check-circle"></i> Subscribed';
-		      submitButton.disabled = true;
-		      emailInput.value = '';
-		      errorCont.style.display = 'none';
-		    })
-		    .catch((error) => {
-		      alert('Error subscribing. Please try again.');
-		      console.error(error);
-		    });
-		});
-
-		// Validate the email address
-		function validateEmail(email) {
-		  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-		  return emailRegex.test(email);
-		}
-
-		// Send the email to your server or API
-		function sendEmailToServer(email) {
-		  // Replace with your server or API URL
-		  const url = 'https://your-server.com/newsletter';
-
-		  // Replace with your API key or authentication token
-		  const apiKey = 'your-api-key';
-
-		  return fetch(url, {
-		    method: 'POST',
-		    headers: {
-		      'Content-Type': 'application/json',
-		      'Authorization': `Bearer ${apiKey}`,
-		    },
-		    body: JSON.stringify({ email }),
-		  });
-		}
-
-	</script>
-
-
     <!-- Footer Section Begin -->
     <footer class="footer">
         <div class="container" id="base-footer">
@@ -257,6 +192,7 @@
 	<script src="js/jquery.slicknav.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/cookies.js"></script>
+	<script src="js/newsletter-form.js"></script>
 	<script src="js/base-footer.js"></script>
 
 
