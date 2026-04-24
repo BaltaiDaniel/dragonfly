@@ -189,6 +189,11 @@
 	border-radius: 32px;
 }
 
+.leadership-modal-close-btn:focus {
+	border-radius: 32px;
+	border: 1px solid #000;
+}
+
 .leadership-modal-img-holder {
 	width: 100%;
 	justify-self: center;

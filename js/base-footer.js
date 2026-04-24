@@ -29,8 +29,20 @@
 				<div class="footer-right-items">\
 					<div class="footer-sect">\
 						<div class="margin_bottom_s"></div>\
-						<p class="footer-section-title">From Dragonfly Studios</p>\
-						<a href="https://baltaidaniel.github.io/dragonfly/get/zenolegends" class="footer-section-item">Zeno Legends</a>\
+						<p class="footer-section-title">Software</p>\
+						<a href="https://baltaidaniel.github.io/dragonfly/software" class="footer-section-item">Explore Software <i class="bi-arrow-right-circle"></i></a>\
+						<a href="https://baltaidaniel.github.io/dragonfly/software#homerentals" class="footer-section-item">Home Rentals</a>\
+					</div>\
+					<div class="footer-sect">\
+						<div class="margin_bottom_s"></div>\
+						<p class="footer-section-title">Consulting</p>\
+						<a href="https://baltaidaniel.github.io/dragonfly/consulting" class="footer-section-item">Explore Consulting <i class="bi-arrow-right-circle"></i></a>\
+					</div>\
+					<div class="footer-sect">\
+						<div class="margin_bottom_s"></div>\
+						<p class="footer-section-title">Entertainment</p>\
+						<a href="https://baltaidaniel.github.io/dragonfly/entertainment" class="footer-section-item">Explore Entertainment <i class="bi-arrow-right-circle"></i></a>\
+						<a href="https://baltaidaniel.github.io/dragonfly/entertainment#zenolegends" class="footer-section-item">Zeno Legends</a>\
 					</div>\
 					<div class="footer-sect">\
 						<div class="margin_bottom_s"></div>\
@@ -42,16 +54,19 @@
 				</div>\
 				\
 				\
+				\
+				\
 				<div class="accordion footer-right-items-mobile" id="accordionGeneral">\
 					<div class="accordion-item">\
 						<p class="accordion-header footer-section-title-mobile" id="headingOne">\
-							<button class="accordion-button collapsed footer-section-title-mobile dark-80" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralOne" aria-expanded="true" aria-controls="accordionGeneralOne">\
-								From Dragonfly Studios\
+							<button class="accordion-button collapsed footer-section-title-mobile dark-80" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralOne" aria-expanded="false" aria-controls="accordionGeneralOne">\
+								Entertainment\
 							</button>\
 						</p>\
 						<div id="accordionGeneralOne" class="accordion-collapse collapse dark-80" aria-labelledby="headingOne" data-bs-parent="#accordionGeneral">\
 							<div class="accordion-body">\
 								<div class="footer-sect">\
+									<a href="https://baltaidaniel.github.io/dragonfly/entertainment" class="footer-section-item">Explore Entertainment <i class="bi-arrow-up-right-circle"></i></a>\
 									<a href="https://baltaidaniel.github.io/dragonfly/get/zenolegends" class="footer-section-item">Zeno Legends</a>\
 								</div>\
 							</div>\
@@ -61,10 +76,42 @@
 					<div class="accordion-item">\
 						<p class="accordion-header footer-section-title-mobile" id="headingTwo">\
 							<button class="accordion-button collapsed footer-section-title-mobile dark-80" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralTwo" aria-expanded="false" aria-controls="accordionGeneralTwo">\
-									About Dragonfly\
+								Software\
 							</button>\
 						</p>\
 						<div id="accordionGeneralTwo" class="accordion-collapse collapse dark-80" aria-labelledby="headingTwo" data-bs-parent="#accordionGeneral">\
+							<div class="accordion-body">\
+								<div class="footer-sect">\
+									<a href="https://baltaidaniel.github.io/dragonfly/software" class="footer-section-item">Explore Software <i class="bi-arrow-up-right-circle"></i></a>\
+									<a href="https://baltaidaniel.github.io/dragonfly/software#homerentals" class="footer-section-item">Home Rentals</a>\
+								</div>\
+							</div>\
+						</div>\
+					</div>\
+					\
+					\
+					<div class="accordion-item">\
+						<p class="accordion-header footer-section-title-mobile" id="headingThree">\
+							<button class="accordion-button collapsed footer-section-title-mobile dark-80" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralThree" aria-expanded="false" aria-controls="accordionGeneralThree">\
+								Consulting\
+							</button>\
+						</p>\
+						<div id="accordionGeneralThree" class="accordion-collapse collapse dark-80" aria-labelledby="headingThree" data-bs-parent="#accordionGeneral">\
+							<div class="accordion-body">\
+								<div class="footer-sect">\
+									<a href="https://baltaidaniel.github.io/dragonfly/consulting" class="footer-section-item">Explore Consulting <i class="bi-arrow-up-right-circle"></i></a>\
+								</div>\
+							</div>\
+						</div>\
+					</div>\
+					\
+					<div class="accordion-item">\
+						<p class="accordion-header footer-section-title-mobile" id="headingFour">\
+							<button class="accordion-button collapsed footer-section-title-mobile dark-80" type="button" data-bs-toggle="collapse" data-bs-target="#accordionGeneralFour" aria-expanded="false" aria-controls="accordionGeneralFour">\
+									About Dragonfly\
+							</button>\
+						</p>\
+						<div id="accordionGeneralFour" class="accordion-collapse collapse dark-80" aria-labelledby="headingFour" data-bs-parent="#accordionGeneral">\
 							<div class="accordion-body">\
 								<div class="footer-sect">\
 									<a href="https://baltaidaniel.github.io/dragonfly/about" class="footer-section-item">\
@@ -120,6 +167,8 @@
 						Contact Us\
 					</a>\
 				</div>\
+			\
+			\
 			</div>';
 
 		
