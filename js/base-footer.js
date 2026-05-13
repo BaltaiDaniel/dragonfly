@@ -42,7 +42,6 @@
 						<div class="margin_bottom_s"></div>\
 						<p class="footer-section-title">Entertainment</p>\
 						<a href="https://baltaidaniel.github.io/dragonfly/entertainment" class="footer-section-item">Explore Entertainment <i class="bi-arrow-right-circle"></i></a>\
-						<a href="https://baltaidaniel.github.io/dragonfly/entertainment#zenolegends" class="footer-section-item">Zeno Legends</a>\
 					</div>\
 					<div class="footer-sect">\
 						<div class="margin_bottom_s"></div>\
