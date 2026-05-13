@@ -47,21 +47,21 @@
         <div class="navbar-holder">
 
             <div class="header-logo-container">
-                <a href="https://baltaidaniel.github.io/dragonfly"><img src="img/logo.png" class="fade-in" id="header-logo-img" alt="Dragonfly Logo"></a>
+                <a href="https://baltaidaniel.github.io/dragonfly"><img src="img/logo.png" id="header-logo-img" alt="Dragonfly Logo"></a>
             </div>
 
-            <a href="https://baltaidaniel.github.io/dragonfly" class="header-logo-title dark fade-in">Dragonfly</a>
+            <a href="https://baltaidaniel.github.io/dragonfly" class="header-logo-title dark">Dragonfly</a>
 
             <div class="h-sep-64"></div>
 
-            <div class="nav-btns-holder fade-in">
+            <div class="nav-btns-holder">
                 <a href="https://baltaidaniel.github.io/dragonfly/software" class="nav-btn dark">Software</a>
                 <a href="https://baltaidaniel.github.io/dragonfly/consulting" class="nav-btn dark active">Consulting</a>
                 <a href="https://baltaidaniel.github.io/dragonfly/entertainment" class="nav-btn dark">Entertainment</a>
                 <a href="https://baltaidaniel.github.io/dragonfly/about" class="nav-btn dark">About Us</a>
             </div>
 
-            <div class="nav-btns-holder-right fade-in">
+            <div class="nav-btns-holder-right">
                 <button class="nav-dropdown-btn dark" type="button" data-bs-toggle="collapse" data-bs-target="#topNavDropdown" aria-expanded="true" aria-controls="topNavDropdown" title="Tabs"><i class="bi-list"></i></button>
             </div>
 
@@ -87,8 +87,22 @@
     </header>
 
 
-    <section class="section-item-1 section-gradient-bg fade-in">
-        <h1 class="partnership-section-item-title font-weight-lighter dark-100 fade-in">Custom Software Solutions For Your Business Needs.</h1>
+    <section class="section-item-1 section-gradient-bg">
+        <h1 class="dark-100"><span class="fade-in" data-delay="300">You Define.</span> <span class="fade-in" data-delay="900">We Deliver.</span></h1>
+        <div class="v-sep-32"></div>
+        <h4 class="dark-100 fade-in" data-delay="1800">Dragonfly delivers custom solutions that help your business scale to its full potential.</h4>
+    </section>
+
+    <section class="section-item-1-v-fill">
+        <form id="consultingDescriptionForm">
+            <div class="v-sep-32"></div>
+            <h3 class="dark-100 text-center">Describe what you want</h3>
+            <div class="v-sep-32"></div>
+            <div class="h-flex nowrap width-100 gap-2">
+                <input id="descriptionInput" type="text" class="no-border width-100" style="height: 52px;" placeholder="I want a mobile app for my hair-making business..." required>
+                <button id="submitDescriptionBtn" class="primary-btn" style="display: inline-block; text-wrap: nowrap;"><i class="bi-arrow-right" style="width: 40px; aspect-ratio: 1.0;"></i></button>
+            </div>
+        </form>
     </section>
 
 
@@ -100,50 +114,25 @@
             <div class="what-we-do-item what-we-offer-img-1">
                 <div class="what-we-do-info-cont gap-2">
                     <h2 class="light-100">Software Development</h2>
-                    <h5 class="light-85">We are a creative technology company reinventing ways technology can benefit society at large by bridging the gap between old systems and access to modern technology.</h5>
-                </div>
-                <div class="h-flex" style="padding: 24px; justify-content: right; position: absolute;">
-                    <button class="light-100"><i class="bi-plus-circle" style="font-size: 40px;"></i></button>
+                    <h5 class="light-85">Get a custom mobile or desktop app that makes your work easier and grows with your business.</h5>
+                    <button class="primary-btn" id="swDevGetStartedBtn">Get Started</button>
                 </div>
             </div>
 
-            <div class="what-we-do-item what-we-offer-img-1">
-                <div class="what-we-do-info-cont gap-2">
-                    <h2 class="light-100">AI and Machine Learning Integration</h2>
-                    <h5 class="light-85">We are a creative technology company reinventing ways technology can benefit society at large by bridging the gap between old systems and access to modern technology.</h5>
-                </div>
-                <div class="h-flex" style="padding: 24px; justify-content: right; position: absolute;">
-                    <button class="light-100"><i class="bi-plus-circle" style="font-size: 40px;"></i></button>
-                </div>
-            </div>
-
-            <div class="what-we-do-item what-we-offer-img-1">
-                <div class="what-we-do-info-cont gap-2">
-                    <h2 class="light-100">Software Testing & QA</h2>
-                    <h5 class="light-85">We are a creative technology company reinventing ways technology can benefit society at large by bridging the gap between old systems and access to modern technology.</h5>
-                </div>
-                <div class="h-flex" style="padding: 24px; justify-content: right; position: absolute;">
-                    <button class="light-100"><i class="bi-plus-circle" style="font-size: 40px;"></i></button>
-                </div>
-            </div>
-
-            <div class="what-we-do-item what-we-offer-img-1">
+            <div class="what-we-do-item what-we-offer-img-2">
                 <div class="what-we-do-info-cont gap-2">
                     <h2 class="light-100">Web Development</h2>
-                    <h5 class="light-85">We are a creative technology company reinventing ways technology can benefit society at large by bridging the gap between old systems and access to modern technology.</h5>
-                </div>
-                <div class="h-flex" style="padding: 24px; justify-content: right; position: absolute;">
-                    <button class="light-100"><i class="bi-plus-circle" style="font-size: 40px;"></i></button>
+                    <h5 class="light-85">Reach more customers with a fast, responsive website that represents your brand.</h5>
+                    <button class="primary-btn" id="webDevGetStartedBtn">Get Started</button>
                 </div>
             </div>
 
-            <div class="what-we-do-item what-we-offer-img-1">
+            <div class="what-we-do-item what-we-offer-img-3">
                 <div class="what-we-do-info-cont gap-2">
-                    <h2 class="light-100">IT Strategy & Performance</h2>
-                    <h5 class="light-85">We are a creative technology company reinventing ways technology can benefit society at large by bridging the gap between old systems and access to modern technology.</h5>
-                </div>
-                <div class="h-flex" style="padding: 24px; justify-content: right; position: absolute;">
-                    <button class="light-100"><i class="bi-plus-circle" style="font-size: 40px;"></i></button>
+                    <h2 class="light-100">IT Systems Installation</span></h2>
+                    <p class="light-85"><i class="bi-info-circle" style="width: 40px; height: 40px;"></i>  Only in certain locations</p>
+                    <h5 class="light-85">Set up reliable networks and infrastructure so your team can work securely and without delays.</h5>
+                    <button class="primary-btn" id="itSysInstallationGetStartedBtn">Get Started</button>
                 </div>
             </div>
         </section>
@@ -159,7 +148,7 @@
             <div class="v-flex spad-l-s grid-item-1">
                 <h3 class="about-section-item-title dark-100">Accountability</h3>
                 <div class="v-sep-16"></div>
-                <h6 class="about-section-item-subtext dark-55">We honor commitments—delivering projects on schedule, within scope, and to the agreed standards.</h6>
+                <h6 class="about-section-item-subtext dark-55">We take responsibility — monitor progress, flag issues early, and make fixes to meet deadlines and standards.</h6>
             </div>
 
             <div class="v-flex spad-l-s grid-item-3">
@@ -171,7 +160,7 @@
             <div class="v-flex spad-l-s grid-item-3">
                 <h3 class="about-section-item-title dark-100">Agile Progress</h3>
                 <div class="v-sep-16"></div>
-                <h6 class="about-section-item-subtext dark-55">Measurable progress every sprint — real work you can see, test, and steer.</h6>
+                <h6 class="about-section-item-subtext dark-55">Visible progress each cycle — real work you can see, test, and steer.</h6>
             </div>
 
             <div class="v-flex spad-l-s grid-item-3">
@@ -183,7 +172,7 @@
             <div class="v-flex spad-l-s grid-item-3">
                 <h3 class="about-section-item-title dark-100">Transparency</h3>
                 <div class="v-sep-16"></div>
-                <h6 class="about-section-item-subtext dark-55">Clients have full visibility into work, costs, and timelines via shared repositories, time tracking, and clear contracts.</h6>
+                <h6 class="about-section-item-subtext dark-55">You have full visibility into work, costs, and timelines via shared project files, time tracking, and clear contracts.</h6>
             </div>
         </section>
     
@@ -192,7 +181,7 @@
 
 
 
-    <section class="section-item-1" id="contact-form">
+    <section class="section-item-1" id="contactForm">
         <h1 class="dark-100">Let's Get Started</h1>
         <div class="v-sep-8"></div>
         <p class="partnership-section-item-subtext">Kindly fill out the form below.</p>
@@ -325,13 +314,13 @@
                 <div class="v-sep-32"></div>
                 <div class="v-flex width-100">
                     <h4 class="dark-55 font-weight-bold">03.</h4>
-                    <h6 class="dark-75">Schedule a 30–60 minute discovery call to confirm goals, scope, timeline, and budget.</h6>
+                    <h6 class="dark-75">A 30–60 minute discovery call is scheduled to confirm goals, scope, timeline, and budget.</h6>
                 </div>
             
                 <div class="v-sep-32"></div>
                 <div class="v-flex width-100">
                     <h4 class="dark-55 font-weight-bold">04.</h4>
-                    <h6 class="dark-75">Send requested documents; we confirm details.</h6>
+                    <h6 class="dark-75">You send requested documents; we confirm details.</h6>
                 </div>
             
                 <div class="v-sep-32"></div>
@@ -343,13 +332,13 @@
                 <div class="v-sep-32"></div>
                 <div class="v-flex width-100">
                     <h4 class="dark-55 font-weight-bold">06.</h4>
-                    <h6 class="dark-75">Review and finalize the proposal; sign the contract and pay the deposit if required.</h6>
+                    <h6 class="dark-75">You review and finalize the proposal; you sign the contract and pay the deposit if required.</h6>
                 </div>
 
                 <div class="v-sep-32"></div>
                 <div class="v-flex width-100">
                     <h4 class="dark-55 font-weight-bold">07.</h4>
-                    <h6 class="dark-75">Attend the kickoff meeting and complete onboarding.</h6>
+                    <h6 class="dark-75">You attend the kickoff meeting and complete onboarding.</h6>
                 </div>
 
                 <div class="v-sep-32"></div>
@@ -361,7 +350,7 @@
                 <div class="v-sep-32"></div>
                 <div class="v-flex width-100">
                     <h4 class="dark-55 font-weight-bold">09.</h4>
-                    <h6 class="dark-75">Review final deliverables and approve for final payment.</h6>
+                    <h6 class="dark-75">You review final deliverables and approve for final payment.</h6>
                 </div>
             
                 <div class="v-sep-32"></div>
@@ -403,6 +392,45 @@
     <script src="js/form.js"></script>
     <script src="js/consulting-form.js"></script>
     <script src="js/base-footer.js"></script>
+
+    <script>
+        const descriptionForm = document.getElementById('consultingDescriptionForm');
+        const descriptionInput = document.getElementById('descriptionInput');
+        const formMessage = document.getElementById('formMessage');
+        const formSubject = document.getElementById('formSubject');
+
+        descriptionForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            formMessage.innerHTML = descriptionInput.value;
+            document.querySelector('#contactForm').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+        
+
+
+        const swDevGetStartedBtn = document.getElementById('swDevGetStartedBtn');
+        const webDevGetStartedBtn = document.getElementById('webDevGetStartedBtn');
+        const itSysInstallationGetStartedBtn = document.getElementById('itSysInstallationGetStartedBtn');
+
+        swDevGetStartedBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            formSubject.value = 'Software Development';
+            formMessage.innerHTML = 'I need a mobile and/or desktop software for...';
+            document.querySelector('#contactForm').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        })
+        webDevGetStartedBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            formSubject.value = 'Web Development';
+            formMessage.innerHTML = 'I need a website for...';
+            document.querySelector('#contactForm').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        })
+        itSysInstallationGetStartedBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            formSubject.value = 'IT Systems Installation';
+            formMessage.innerHTML = 'I need my IT systems set up so my team can work reliably and securely.';
+            document.querySelector('#contactForm').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        })
+    </script>
 
 
 </body>

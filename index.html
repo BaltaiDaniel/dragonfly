@@ -42,23 +42,23 @@
 	<header class="navbar" id="navbarSelect">
 		<div class="navbar-holder">
 			<div class="header-logo-container">
-				<a href="https://baltaidaniel.github.io/dragonfly"><img src="img/logo-light.png" class="fade-in" id="header-logo-img" alt="Dragonfly Logo"></a>
+				<a href="https://baltaidaniel.github.io/dragonfly"><img src="img/logo-light.png" id="header-logo-img" alt="Dragonfly Logo"></a>
 			</div>
 
-			<a href="https://baltaidaniel.github.io/dragonfly" class="header-logo-title fade-in">Dragonfly</a>
+			<a href="https://baltaidaniel.github.io/dragonfly" class="header-logo-title">Dragonfly</a>
 
 			<div class="h-sep-64"></div>
 
-			<div class="nav-btns-holder fade-in">
+			<div class="nav-btns-holder">
             	<a href="https://baltaidaniel.github.io/dragonfly/software" class="nav-btn">Software</a>
             	<a href="https://baltaidaniel.github.io/dragonfly/consulting" class="nav-btn">Consulting</a>
             	<a href="https://baltaidaniel.github.io/dragonfly/entertainment" class="nav-btn">Entertainment</a>
             	<a href="https://baltaidaniel.github.io/dragonfly/about" class="nav-btn">About Us</a>
 			</div>
 
-			<div class="nav-btns-holder-right fade-in">
-                <a href="https://baltaidaniel.github.io/dragonfly/auth" class="nav-btn-icon" style="padding: 0;"><i class="bi-person-circle" style="font-size: 24px;"></i></a>
-                
+			<div class="nav-btns-holder-right">
+                <a href="https://baltaidaniel.github.io/dragonfly/auth" class="nav-btn-icon" id="accountBtn" style="padding: 0;"><i class="bi-person-circle" style="font-size: 24px;"></i></a>
+
 				<button class="nav-dropdown-btn" type="button" data-bs-toggle="collapse" data-bs-target="#topNavDropdown" aria-expanded="true" aria-controls="topNavDropdown" title="Tabs"><i class="bi-list"></i></button>
 			</div>
 		</div>
@@ -80,54 +80,20 @@
 	<section class="section-hero-item">
 		<div class="hero-img hero-img-1"></div>
 		<div class="hero-overlay"></div>
+		<div class="hero-overlay-darkened-top"></div>
 		
-		<div class="meta-box-hero fade-in">
-			<div class="row">
-				<img src="img/software/zeno-legends-icon.png" class="software-img">
-				<div class="h-sep-16"></div>
-				<div>
-					<h1 class="hero-item-title">Zeno Legends</h1>
-					<p class="hero-item-subtext light-85">Epic adventure.</p>
-				</div>
-			</div>
-			<a href="https://baltaidaniel.github.io/dragonfly/get/zenolegends" class="hero-download-btn fade-in" alt="Download Zeno Legends by Dragonfly.">Get the game <i class="bi-arrow-right"></i></a>
-		</div>
-
-	</section>
-
-
-
-	<section class="section-hero-item">
-		<div class="hero-img hero-img-2"></div>
-		<div class="hero-overlay"></div>
-		<div class="meta-box-hero fade-in">
-			<div class="row">
-				<img src="img/software/randomizer-icon.png" class="software-img">
-				<div class="h-sep-16"></div>
-				<div>
-					<h1 class="hero-item-title">Randomizer</h1>
-					<h4 class="hero-item-subtext light-85">Generate random values.</h4>
-				</div>
-			</div>
-			<a href="https://baltaidaniel.github.io/dragonfly/get/randomizer" class="hero-download-btn fade-in" alt="Download the Randomizer app.">Get the app <i class="bi-arrow-right"></i></a>
-		</div>
-	</section>
-
-
-	<section class="section-hero-item">
-		<div class="hero-img hero-img-3"></div>
-		<div class="hero-overlay"></div>
-		<div class="meta-box-hero fade-in">
+		<div class="meta-box-hero">
 			<div class="row">
 				<img src="img/software/hom-rnl-icon.png" class="software-img">
 				<div class="h-sep-16"></div>
 				<div>
-					<h1 class="hero-item-title fade-in">Home Rentals</h1>
-					<h4 class="hero-item-subtext light-85">Rent a home.</h4>
+					<h1 class="hero-item-title">Home Rentals</h1>
+					<h4 class="hero-item-subtext light-85">Rent a home</h4>
 				</div>
 			</div>
-			<a href="https://baltaidaniel.github.io/dragonfly/software#homerentals" class="hero-download-btn fade-in" alt="Download the Home Rentals app.">Get the app <i class="bi-arrow-right"></i></a>
+			<a href="https://baltaidaniel.github.io/dragonfly/software#homerentals" class="hero-download-btn" alt="Download the Home Rentals app.">Get the app <i class="bi-arrow-right"></i></a>
 		</div>
+
 	</section>
 
 
@@ -153,7 +119,7 @@
 		        </div>
 				
 				<div class="v-flex">
-					<button class="primary-btn" id="emailSubmitBtn" type="submit">Subscribe</button>
+					<button class="primary-btn" id="emailSubmitBtn" type="submit" onclick="userAuth.login()">Subscribe</button>
 				</div>
 			
 			</div>
@@ -189,9 +155,9 @@
 	<!-- Js Plugins -->
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/jquery.slicknav.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/cookies.js"></script>
+	<script src="js/account.js"></script>
 	<script src="js/newsletter-form.js"></script>
 	<script src="js/base-footer.js"></script>
 

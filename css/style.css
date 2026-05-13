@@ -31,7 +31,7 @@ body {
 	background: #100028;
 	-webkit-font-smoothing: antialiased;
 	font-smooth: always;
-	/*scroll-behavior: smooth;*/
+	scroll-behavior: unset;
 }
 
 
@@ -454,6 +454,22 @@ ol {
 
 
 
+.input-holder {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: var(--default-border-radius);
+	background: transparent;
+	color: #000;
+	padding: 8px;
+	transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+}
+
+.input-holder:focus {
+	color: #000;
+	border: 1px solid var(--accent-color);
+}
+
+
+
 input {
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	border-radius: var(--default-border-radius);
@@ -470,6 +486,21 @@ input:placeholder {
 input:focus {
 	color: #000;
 	border: 1px solid var(--accent-color);
+}
+
+
+input .no-border {
+	border: none;
+	border-radius: var(--default-border-radius);
+	background: transparent;
+	color: #000;
+	padding: 8px;
+	transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+}
+
+input .no-border:focus {
+	color: #000;
+	border: none;
 }
 
 
@@ -2154,9 +2185,15 @@ button:focus:not(:focus-visible) {
 }
 
 .hero-overlay {
-	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
 	width: inherit;
 	height: inherit;
+	position: absolute;
+}
+.hero-overlay-darkened-top {
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+	width: inherit;
+	height: 20%;
 	position: absolute;
 }
 
@@ -2164,15 +2201,15 @@ button:focus:not(:focus-visible) {
 
 
 .hero-img-1 {
-	background-image: url('../img/software/zeno-legends-showcase-1.png');
+	background-image: url('../img/software/hom-rnl-showcase-1.png');
 }
 
 .hero-img-2 {
-	background-image: url('../img/software/randomizer-showcase-1.png');
+	background-image: url('../img/software/zeno-legends-showcase-1.png');
 }
 
 .hero-img-3 {
-	background-image: url('../img/software/hom-rnl-showcase-1.png');
+	background-image: url('../img/software/randomizer-showcase-1.png');
 }
 
 /*@media(max-width: 1024px) {
@@ -2404,19 +2441,29 @@ button:focus:not(:focus-visible) {
 	color: #ccc;
 	background: transparent;
 	font-size: 20px;
+	aspect-ratio: 1.0;
+	width: 32px;
+	height: 32px;
 	text-align: center;
 	padding: 8px 0 8px 0;
 	align-content: center;
 	display: block;
 	border-radius: var(--default-border-radius);
+	overflow: hidden;
 	margin: 2px;
 	border: 2px transparent;
 	transition: all 0.3s;
+}
+.nav-btn-icon img {
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
 }
 
 .nav-btn-icon:hover {
 	color: var(--accent-color);
 }
+
 
 
 .nav-btn-icon.dark {

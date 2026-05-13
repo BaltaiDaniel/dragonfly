@@ -1,6 +1,6 @@
 'use strict';
 
-const form = document.getElementById('contactForm');
+const form = document.getElementById('consultingForm');
 
 const fullNameInput = document.getElementById('formFullName');
 const emailInput = document.getElementById('formEmail');
@@ -11,7 +11,7 @@ const companyAddressInput = document.getElementById('formCompanyAddress');
 const subjectInput = document.getElementById('formSubject');
 const messageInput = document.getElementById('formMessage');
 
-const submitButton = document.getElementById('formSubmitBtn');
+const submitButton = document.getElementById('submitBtn');
 
 
 const fullNameErrorCont = document.getElementById('fullNameErrorCont');

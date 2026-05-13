@@ -4,7 +4,7 @@ class CookieNoticeManager {
         this.consentGiven = false;
         this.cookieSettings = {
             necessary: true, // Always true
-            functional: false,
+            functional: true,
             analytics: false,
             marketing: false
         };
