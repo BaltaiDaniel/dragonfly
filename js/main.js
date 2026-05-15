@@ -16,9 +16,6 @@
 
 					setTimeout(() => {
 						entry.target.classList.add('show');
-						// if (hideOnComplete) {
-						// 	entry.target.style.display = 'none';
-						// }
 					}, delay);
 					
 					observer.unobserve(entry.target);
@@ -42,25 +39,16 @@
 
 	function update(){
 		const y = window.scrollY || window.pageYOffset;
-		// if (y >= THRESHOLD) navbar.classList.add('compact');
-		// else navbar.classList.remove('compact');
 		
 		if (y >= THRESHOLD) {
 			navbar.classList.add('compact');
 			topNavDropdown.classList.add('transp');
-			// topNavDropdown.style.background = 'transparent';
 		}
 		else {
 			navbar.classList.remove('compact');
 			topNavDropdown.classList.remove('transp');
-			// topNavDropdown.style.background = '#33333388';
 		}
 		
-		// For Navbar dropdown
-		// if (y >= THRESHOLD) topNavDropdown.classList.add('transparent');
-		// else topNavDropdown.classList.remove('transparent');
-		//
-
 		ticking = false;
 	}
 
@@ -75,10 +63,7 @@
 
 	window.addEventListener('scroll', onScroll, {passive:true});
 	
-	// init on load
 	update();
-
-
 
 
 
@@ -88,11 +73,8 @@
 
 
 
-	if (!dropdown) return console.warn('No #topNavDropdown found');
+	if (!dropdown) return;
 
-	function debug(...args){ console.log('[nav-dropdown]', ...args); }
-
-	// Helper to get pointer coordinates
 	function getXY(e){
 	const t = e.touches?.[0] ?? e.changedTouches?.[0];
 	return {
@@ -101,7 +83,6 @@
 	};
 	}
 
-	// Returns true if the point (from event) is inside element (or its descendants)
 	function pointInside(el, e){
 	const {x, y} = getXY(e);
 	const hit = document.elementFromPoint(x, y);
@@ -110,46 +91,34 @@
 
 	// Main handler
 	function onPointerDown(e){
-	// Only act if dropdown is visible (Bootstrap adds .show)
-	if (!dropdown.classList.contains('show')) return;
+		if (!dropdown.classList.contains('show')) return;
 
-	const { x, y } = getXY(e);
-	const rect = dropdown.getBoundingClientRect();
-	debug('event at', x, y, 'dropdown rect', rect);
+		const { x, y } = getXY(e);
+		const rect = dropdown.getBoundingClientRect();
 
-	// If pointer is inside dropdown or toggle, do nothing
-	if (pointInside(dropdown, e) || (toggle && pointInside(toggle, e))) {
-	  debug('inside dropdown or toggle — ignore');
-	  return;
+		if (pointInside(dropdown, e) || (toggle && pointInside(toggle, e))) {
+		  return;
+		}
+
+		if (y < rect.top || y > rect.bottom) {
+		  const inst = window.bootstrap?.Collapse?.getInstance?.(dropdown);
+		  if (inst) inst.hide();
+		  else {
+		    dropdown.classList.remove('show');
+		    dropdown.setAttribute('aria-hidden', 'true');
+		    if (toggle) toggle.setAttribute('aria-expanded', 'false');
+		  }
+		}
 	}
 
-	// Close when pointer is outside dropdown's vertical bounds
-	if (y < rect.top || y > rect.bottom) {
-	  debug('outside bounds — closing');
-	  // Prefer existing Bootstrap instance if present
-	  const inst = window.bootstrap?.Collapse?.getInstance?.(dropdown);
-	  if (inst) inst.hide();
-	  else {
-	    dropdown.classList.remove('show');
-	    dropdown.setAttribute('aria-hidden', 'true');
-	    if (toggle) toggle.setAttribute('aria-expanded', 'false');
-	  }
-	} else {
-	  debug('within vertical bounds — ignore');
-	}
-	}
 
-	// Use pointerdown; try non-passive so elementFromPoint works consistently on iOS
 	document.addEventListener('pointerdown', onPointerDown, { passive: false });
 
-	// Useful debug listeners you can remove later
+
 	document.addEventListener('pointerdown', e => debug('global pointerdown', e.type, getXY(e)), { passive: true });
 
 
 
-
-
-	// Close on Escape
 	document.addEventListener('keydown', (e) => {
 	  if (e.key !== 'Escape' && e.key !== 'Esc') return;
 	  // Only act if dropdown is visible
@@ -162,10 +131,6 @@
 	    if (toggle) toggle.setAttribute('aria-expanded', 'false');
 	  }
 	});
-
-
-
-
 
 
 
@@ -213,15 +178,3 @@
 
 
 })(jQuery);
-
-
-
-
-
-
-
-
-
-
-
-

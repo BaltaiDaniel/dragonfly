@@ -1,4 +1,3 @@
-// Cookie Notice Manager
 class CookieNoticeManager {
     constructor() {
         this.consentGiven = false;
@@ -16,7 +15,7 @@ class CookieNoticeManager {
         this.setupEventListeners();
     }
 
-    // Check if user has already given consent
+
     checkConsent() {
         const consent = this.getCookie('cookie_consent');
         if (consent) {
@@ -34,7 +33,7 @@ class CookieNoticeManager {
         }
     }
 
-    // Show cookie notice
+
     showCookieNotice() {
         const notice = document.getElementById('cookie-consent');
         if (notice) {
@@ -59,7 +58,7 @@ class CookieNoticeManager {
         }
     }
 
-    // Hide cookie notice
+
     hideCookieNotice() {
         const notice = document.getElementById('cookie-consent');
         if (notice) {
@@ -67,51 +66,43 @@ class CookieNoticeManager {
         }
     }
 
-    // Setup event listeners
+
     setupEventListeners() {
-        // Accept all button
         const acceptBtn = document.getElementById('cookie-accept-all');
         if (acceptBtn) {
             acceptBtn.addEventListener('click', () => this.acceptAll());
         }
 
-        // Accept necessary button
         const acceptNecessaryBtn = document.getElementById('cookie-accept-necessary');
         if (acceptNecessaryBtn) {
             acceptNecessaryBtn.addEventListener('click', () => this.acceptNecessary());
         }
 
-        // Decline all button
         const declineBtn = document.getElementById('cookie-decline-btn');
         if (declineBtn) {
             declineBtn.addEventListener('click', () => this.declineAll());
         }
 
-        // Settings button
         const settingsBtn = document.getElementById('cookie-settings-btn');
         if (settingsBtn) {
             settingsBtn.addEventListener('click', () => this.showSettingsModal());
         }
 
-        // Settings modal close
         const closeBtn = document.querySelector('.cookie-settings-close');
         if (closeBtn) {
             closeBtn.addEventListener('click', () => this.hideSettingsModal());
         }
 
-        // Save preferences
         const saveBtn = document.getElementById('save-preferences');
         if (saveBtn) {
             saveBtn.addEventListener('click', () => this.savePreferences());
         }
 
-        // Accept all from settings
         const acceptAllSettings = document.getElementById('accept-all-settings');
         if (acceptAllSettings) {
             acceptAllSettings.addEventListener('click', () => this.acceptAll());
         }
 
-        // Close modal when clicking outside
         const modal = document.getElementById('cookie-settings-modal');
         if (modal) {
             modal.addEventListener('click', (e) => {
@@ -121,11 +112,10 @@ class CookieNoticeManager {
             });
         }
 
-        // Update settings modal with current values
         this.updateSettingsModalValues();
     }
 
-    // Accept all cookies
+
     acceptAll() {
         this.cookieSettings = {
             necessary: true,
@@ -137,10 +127,9 @@ class CookieNoticeManager {
         this.applyCookieSettings();
         this.hideCookieNotice();
         this.hideSettingsModal();
-        // this.showNotification('Cookie preferences saved successfully!');
     }
 
-    // Accept necessary cookies
+
     acceptNecessary() {
         this.cookieSettings = {
             necessary: true,
@@ -152,10 +141,9 @@ class CookieNoticeManager {
         this.applyCookieSettings();
         this.hideCookieNotice();
         this.hideSettingsModal();
-        // this.showNotification('Cookie preferences saved successfully!');
     }
 
-    // Decline all non-essential cookies
+
     declineAll() {
         this.cookieSettings = {
             necessary: true,
@@ -170,9 +158,8 @@ class CookieNoticeManager {
         this.showNotification('Only necessary cookies are enabled.');
     }
 
-    // Save user preferences
+
     savePreferences() {
-        // Get values from settings modal
         const functionalCheckbox = document.getElementById('settings-functional');
         const analyticsCheckbox = document.getElementById('settings-analytics');
         const marketingCheckbox = document.getElementById('settings-marketing');
@@ -191,7 +178,7 @@ class CookieNoticeManager {
         this.showNotification('Cookie preferences saved successfully!');
     }
 
-    // Save consent to cookie
+
     saveConsent() {
         const consentValue = JSON.stringify(this.cookieSettings);
         this.setCookie('cookie_consent', consentValue, 365); // Expires in 1 year
@@ -203,37 +190,33 @@ class CookieNoticeManager {
         this.setCookie('marketing_enabled', this.cookieSettings.marketing, 365);
     }
 
-    // Apply cookie settings to website
+
     applyCookieSettings() {
-        // Apply analytics cookies
         if (this.cookieSettings.analytics) {
             this.enableAnalytics();
         } else {
             this.disableAnalytics();
         }
 
-        // Apply marketing cookies
         if (this.cookieSettings.marketing) {
             this.enableMarketing();
         } else {
             this.disableMarketing();
         }
 
-        // Apply functional cookies
         if (this.cookieSettings.functional) {
             this.enableFunctional();
         } else {
             this.disableFunctional();
         }
 
-        // Dispatch custom event for other scripts to listen to
         const event = new CustomEvent('cookieConsentUpdated', { 
             detail: this.cookieSettings 
         });
         document.dispatchEvent(event);
     }
 
-    // Show settings modal
+
     showSettingsModal() {
         const modal = document.getElementById('cookie-settings-modal');
         if (modal) {
@@ -243,7 +226,7 @@ class CookieNoticeManager {
         }
     }
 
-    // Hide settings modal
+
     hideSettingsModal() {
         const modal = document.getElementById('cookie-settings-modal');
         if (modal) {
@@ -252,7 +235,7 @@ class CookieNoticeManager {
         }
     }
 
-    // Update settings modal checkboxes with current values
+
     updateSettingsModalValues() {
         const functionalCheckbox = document.getElementById('settings-functional');
         const analyticsCheckbox = document.getElementById('settings-analytics');
@@ -262,7 +245,6 @@ class CookieNoticeManager {
         if (analyticsCheckbox) analyticsCheckbox.checked = this.cookieSettings.analytics;
         if (marketingCheckbox) marketingCheckbox.checked = this.cookieSettings.marketing;
 
-        // Update main notice checkboxes if they exist
         const mainFunctional = document.getElementById('functional-cookies');
         const mainAnalytics = document.getElementById('analytics-cookies');
         const mainMarketing = document.getElementById('marketing-cookies');
@@ -272,23 +254,20 @@ class CookieNoticeManager {
         if (mainMarketing) mainMarketing.checked = this.cookieSettings.marketing;
     }
 
-    // Enable analytics
+
     enableAnalytics() {
-        // Add your analytics initialization code here
-        // Example: Google Analytics
+        // Analytics initialization code
         if (typeof gtag !== 'undefined') {
             gtag('consent', 'update', {
                 'analytics_storage': 'granted'
             });
         }
         
-        // Load analytics scripts if needed
         this.loadAnalyticsScript();
     }
 
-    // Disable analytics
+
     disableAnalytics() {
-        // Disable analytics tracking
         if (typeof gtag !== 'undefined') {
             gtag('consent', 'update', {
                 'analytics_storage': 'denied'
@@ -296,7 +275,7 @@ class CookieNoticeManager {
         }
     }
 
-    // Enable marketing
+
     enableMarketing() {
         if (typeof gtag !== 'undefined') {
             gtag('consent', 'update', {
@@ -307,7 +286,7 @@ class CookieNoticeManager {
         }
     }
 
-    // Disable marketing
+
     disableMarketing() {
         if (typeof gtag !== 'undefined') {
             gtag('consent', 'update', {
@@ -318,19 +297,18 @@ class CookieNoticeManager {
         }
     }
 
-    // Enable functional
+
     enableFunctional() {
         // Enable functionality that requires cookies
-        // Example: Load user preferences, themes, etc.
         this.loadUserPreferences();
+        // this.loadTheme();
     }
 
-    // Disable functional
     disableFunctional() {
-        // Disable non-essential functionality
+        // this.disableTheme();
     }
 
-    // Load analytics script
+
     loadAnalyticsScript() {
         // Check if analytics script already loaded
         if (!document.querySelector('#analytics-script') && this.cookieSettings.analytics) {
@@ -348,22 +326,16 @@ class CookieNoticeManager {
         }
     }
 
-    // Load user preferences
+
     loadUserPreferences() {
-        // Load saved user preferences from cookies
-        const theme = this.getCookie('user_theme');
         const language = this.getCookie('user_language');
-        
-        if (theme) {
-            document.body.classList.add(`theme-${theme}`);
-        }
         
         if (language) {
             // Apply language preference
         }
     }
 
-    // Show notification
+
     showNotification(message) {
         const notification = document.createElement('div');
         notification.className = 'cookie-notification';
@@ -389,7 +361,7 @@ class CookieNoticeManager {
         }, 3000);
     }
 
-    // Cookie utility functions
+
     setCookie(name, value, days) {
         const expires = new Date();
         expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
@@ -407,7 +379,7 @@ class CookieNoticeManager {
         return null;
     }
 
-    // Reset consent (for testing/debugging)
+
     resetConsent() {
         this.setCookie('cookie_consent', '', -1);
         this.cookieSettings = {
@@ -419,11 +391,10 @@ class CookieNoticeManager {
         this.consentGiven = false;
         this.showCookieNotice();
         this.updateSettingsModalValues();
-        console.log('Cookie consent reset');
     }
 }
 
-// Add CSS animations
+
 const style = document.createElement('style');
 style.textContent = `
     @keyframes slideInRight {
@@ -450,12 +421,12 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Initialize cookie notice when DOM is ready
+
 document.addEventListener('DOMContentLoaded', () => {
     window.cookieManager = new CookieNoticeManager();
 });
 
-// Optional: Add a floating button to reset consent (for testing)
+
 function resetCookieConsent() {
     if (window.cookieManager) {
         window.cookieManager.resetConsent();
