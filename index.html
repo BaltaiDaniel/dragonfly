@@ -59,12 +59,12 @@
 			<div class="nav-btns-holder-right">
                 <a href="https://baltaidaniel.github.io/dragonfly/auth" class="nav-btn-icon" id="accountBtn" style="padding: 0;"><i class="bi-person-circle" style="font-size: 24px;"></i></a>
 
-				<button class="nav-dropdown-btn" type="button" data-bs-toggle="collapse" data-bs-target="#topNavDropdown" aria-expanded="true" aria-controls="topNavDropdown" title="Tabs"><i class="bi-list"></i></button>
+				<button id="topNavToggle" class="nav-dropdown-btn" type="button" data-bs-toggle="collapse" data-bs-target="#topNavDropdown" aria-expanded="true" aria-controls="topNavDropdown" title="Tabs"><i class="bi-list"></i></button>
 			</div>
 		</div>
 
-        <div id="topNavDropdown" class="accordion-collapse collapse dark-80" aria-labelledby="topNavDropdown" data-bs-parent="#accordionGeneral">
-            <div class="accordion-body">
+        <div id="topNavDropdown" class="accordion-collapse collapse accordion-cont" aria-labelledby="topNavDropdown" data-bs-parent="#accordionGeneral">
+            <div class="accordion-body-navbar">
             	<div class="nav-sect-mobile">
 	            	<a href="https://baltaidaniel.github.io/dragonfly/software" class="nav-btn mobile">Software</a>
 	            	<a href="https://baltaidaniel.github.io/dragonfly/consulting" class="nav-btn mobile">Consulting</a>
@@ -73,73 +73,30 @@
             	</div>
             </div>
         </div>
-
 	</header>
 
 
-	<!-- 🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧 -->
-	<!-- <section class="section-hero-item" style="background: black; height: 100vh;">
-		<section style="position: absolute; width: 100vw; height: auto; margin-top: 20vh;">
-			<div class="v-flex text-center" style="justify-content: center; background: black;">
+
+	<section class="section-hero-item">
+		<div class="section-hero-cont">
+			<div class="v-flex text-center">
 				<h1 class="light-100">Home Rentals</h1>
-				<h6 class="text-muted">Rent a home</h6>
-			</div>
-		</section>
-
-		<section class="section-hero-item h-flex" style="position: absolute; width: 80vw; height: 100vh; border-radius: 16px; margin-top: 300px;">
-			<div class="hero-img hero-img-1" style="justify-self: center;"></div>
-			<div class="hero-overlay"></div>
-		</section>
-	</section> -->
-
-
-	<section class="section-hero-item" style="background: black; height: auto; padding-bottom: 32px;">
-		<div style="width: 100vw; height: 30vh; margin-top: 28vh;">
-			<div class="v-flex text-center" style="justify-content: center; background: black;">
-				<h1 class="light-100">Home Rentals</h1>
-				<h4 class="text-muted">Rent a home</h4>
+				<h4 class="light-85">Rent a home</h4>
 				<div class="v-sep-24"></div>
 				<div class="h-flex" style="justify-content: center;">
-					<button class="primary-btn">Get the App</button>
+					<a href="https://baltaidaniel.github.io/dragonfly/software#homerentals" class="hero-download-btn flex-center" alt="Download the Home Rentals app.">Get the app <i class="bi-arrow-right"></i></a>
 				</div>
 			</div>
 		</div>
 
-		<section class="section-hero-item h-flex" style="display: flex; place-self: center; justify-content: center; width: 80vw; height: 100vh; border-radius: 16px; top: 200px;">
-			<div class="hero-img hero-img-1" style="justify-self: center; border-radius: 16px; width: 80vw;"></div>
+		<section class="section-hero-item-special h-flex">
+			<div class="hero-img hero-img-1"></div>
 		</section>
 	</section>
-	<!-- 🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧 -->
 
-
-
-
-
-
-
-
-	<!-- <section class="section-hero-item">
-		<div class="hero-img hero-img-1"></div>
-		<div class="hero-overlay"></div>
-		<div class="hero-overlay-darkened-top"></div>
-		
-		<div class="meta-box-hero">
-			<div class="row">
-				<img src="img/software/hom-rnl-icon.png" class="software-img">
-				<div class="h-sep-16"></div>
-				<div>
-					<h1 class="hero-item-title">Home Rentals</h1>
-					<h4 class="hero-item-subtext light-85">Rent a home</h4>
-				</div>
-			</div>
-			<a href="https://baltaidaniel.github.io/dragonfly/software#homerentals" class="hero-download-btn" alt="Download the Home Rentals app.">Get the app <i class="bi-arrow-right"></i></a>
-		</div>
-
-	</section> -->
 
 
 	<section class="section-item-1-v-fill">
-		<div class="v-sep-64"></div>
 		<div class="v-sep-64"></div>
 		<h4 class="section-item-title dark-55">Get news and updates about Dragonfly</h4>
 		<div class="v-sep-24"></div>
@@ -175,7 +132,6 @@
 				<p class="dark-55">Your subscription is subject to our <a href="https://baltaidaniel.github.io/dragonfly/terms" class="blue">Terms</a> and <a href="https://baltaidaniel.github.io/dragonfly/pp" class="blue">Privacy Policy</a>.</p>
 			</div>
 		</form>
-
 	</section>
 
 
@@ -193,7 +149,7 @@
     <!-- Footer Section End -->
 
 
-	<!-- Js Plugins -->
+
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/main.js"></script>

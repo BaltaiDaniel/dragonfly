@@ -1590,11 +1590,51 @@ textarea:focus {
 
 
 .section-hero-item {
+    height: auto;
+    width: 100vw;
+    padding-bottom: 32px;
+    background: black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    gap: 32px;
+}
+
+@media(max-width: 760px) {
+	.section-hero-item {
+	    height: 780px;
+	}
+}
+
+.section-hero-cont {
+    height: 30vh;
+    width: 100vw;
+    margin-top: 27vh;
+}
+
+.section-hero-item-fill {
     height: 100vh;
     width: 100vw;
     background: black;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    gap: 32px;
+}
+
+.section-hero-item-special {
+    display: flex;
+    place-self: center;
+    height: 100vh;
+    width: 80vw;
+    border-radius: 16px;
+    top: 200px;
+    background: black;
+    overflow: hidden;
     flex-direction: column;
     align-items: stretch;
     justify-content: stretch;
@@ -2104,8 +2144,80 @@ textarea:focus {
 
 
 /*---------------------------------------
-  FAQ ACCORDION               
+  ACCORDION               
 -----------------------------------------*/
+.accordion-cont {
+	background: #33333388;
+	backdrop-filter: blur(8px);
+	/*height: 100vh;*/
+	transition: all 0.3s ease;
+}
+
+.accordion-cont.light {
+	background: #ffffff88;
+}
+
+.transp {
+	background: transparent;
+	backdrop-filter: none;
+	transition: all 0.3s ease;
+}
+
+
+
+
+
+
+/*.nav-dropdown-btn{
+  width: 40px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.icon-lines{
+  position: relative;
+  width: 22px;
+  height: 16px;
+  display: inline-block;
+}
+
+.line{
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: currentColor;
+  transition: transform 240ms ease, opacity 180ms ease;
+}
+
+.l1{ top: 0; }
+.l2{ top: 7px; }
+.l3{ top: 14px; }
+
+.nav-dropdown-btn.active .l1{
+  transform: translateY(7px) rotate(45deg);
+}
+.nav-dropdown-btn.active .l2{
+  opacity: 0;
+  transform: scaleX(0.2);
+}
+.nav-dropdown-btn.active .l3{
+  transform: translateY(-7px) rotate(-45deg);
+}
+*/
+
+
+
+
+
+
+
 .accordion-item {
   background-color: transparent;
   border-top: 0;
@@ -2154,6 +2266,13 @@ button:focus:not(:focus-visible) {
 .accordion-body {
   padding: 0;
   margin: 12px 0 24px 0;
+  height: auto;
+}
+
+.accordion-body-navbar {
+  padding: 0;
+  margin: 12px 0 24px 0;
+  height: 100vh;
 }
 
 .accordion-button {
@@ -2179,9 +2298,18 @@ button:focus:not(:focus-visible) {
 	position: absolute;
 	display: block;
 	align-self: stretch;
-	justify-self: stretch;
-	width: 100%;
+	justify-self: center;
+	border-radius: 16px;
+	place-self: center;
+	width: 80vw;
 	height: 100%;
+}
+
+@media(max-width: 760px) {
+	.hero-img {
+		height: 60%;
+		width: 90vw;
+	}
 }
 
 .hero-overlay {
@@ -2264,6 +2392,56 @@ button:focus:not(:focus-visible) {
 	Global Header
 -----------------------*/
 /* --> BEGIN Navbar */
+.navbar-dropdown-blur-bg {
+	display: block;
+	position: fixed;
+	z-index: -2;
+	width: 100vw;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	backdrop-filter: blur(8px);
+	background: #000000aa;
+	transform: scaleY(0.0);
+	transition: all 0.3s ease;
+}
+
+@media(max-width: 760px) {
+	.navbar-dropdown-blur-bg {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.navbar-dropdown-blur-bg.active {
+	transform: scaleY(1.0);
+}
+
+.navbar-dropdown-bg-white {
+	display: inline-block;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	z-index: -2;
+	padding: 0;
+	margin: 0;
+	backdrop-filter: blur(8px);
+	background: #fff;
+	transform: scaleY(0.0);
+}
+
+@media(max-width: 760px) {
+	.navbar-dropdown-bg-white {
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.navbar-dropdown-bg-white.active {
+	transform: scaleY(1.0);
+}
+
+
 .navbar {
 	position: fixed;
 	display: flex;
@@ -2485,7 +2663,10 @@ button:focus:not(:focus-visible) {
 	background: transparent;
 	text-align: center;
 	padding: 8px 0 8px 0;
+	width: 28px;
+	aspect-ratio: 1.0;
 	align-content: center;
+	justify-content: center;
 	border-radius: var(--default-border-radius);
 	margin: 2px;
 	border: 2px transparent;
@@ -2494,12 +2675,13 @@ button:focus:not(:focus-visible) {
 }
 
 .nav-dropdown-btn.dark {
-	color: #333;
+	color: #000;
 }
 
 .nav-dropdown-btn:hover {
 	color: var(--accent-color);
 }
+
 
 @media(max-width: 1024px) {
 	.nav-dropdown-btn {

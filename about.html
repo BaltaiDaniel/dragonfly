@@ -59,7 +59,7 @@
             </div>
 
             <div class="nav-btns-holder-right">
-                <button class="nav-dropdown-btn dark" type="button" data-bs-toggle="collapse" data-bs-target="#topNavDropdown" aria-expanded="true" aria-controls="topNavDropdown" title="Tabs"><i class="bi-list dark-100"></i></button>
+                <button id="topNavToggle" class="nav-dropdown-btn dark" type="button" data-bs-toggle="collapse" data-bs-target="#topNavDropdown" aria-expanded="true" aria-controls="topNavDropdown" title="Tabs"><i class="bi-list dark-100"></i></button>
             </div>
 
         </div>
@@ -76,7 +76,7 @@
 
 
         <div id="topNavDropdown" class="accordion-collapse collapse dark-80" aria-labelledby="topNavDropdown" data-bs-parent="#accordionGeneral">
-            <div class="accordion-body">
+            <div class="accordion-body-navbar">
                 <div class="nav-sect-mobile">
                     <a class="sub-nav-btn-mobile" href="#business_profile">Business Profile</a>
                     <a class="sub-nav-btn-mobile" href="#leadership">Leadership</a>
@@ -318,7 +318,7 @@
                 <button class="form-submit-btn" type="submit" id="formSubmitBtn">Submit</button>
                 <div class="error-content" id="submitErrorCont" style="display: none;">
                     <i class="bi-info-circle text-error"></i>
-                    <p class="text-error" id="submitErrorText">Something went wrong. Try again.</p>
+                    <p class="text-error" id="submitErrorText">Something went wrong. Try again after some time.</p>
                 </div>
             </form>
         </div>

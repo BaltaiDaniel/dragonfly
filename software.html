@@ -57,7 +57,7 @@
 			</div>
 
 			<div class="nav-btns-holder-right fade-in">
-				<button class="nav-dropdown-btn" type="button" data-bs-toggle="collapse" data-bs-target="#topNavDropdown" aria-expanded="true" aria-controls="topNavDropdown" title="Tabs"><i class="bi-list"></i></button>
+				<button id="topNavToggle" class="nav-dropdown-btn" type="button" data-bs-toggle="collapse" data-bs-target="#topNavDropdown" aria-expanded="true" aria-controls="topNavDropdown" title="Tabs"><i class="bi-list"></i></button>
 			</div>
 
 		</div>
@@ -68,8 +68,9 @@
         </div>
 
 
-        <div id="topNavDropdown" class="accordion-collapse collapse dark-80" aria-labelledby="topNavDropdown" data-bs-parent="#accordionGeneral">
-            <div class="accordion-body">
+        <div id="topNavDropdown" class="accordion-collapse collapse accordion-cont" aria-labelledby="topNavDropdown" data-bs-parent="#accordionGeneral">
+        	<!-- <div class="navbar-dropdown-blur-bg" id="navDropdownBg"></div> -->
+            <div class="accordion-body-navbar">
             	<div class="nav-sect-mobile">
 	            	<a href="https://baltaidaniel.github.io/dragonfly/software" class="nav-btn mobile">Software</a>
 	            	<a href="https://baltaidaniel.github.io/dragonfly/consulting" class="nav-btn mobile">Consulting</a>

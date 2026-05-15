@@ -49,9 +49,9 @@ messageInput.addEventListener('blur', validateMessage);
 function validateFullName() {
     const fullName = fullNameInput.value.trim();
     
-    if (!fullName || fullName.length < 2) {
+    if (!fullName || fullName.length < 3) {
         fullNameErrorCont.style.display = 'flex';
-        fullNameErrorText.innerHTML = 'Enter a valid full name (at least 2 characters)';
+        fullNameErrorText.innerHTML = 'Enter a valid name (at least 3 characters)';
         fullNameInput.style.borderColor = '#dc3545';
         return false;
     }
@@ -269,7 +269,7 @@ form.addEventListener('submit', (e) => {
         return response.json();
     })
     .then((data) => {
-        submitButton.innerHTML = '<i class="bi-check-circle"></i> Submitted';
+        submitButton.innerHTML = '<i class="bi-check-circle"></i> Your request has been received';
         submitButton.disabled = true;
         submitErrorCont.style.display = 'none';
         form.reset();

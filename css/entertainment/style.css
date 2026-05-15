@@ -32,7 +32,7 @@
 
 @media(max-width: 1024px) {
 	.navbar-entertainment {
-		padding: 10px 48px 10px 48px;
+		padding: 24px 48px 24px 48px;
 	}
 	.navbar-entertainment.compact {
 		padding: 6px 64px 6px 64px;
@@ -41,9 +41,9 @@
 
 @media(max-width: 760px) {
 	.navbar-entertainment {
-		padding: 10px 24px 10px 16px;
+		padding: 24px 8px 24px 8px;
 	}
-	.navbar.compact {
+	.navbar-entertainment.compact {
 		padding: 6px 16px 6px 16px;
 	}
 }

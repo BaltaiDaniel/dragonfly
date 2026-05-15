@@ -43,9 +43,9 @@ messageInput.addEventListener('blur', validateMessage);
 function validateFullName() {
     const fullName = fullNameInput.value.trim();
     
-    if (!fullName || fullName.length < 2) {
+    if (!fullName || fullName.length < 3) {
         fullNameErrorCont.style.display = 'flex';
-        fullNameErrorText.innerHTML = 'Enter a valid full name (at least 2 characters)';
+        fullNameErrorText.innerHTML = 'Enter a valid name (at least 3 characters)';
         fullNameInput.style.borderColor = '#dc3545';
         return false;
     }
@@ -119,14 +119,13 @@ function validateCompany() {
     if (!company) {
         return true;
     }
-    if (company.length > 0 && company.length < 2) {
+    if (company.length > 0 && company.length < 3) {
         companyErrorCont.style.display = 'flex';
-        companyErrorText.innerHTML = 'Company name must be at least 2 characters long';
+        companyErrorText.innerHTML = 'Company name must be at least 3 characters long';
         companyInput.style.borderColor = '#dc3545';
         return false;        
     }
     
-    companyErrorCont.style.display = 'none';
     companyInput.style.borderColor = '#28a745';
     return true;
 }
@@ -137,15 +136,6 @@ function validateCompanyAddress() {
     if (!companyAddress) {
         return true;
     }
-    if (companyAddress.length > 0 && companyAddress.length < 2) {
-        companyAddressErrorCont.style.display = 'flex';
-        companyAddressErrorText.innerHTML = 'Enter a valid company address';
-        companyAddressInput.style.borderColor = '#dc3545';
-        return false;        
-    }
-    
-    companyAddressErrorCont.style.display = 'none';
-    companyAddressInput.style.borderColor = '#28a745';
     return true;
 }
 
@@ -230,7 +220,7 @@ form.addEventListener('submit', (e) => {
         return response.json();
     })
     .then((data) => {
-        submitButton.innerHTML = '<i class="bi-check-circle"></i> Your message has been received';
+        submitButton.innerHTML = '<i class="bi-check-circle"></i> Your request has been received.\nA representative of Dragonfly will contact you by email or phone within 3 business days.';
         submitButton.disabled = true;
         submitErrorCont.style.display = 'none';
         form.reset();

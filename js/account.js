@@ -75,11 +75,11 @@ const userAuth = (function() {
                 name: userName
             };
             updateAccountButton();
-            console.log(`✅ Logged in as: ${userName}`);
+            // console.log(`✅ Logged in as: ${userName}`);
         } else {
             currentUser = null;
             updateAccountButton();
-            console.log('❌ Not logged in');
+            // console.log('❌ Not logged in');
         }
     }
     
@@ -109,7 +109,7 @@ const userAuth = (function() {
         
         currentUser = randomUser;
         updateAccountButton();
-        console.log(`✅ Logged in as: ${randomUser.name}`);
+        // console.log(`✅ Logged in as: ${randomUser.name}`);
         showToast(`Welcome back, ${randomUser.name}!`, 'success');
     }
     
@@ -122,7 +122,7 @@ const userAuth = (function() {
         
         currentUser = null;
         updateAccountButton();
-        console.log('❌ Not logged in');
+        // console.log('❌ Not logged in');
         showToast('Logged out successfully', 'info');
     }
     
