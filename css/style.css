@@ -1666,9 +1666,11 @@ textarea:focus {
     background: white;
     overflow: hidden;
     padding: 128px 128px 128px 128px;
-    align-items: stretch;
+    /*align-items: stretch;*/
+    align-items: center;
     align-content: center;
     justify-items: stretch;
+    justify-content: center;
 }
 
 

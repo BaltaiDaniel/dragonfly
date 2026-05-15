@@ -65,8 +65,7 @@
 						<div id="accordionGeneralOne" class="accordion-collapse collapse dark-80" aria-labelledby="headingOne" data-bs-parent="#accordionGeneral">\
 							<div class="accordion-body">\
 								<div class="footer-sect">\
-									<a href="https://baltaidaniel.github.io/dragonfly/entertainment" class="footer-section-item">Explore Entertainment <i class="bi-arrow-up-right-circle"></i></a>\
-									<a href="https://baltaidaniel.github.io/dragonfly/get/zenolegends" class="footer-section-item">Zeno Legends</a>\
+									<a href="https://baltaidaniel.github.io/dragonfly/entertainment" class="footer-section-item">Explore Entertainment <i class="bi-arrow-right"></i></a>\
 								</div>\
 							</div>\
 						</div>\
@@ -81,7 +80,7 @@
 						<div id="accordionGeneralTwo" class="accordion-collapse collapse dark-80" aria-labelledby="headingTwo" data-bs-parent="#accordionGeneral">\
 							<div class="accordion-body">\
 								<div class="footer-sect">\
-									<a href="https://baltaidaniel.github.io/dragonfly/software" class="footer-section-item">Explore Software <i class="bi-arrow-up-right-circle"></i></a>\
+									<a href="https://baltaidaniel.github.io/dragonfly/software" class="footer-section-item">Explore Software <i class="bi-arrow-right"></i></a>\
 									<a href="https://baltaidaniel.github.io/dragonfly/software#homerentals" class="footer-section-item">Home Rentals</a>\
 								</div>\
 							</div>\
@@ -98,7 +97,7 @@
 						<div id="accordionGeneralThree" class="accordion-collapse collapse dark-80" aria-labelledby="headingThree" data-bs-parent="#accordionGeneral">\
 							<div class="accordion-body">\
 								<div class="footer-sect">\
-									<a href="https://baltaidaniel.github.io/dragonfly/consulting" class="footer-section-item">Explore Consulting <i class="bi-arrow-up-right-circle"></i></a>\
+									<a href="https://baltaidaniel.github.io/dragonfly/consulting" class="footer-section-item">Explore Consulting <i class="bi-arrow-right"></i></a>\
 								</div>\
 							</div>\
 						</div>\
